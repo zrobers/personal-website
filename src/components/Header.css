@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .header {
+    background-color: #2e4075; /* Primary color */
+    color: white; /* White text for contrast */
+    width: 100%;
+    padding: 0.5rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center; /* Ensures logo and text are vertically aligned */
+  }
+  
+  .logo-image {
+    height: 30px; /* Adjust the height to make it smaller */
+    width: auto;
+    margin-right: 10px; /* Space between the logo and text */
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white; /* Accent color */
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
