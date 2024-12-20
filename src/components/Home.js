@@ -1,9 +1,17 @@
 import React, { useRef, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import CountUp from 'react-countup';
 import Slideshow from '../components/Slideshow'; // slideshow component
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faBrain, faChartLine, faCogs } from '@fortawesome/free-solid-svg-icons';
 import { FaSchool, FaMapMarkerAlt, FaLaptopCode, FaHiking, FaCalendar, FaGraduationCap } from 'react-icons/fa';
+
+const experiences = [
+    { image: '/images/software.png', label: 'Software Development Internships', number: 2 },
+    { image: '/images/research.png', label: 'Research Experiences', number: 3 },
+    { image: '/images/projects.png', label: 'Personal Projects', number: 5 },
+    { image: '/images/math.png', label: 'University Math Courses', number: 10 },
+  ];
 
 const skills = [
   { icon: <FontAwesomeIcon icon={faCode} />, label: 'Software Development' },
@@ -17,8 +25,8 @@ const skills = [
 const Home = () => {
   const slideshowRef = useRef(null);
 
-  const { ref: bioRef, inView: bioInView } = useInView({ triggerOnce: true });
   const { ref: skillsRef, inView: skillsInView } = useInView({ triggerOnce: true });
+  const { ref: experiencesRef, inView: experiencesInView } = useInView({ triggerOnce: true });
 
   useEffect(() => {
     const handleResize = () => {
@@ -67,26 +75,50 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Bio and Skills Section */}
-      <div style={styles.bioSection}>
-        <div ref={skillsRef} style={{ 
-          ...styles.skillsContainer, 
-          opacity: skillsInView ? 1 : 0, 
-          transform: skillsInView ? 'translateY(0)' : 'translateY(20px)', 
-          transition: 'opacity 2s ease, transform 2s ease'  // Increased transition time
-        }}>
-          {/* My Skills Title */}
-          <h2 style={styles.skillsTitle}>My Skills</h2>
-
-          <div style={styles.skillsSection}>
-            {skills.map((skill, index) => (
-              <div key={index} style={styles.skill}>
-                <div style={styles.skillIcon}>{skill.icon}</div>
-                <div style={styles.label}>{skill.label}</div>
-              </div>
-            ))}
-          </div>
+      {/* Skills Section */}
+      <div ref={skillsRef} style={{
+        ...styles.skillsContainer,
+        opacity: skillsInView ? 1 : 0,
+        transform: skillsInView ? 'translateY(0)' : 'translateY(20px)',
+        transition: 'opacity 2s ease, transform 2s ease',
+      }}>
+        <h2 style={styles.skillsTitle}>My Skills</h2>
+        <div style={styles.skillsSection}>
+          {skills.map((skill, index) => (
+            <div key={index} style={styles.skill}>
+              <div style={styles.skillIcon}>{skill.icon}</div>
+              <div style={styles.label}>{skill.label}</div>
+            </div>
+          ))}
         </div>
+      </div>
+
+      {/* Experiences Section */}
+      <div ref={experiencesRef} style={{
+        ...styles.experiencesContainer,
+        opacity: experiencesInView ? 1 : 0,
+        transform: experiencesInView ? 'translateY(0)' : 'translateY(20px)',
+        transition: 'opacity 2s ease, transform 2s ease',
+      }}>
+        <h2 style={styles.skillsTitle}>My Experiences</h2>
+            <div style={styles.experiencesSection}>
+                {experiences.map((exp, index) => (
+                    <div key={index} style={styles.experience}>
+                        <img src={exp.image} alt={exp.label} style={styles.experienceImage} />
+                        <CountUp
+                            start={0}
+                            end={experiencesInView ? exp.number : 0}
+                            duration={10}
+                            delay={1 * index} // Stagger the animations
+                        >
+                            {({ countUpRef }) => (
+                                <div ref={countUpRef} style={styles.experienceNumber}></div>
+                            )}
+                        </CountUp>
+                        <div style={styles.experienceLabel}>{exp.label}</div>
+                    </div>
+                ))}
+            </div>
       </div>
     </div>
   );
@@ -141,13 +173,13 @@ const styles = {
   },
   fastFactsSection: {
     display: 'flex',
-    justifyContent: 'space-around', // Distribute items across the screen
-    backgroundColor: '#2e4075', // Blue background
+    justifyContent: 'space-around',
+    backgroundColor: '#2e4075',
     padding: '30px',
-    width: '100%', // Full width
+    width: '100%',
     boxSizing: 'border-box',
-    color: 'white', // White text color
-    textAlign: 'center', // Center the text
+    color: 'white',
+    textAlign: 'center',
   },
   fastFactItem: {
     display: 'flex',
@@ -156,7 +188,7 @@ const styles = {
     margin: '10px',
   },
   fastFactIcon: {
-    fontSize: '2rem', // Adjust icon size as needed
+    fontSize: '2rem',
     marginBottom: '10px',
   },
   factLabel: {
@@ -172,56 +204,65 @@ const styles = {
     backgroundColor: '#ffffff',
     flexWrap: 'wrap',
   },
-  skillsContainer: {
-    display: 'flex',
-    flexDirection: 'column', // Stack title and skills vertically
-    alignItems: 'center', // Center everything horizontally
-    justifyContent: 'center', // Center content vertically
-    width: '100%',
-    textAlign: 'center', // Center text inside the container
+  skillsContainer: { 
+    textAlign: 'center', 
+    padding: '20px' 
   },
-  skillsTitle: {
-    fontSize: '3rem',
-    color: '#2e4075',
-    fontWeight: 'bold',
-    marginBottom: '40px', // Add space below title for separation from skills
-    textAlign: 'center',
+  skillsTitle: { 
+    fontSize: '3rem', 
+    color: '#2e4075', 
+    fontWeight: 'bold', 
+    marginBottom: '30px' 
   },
-  skillsSection: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr 1fr',  // 3 columns for skills
-    gap: '20px',
-    justifyItems: 'center',
-    alignItems: 'center',
-    maxWidth: '75%',
-    margin: '0 auto',
+  skillsSection: { 
+    display: 'grid', 
+    gridTemplateColumns: 'repeat(3, 1fr)', 
+    gap: '20px', 
+    justifyItems: 'center' 
   },
-  skill: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    textAlign: 'center',
-    fontSize: '2rem',
-    color: '#2e4075',
+  skill: { 
+    textAlign: 'center', 
+    color: '#2e4075' 
   },
-  skillIcon: {
-    fontSize: '4rem',
-    color: '#2e4075',
-    marginBottom: '10px',
+  skillIcon: { 
+    fontSize: '4rem', 
+    color: '#2e4075', 
+    marginBottom: '10px' 
   },
-  label: {
-    fontWeight: 'bold',
+  label: { 
+    fontWeight: 'bold' 
   },
-  logo: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: '25%',
-    marginLeft: '20px',
+  experiencesContainer: { 
+    textAlign: 'center', 
+    backgroundColor: '#d4e3fc', 
+    padding: '40px' 
   },
-  logoImage: {
-    width: '100%',
-    height: 'auto',
+  experiencesSection: { 
+    display: 'grid', 
+    gridTemplateColumns: 'repeat(2, 1fr)', 
+    gap: '30px', 
+    justifyItems: 'center' 
+  },
+  experience: { 
+    textAlign: 'center' 
+  },
+  experienceImage: { 
+    maxWidth: '100%', 
+    maxHeight: '300px', 
+    width: 'auto', 
+    height: 'auto',  
+    marginBottom: '10px', 
+    objectFit: 'contain' 
+  },
+  experienceNumber: { 
+    fontSize: '2rem', 
+    fontWeight: 'bold', 
+    color: '#2e4075' 
+  },
+  experienceLabel: { 
+    fontSize: '1.2rem', 
+    fontWeight: 'bold', 
+    color: '#2e4075' 
   },
 };
 
