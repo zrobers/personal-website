@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Research from './components/Research';
 import Projects from './components/Projects';
 import Nonprofit from './components/Nonprofit';
+import ThoughtLeadership from './components/Thought_Leadership';
 import Contact from './components/Contact';
 import './App.css';
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/research" element={<Research />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/nonprofit" element={<Nonprofit />} />
+        <Route path="/thought-leadership" element={<ThoughtLeadership />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       </div>

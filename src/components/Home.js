@@ -18,8 +18,8 @@ const skills = [
   { icon: <FontAwesomeIcon icon={faBrain} />, label: 'Machine Learning' },
   { icon: <FontAwesomeIcon icon={faCogs} />, label: 'Mathematical Modeling' },
   { icon: <FontAwesomeIcon icon={faChartLine} />, label: 'Data Analysis' },
-  { icon: <FaLaptopCode />, label: 'Product' },  // Added Product skill
-  { icon: <FaHiking />, label: 'Leadership' },   // Added Leadership skill
+  { icon: <FaLaptopCode />, label: 'Product' },  
+  { icon: <FaHiking />, label: 'Leadership' },  
 ];
 
 const Home = () => {
@@ -46,6 +46,7 @@ const Home = () => {
 
   return (
     <div style={styles.pageContainer}>
+
       {/* Slideshow Section */}
       <div style={styles.slideshowContainer} ref={slideshowRef}>
         <Slideshow />
@@ -120,6 +121,45 @@ const Home = () => {
                 ))}
             </div>
       </div>
+
+      {/* Nonprofit Section */}
+      <div style={styles.nonprofitSection}>
+        <h2 style={styles.nonprofitTitle}>Nonprofit Work</h2>
+        <p style={styles.nonprofitDescription}>
+          I’ve founded and managed nonprofits that inspire students and alumni worldwide. Learn more about my efforts and explore our initiatives.
+        </p>
+        <div style={styles.nonprofitLogos}>
+          <a href="https://www.sailea.org" target="_blank" rel="noopener noreferrer">
+            <img src="/images/sailea.png" alt="The Scholastic Artificial Intelligence League" style={styles.logo} />
+          </a>
+          <a href="https://www.echhsalumni.org" target="_blank" rel="noopener noreferrer">
+            <img src="/images/echhsaa.png" alt="The ECHHS Alumni Association" style={styles.logo} />
+          </a>
+        </div>
+        <a href="/nonprofit" style={styles.learnMoreLink}>
+          Learn More
+        </a>
+      </div>
+
+      {/* Thought Leadership Section */}
+      <div style={styles.nonprofitSection}>
+        <h2 style={styles.nonprofitTitle}>Thought Leadership</h2>
+        <p style={styles.nonprofitDescription}>
+          Modern challenges necessitate novel insights. Read my unique thoughts on the ethics and philosophy of AI, leadership in a digital age, and the intersection of classical antiquity and the modern day.
+        </p>
+        <div style={styles.nonprofitLogos}>
+          <a href="https://www.sailea.org" target="_blank" rel="noopener noreferrer">
+            <img src="/images/sailea.png" alt="The Scholastic Artificial Intelligence League" style={styles.logo} />
+          </a>
+          <a href="https://www.echhsalumni.org" target="_blank" rel="noopener noreferrer">
+            <img src="/images/echhsaa.png" alt="The ECHHS Alumni Association" style={styles.logo} />
+          </a>
+        </div>
+        <a href="/nonprofit" style={styles.learnMoreLink}>
+          Learn More
+        </a>
+      </div>
+
     </div>
   );
 };
@@ -263,6 +303,46 @@ const styles = {
     fontSize: '1.2rem', 
     fontWeight: 'bold', 
     color: '#2e4075' 
+  },
+  nonprofitSection: {
+    textAlign: 'center',
+    padding: '40px',
+    backgroundImage: 'url("/images/modern-pattern.png")', // Replace with your modern pattern image
+    backgroundSize: 'cover',
+    backgroundColor: '#ffffff',
+  },
+  nonprofitTitle: {
+    fontSize: '2.5rem',
+    color: '#2e4075',
+    fontWeight: 'bold',
+    marginBottom: '20px',
+  },
+  nonprofitDescription: {
+    fontSize: '1.2rem',
+    color: '#2e4075',
+    marginBottom: '30px',
+  },
+  nonprofitLogos: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '20px',
+    marginBottom: '30px',
+  },
+  logo: {
+    width: '150px',
+    height: 'auto',
+    transition: 'transform 0.3s',
+    cursor: 'pointer',
+  },
+  learnMoreLink: {
+    display: 'inline-block',
+    fontSize: '1.2rem',
+    color: '#ffffff',
+    backgroundColor: '#2e4075',
+    padding: '10px 20px',
+    textDecoration: 'none',
+    borderRadius: '5px',
+    fontWeight: 'bold',
   },
 };
 
