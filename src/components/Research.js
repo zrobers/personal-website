@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+// What if... typing on header
 const DynamicFeature = () => {
   const finishers = [
     "generate tissues with AI?",
@@ -48,6 +49,38 @@ const DynamicFeature = () => {
   );
 };
 
+// Individual research projects
+const projects = [
+  {
+    title: "Hickey Lab",
+    description: "Exploring cell growth patterns and their implications in medical research.",
+    style: {
+      backgroundImage: 'url(/images/cells.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    },
+  },
+  {
+    title: "Fluids",
+    description: "Studying fluid dynamics and their applications in engineering.",
+    style: {
+      backgroundImage: 'url(/images/iceberg.jpg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    },
+  },
+  {
+    title: "Heat Transfer",
+    description: "Optimizing heat transfer systems for sustainable energy.",
+    style: {
+      backgroundImage: 'url(/images/metal.jpg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    },
+  },
+];
+
+
 const Research = () => {
   useEffect(() => {
     const style = document.createElement('style');
@@ -91,9 +124,17 @@ const Research = () => {
           My research blends the computational with the tangible, serving as an outlet for me to apply the abstract concepts I learn in the classroom to real-world problems. I'm actively involved in 3 projects in deep learning, applied mathematics, and mathematical modeling.
         </p>
       </div>
-      <div style={styles.hickeyLab}>
-        TEST
-      </div>
+      {projects.map((project, index) => (
+        <div key={index} style={project.style}>
+          <div style={styles.projectContent}>
+            <div style={styles.projectText}>
+              <h2>{project.title}</h2>
+              <p>{project.description}</p>
+            </div>
+            <div style={styles.projectImage}></div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
@@ -173,10 +214,42 @@ const styles = {
     margin: '0 auto',
     color: '#2e4075',
   },
-  hickeyLab: {
-    backgroundImage: 'url(/images/cells.png)',
+  projectSection: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: '2em',
+    margin: '2em 0',
+    color: '#fff',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    fontSize: '4 rem'
-  }
+  },
+  projectContent: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+  },
+  projectText: {
+    flex: '1',
+    padding: '1em',
+    fontSize: '1.2rem',
+    color: '#fff',
+  },
+  projectImage: {
+    flex: '1',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    height: '300px',
+    marginLeft: '2em',
+  },
+  hickeyLab: {
+    backgroundImage: 'url(/images/cells.png)',
+  },
+  fluids: {
+    backgroundImage: 'url(/images/iceberg.jpg)',
+  },
+  heat: {
+    backgroundImage: 'url(/images/cells.png)',
+  },
 };
