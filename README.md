@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Personal Website for Zach Robers
+
+I built this website to showcase my research, personal projects, nonprofit work, and thought leadership while simultaneously demonstrating my web development skills. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

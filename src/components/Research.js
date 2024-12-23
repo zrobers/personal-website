@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-// Define the dynamic typing to ask research questions
 const DynamicFeature = () => {
-
   const finishers = [
     "generate tissues with AI?",
     "predict natural disasters?",
@@ -44,13 +42,37 @@ const DynamicFeature = () => {
     <div style={styles.dynamicTextWrapper}>
       <div style={styles.dynamicText}>
         What if we could <span style={styles.highlight}>{text}</span>
-        <span style={styles.blinkingCursor}>|</span>
+        <span className="blinkingCursor">|</span>
       </div>
     </div>
   );
 };
 
 const Research = () => {
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @keyframes blink {
+        0%, 100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+      .blinkingCursor {
+        display: inline-block;
+        width: 10px;
+        animation: blink 0.8s steps(2, start) infinite;
+      }
+    `;
+    document.head.appendChild(style);
+
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   return (
     <div>
       <div style={styles.topSection}>
@@ -63,11 +85,14 @@ const Research = () => {
             Research is formalized curiosity. It is poking and prying with a purpose.
           </p>
           <div style={styles.quoteMarksBottom}>”</div>
-          <p style={styles.quoteAuthor}>- Zora Neale Hurston</p>
+          <p style={styles.quoteAuthor}>Zora Neale Hurston</p>
         </div>
         <p style={styles.paragraph}>
-          My research blends the computational with the tangible, serving as an outlet for me to apply the abstract concepts I learn in the classroom to real-world problems. I'm actively involved in 3 projects in deep learning, applied mathematics, and mathematical modeling. 
+          My research blends the computational with the tangible, serving as an outlet for me to apply the abstract concepts I learn in the classroom to real-world problems. I'm actively involved in 3 projects in deep learning, applied mathematics, and mathematical modeling.
         </p>
+      </div>
+      <div style={styles.hickeyLab}>
+        TEST
       </div>
     </div>
   );
@@ -76,16 +101,6 @@ const Research = () => {
 export default Research;
 
 const styles = {
-  keyframes: `
-    @keyframes blink {
-      0%, 100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-    }
-  `,
   topSection: {
     backgroundImage: 'url(/images/duke_stone.jpg)',
     backgroundSize: 'cover',
@@ -104,11 +119,6 @@ const styles = {
     fontWeight: 'bold',
     color: '#2e4075',
     textAlign: 'center',
-  },
-  blinkingCursor: {
-    display: 'inline-block',
-    width: '10px',
-    animation: 'blink 0.7s steps(2, start) infinite',
   },
   highlight: {
     color: '#2e4075',
@@ -129,25 +139,23 @@ const styles = {
     boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
   },
   quoteMarksTop: {
-    fontSize: '5rem',
+    fontSize: '8rem',
     color: '#2e4075',
     position: 'absolute',
-    fontFamily: '"Times New Roman", Times, serif',
-    top: '10px',
+    top: '70px',
     left: '10px',
     transform: 'translateY(-50%)',
   },
   quoteMarksBottom: {
-    fontSize: '5rem',
+    fontSize: '8rem',
     color: '#2e4075',
     position: 'absolute',
-    fontFamily: '"Times New Roman", Times, serif',
-    bottom: '10px',
+    bottom: '-140px',
     right: '10px',
     transform: 'translateY(-50%)',
   },
   quoteText: {
-    fontSize: '1.5rem',
+    fontSize: '2rem',
     lineHeight: '1.8',
     margin: '2em 0',
     color: '#2e4075',
@@ -156,7 +164,7 @@ const styles = {
     fontSize: '1rem',
     fontStyle: 'italic',
     marginTop: '1em',
-    color: '#555',
+    color: '#2e4075',
   },
   paragraph: {
     fontSize: '1.2rem',
@@ -165,4 +173,10 @@ const styles = {
     margin: '0 auto',
     color: '#2e4075',
   },
+  hickeyLab: {
+    backgroundImage: 'url(/images/cells.png)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    fontSize: '4 rem'
+  }
 };
