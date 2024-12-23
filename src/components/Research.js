@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-// What if... typing on header
+// Typing animation on header
 const DynamicFeature = () => {
   const finishers = [
     "generate tissues with AI?",
@@ -81,7 +81,19 @@ const projects = [
 ];
 
 
+
 const Research = () => {
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handleNext = () => {
+    setCurrentSlide((prev) => (prev + 1) % projects.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentSlide((prev) => (prev - 1 + projects.length) % projects.length);
+  };
+
   useEffect(() => {
     const style = document.createElement('style');
     style.innerHTML = `
@@ -124,17 +136,37 @@ const Research = () => {
           My research blends the computational with the tangible, serving as an outlet for me to apply the abstract concepts I learn in the classroom to real-world problems. I'm actively involved in 3 projects in deep learning, applied mathematics, and mathematical modeling.
         </p>
       </div>
-      {projects.map((project, index) => (
-        <div key={index} style={project.style}>
+      <div style={styles.slideshowContainer}>
+        <div
+          style={{
+            ...styles.fullScreenSlide,
+            ...projects[currentSlide].style,
+          }}
+        >
           <div style={styles.projectContent}>
-            <div style={styles.projectText}>
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
-            </div>
-            <div style={styles.projectImage}></div>
+            <h2>{projects[currentSlide].title}</h2>
+            <p>{projects[currentSlide].description}</p>
           </div>
         </div>
-      ))}
+        <button style={styles.arrowLeft} onClick={handlePrev}>
+          <div style={{
+            width: '0',
+            height: '0',
+            borderTop: '15px solid transparent',
+            borderBottom: '15px solid transparent',
+            borderRight: '20px solid #fff',
+          }}></div>
+        </button>
+        <button style={styles.arrowRight} onClick={handleNext}>
+          <div style={{
+            width: '0',
+            height: '0',
+            borderTop: '15px solid transparent',
+            borderBottom: '15px solid transparent',
+            borderLeft: '20px solid #fff',
+          }}></div>
+        </button>
+      </div>
     </div>
   );
 };
@@ -212,44 +244,69 @@ const styles = {
     lineHeight: '1.8',
     maxWidth: '800px',
     margin: '0 auto',
-    color: '#2e4075',
+    color: '#fff',
+    backgroundColor: '#2e4075',
   },
-  projectSection: {
+  slideshowContainer: {
+    position: 'relative',
+    width: '100%',
+    height: '100vh',
+    overflow: 'hidden',
+  },
+  fullScreenSlide: {
+    height: '100vh',
+    width: '100vw',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: '2em',
-    margin: '2em 0',
+    justifyContent: 'center',
     color: '#fff',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    textAlign: 'center',
+    cursor: 'pointer',
+    transition: 'transform 0.5s ease-in-out',
   },
   projectContent: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    width: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    padding: '2em',
+    borderRadius: '8px',
   },
-  projectText: {
-    flex: '1',
-    padding: '1em',
-    fontSize: '1.2rem',
+  arrowLeft: {
+    position: 'absolute',
+    top: '50%',
+    left: '20px',
+    transform: 'translateY(-50%)',
+    backgroundColor: '#2e4075', 
     color: '#fff',
+    border: 'none',
+    borderRadius: '50%',
+    width: '60px', // Increased size
+    height: '60px', // Increased size
+    fontSize: '2rem', // Larger font size
+    cursor: 'pointer',
+    zIndex: 1000,
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Subtle shadow
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    transition: 'transform 0.2s, box-shadow 0.2s', // Smooth transitions
   },
-  projectImage: {
-    flex: '1',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    height: '300px',
-    marginLeft: '2em',
-  },
-  hickeyLab: {
-    backgroundImage: 'url(/images/cells.png)',
-  },
-  fluids: {
-    backgroundImage: 'url(/images/iceberg.jpg)',
-  },
-  heat: {
-    backgroundImage: 'url(/images/cells.png)',
+  arrowRight: {
+    position: 'absolute',
+    top: '50%',
+    right: '20px',
+    transform: 'translateY(-50%)',
+    backgroundColor: '#2e4075', 
+    color: '#fff',
+    border: 'none',
+    borderRadius: '50%',
+    width: '60px', // Increased size
+    height: '60px', // Increased size
+    fontSize: '2rem', // Larger font size
+    cursor: 'pointer',
+    zIndex: 1000,
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Subtle shadow
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    transition: 'transform 0.2s, box-shadow 0.2s', // Smooth transitions
   },
 };
