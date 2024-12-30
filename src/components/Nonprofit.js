@@ -1,4 +1,7 @@
 import React from 'react';
+import Sailea_Slideshow from '../components/Sailea_Slideshow';
+import Echhsaa_Slideshow from '../components/Echhsaa_Slideshow';
+import { FaUsers, FaFolder, FaComments, FaGlobeAmericas, FaMoneyCheck, FaNewspaper, FaSchool} from 'react-icons/fa';
 
 const Nonprofit = () => {
   return (
@@ -18,7 +21,7 @@ const Nonprofit = () => {
         </p>
       </div>
 
-      {/* Scholastic Artificial Intelligence League Section */}
+      {/* The Scholastic Artificial Intelligence League Section */}
       <section style={styles.nonprofitSection}>
         <div style={styles.headerRow}>
           <a href="https://sailea.org" target="_blank" rel="noopener noreferrer" style={styles.logoLink}>
@@ -26,29 +29,43 @@ const Nonprofit = () => {
           </a>
           <span style={styles.verticalBar}>|</span>
           <a href="https://sailea.org" target="_blank" rel="noopener noreferrer" style={styles.nameLink}>
-            Scholastic Artificial Intelligence League (SAILea)<span style={styles.paperclip}>📎</span>
+            The Scholastic Artificial Intelligence League (SAILea)
           </a>
         </div>
 
-        <div style={styles.gallery}>
-          <img src="/images/sail-gallery1.png" alt="AI Workshop" style={styles.galleryImage} />
-          <figcaption style={styles.caption}>AI Workshop with high school students</figcaption>
-          {/* Add rotating gallery logic here */}
-        </div>
-
+        {/* Description */}
         <p style={styles.paragraph}>
-          The Scholastic Artificial Intelligence League empowers high school students globally to explore AI through workshops, competitions, and collaborative projects. We aim to democratize AI education and inspire the next generation of innovators.
+          The Scholastic Artificial Intelligence League empowers high school students globally to explore AI through interactive resources, courses, speaker events, and competitions. We aim to democratize AI education and inspire the next generation of innovators.
         </p>
 
-        <ul style={styles.statsList}>
-          <li>🌎 1,000+ members across 4 continents</li>
-          <li>🏫 Partnerships with 50+ schools</li>
-          <li>📚 200+ hours of AI educational content</li>
-          <li>🚀 100+ projects completed by student teams</li>
-        </ul>
+        {/* Slideshow Section */}
+        <div style={styles.gallery}>
+          <Sailea_Slideshow />
+        </div>
+
+        {/* Fast Facts Section */}
+      <div style={styles.fastFactsSection}>
+        <div style={styles.fastFactItem}>
+          <FaUsers style={styles.fastFactIcon} />
+          <div style={styles.factLabel}>2,000+ Members</div>
+        </div>
+        <div style={styles.fastFactItem}>
+          <FaFolder style={styles.fastFactIcon} />
+          <div style={styles.factLabel}>150+ Resources</div>
+        </div>
+        <div style={styles.fastFactItem}>
+          <FaComments style={styles.fastFactIcon} />
+          <div style={styles.factLabel}>6 Speaker Events</div>
+        </div>
+        <div style={styles.fastFactItem}>
+          <FaGlobeAmericas style={styles.fastFactIcon} />
+          <div style={styles.factLabel}>4 Continents</div>
+        </div>
+      </div>
+
       </section>
 
-      {/* East Chapel Hill Alumni Association Section */}
+      {/* The East Chapel Hill Alumni Association Section */}
       <section style={styles.nonprofitSection}>
         <div style={styles.headerRow}>
           <a href="https://echhsalumni.org" target="_blank" rel="noopener noreferrer" style={styles.logoLink}>
@@ -56,26 +73,40 @@ const Nonprofit = () => {
           </a>
           <span style={styles.verticalBar}>|</span>
           <a href="https://echhsalumni.org" target="_blank" rel="noopener noreferrer" style={styles.nameLink}>
-            East Chapel Hill High School Alumni Association <span style={styles.paperclip}>📎</span>
+            The East Chapel Hill High School Alumni Association 
           </a>
         </div>
 
-        <div style={styles.gallery}>
-          <img src="/images/echhs-gallery1.png" alt="Alumni Event" style={styles.galleryImage} />
-          <figcaption style={styles.caption}>Reunion event at ECHHS</figcaption>
-          {/* Add rotating gallery logic here */}
-        </div>
-
+        {/* Description */}
         <p style={styles.paragraph}>
-          The East Chapel Hill High School Alumni Association fosters connections among alumni, supports current students, and preserves the rich traditions of ECHHS through events, mentorship programs, and scholarships.
+          The East Chapel Hill High School Alumni Association fosters connections among alumni, supports current students, and enhances the ECHHS campus through fundraising initiatives, mentorship programs, and gatherings.
         </p>
 
-        <ul style={styles.statsList}>
-          <li>👩‍🎓 5,000+ active alumni</li>
-          <li>🎓 $100,000+ in scholarships awarded</li>
-          <li>🤝 20+ mentorship programs</li>
-          <li>📅 Annual reunion events for 25+ years</li>
-        </ul>
+         {/* Slideshow Section */}
+         <div style={styles.gallery}>
+          <Echhsaa_Slideshow />
+        </div>
+
+        {/* Fast Facts Section */}
+      <div style={styles.fastFactsSection}>
+        <div style={styles.fastFactItem}>
+          <FaMoneyCheck style={styles.fastFactIcon} />
+          <div style={styles.factLabel}>$10k+ Raised</div>
+        </div>
+        <div style={styles.fastFactItem}>
+          <FaUsers style={styles.fastFactIcon} />
+          <div style={styles.factLabel}>120+ Members</div>
+        </div>
+        <div style={styles.fastFactItem}>
+          <FaNewspaper style={styles.fastFactIcon} />
+          <div style={styles.factLabel}>19 Blog Entries</div>
+        </div>
+        <div style={styles.fastFactItem}>
+          <FaSchool style={styles.fastFactIcon} />
+          <div style={styles.factLabel}>200+ Students Impacted</div>
+        </div>
+      </div>
+
       </section>
     </div>
   );
@@ -84,7 +115,7 @@ const Nonprofit = () => {
 const styles = {
   header: {
     position: 'relative',
-    height: '300px',
+    height: '500px',
     backgroundImage: 'url("/images/gazebo.png")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -138,12 +169,10 @@ const styles = {
     fontSize: '2rem',
     color: '#2e4075',
     textDecoration: 'none',
+    fontWeight: 'bold',
   },
   logoLink: {
     textDecoration: 'none',
-  },
-  paperclip: {
-    fontSize: '1rem',
   },
   gallery: {
     textAlign: 'center',
@@ -162,12 +191,31 @@ const styles = {
     fontSize: '1.2rem',
     lineHeight: '1.6',
     marginBottom: '20px',
+    color: '#2e4075',
   },
-  statsList: {
-    listStyleType: 'none',
-    padding: '0',
+  fastFactsSection: {
+    display: 'flex',
+    justifyContent: 'space-around',
+    backgroundColor: '#2e4075',
+    padding: '30px',
+    width: '100%',
+    boxSizing: 'border-box',
+    color: 'white',
+    textAlign: 'center',
+  },
+  fastFactItem: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    margin: '10px',
+  },
+  fastFactIcon: {
+    fontSize: '2rem',
+    marginBottom: '10px',
+  },
+  factLabel: {
     fontSize: '1.2rem',
-    lineHeight: '1.8',
+    fontWeight: 'bold',
   },
 };
 
