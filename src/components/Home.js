@@ -33,13 +33,13 @@ const Home = () => {
       if (slideshowRef.current) {
         const overlay = slideshowRef.current.querySelector('.overlay');
         if (overlay) {
-          overlay.style.bottom = '20px'; // Adjust as needed
+          overlay.style.bottom = '20px'; 
         }
       }
     };
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Initial positioning
+    handleResize(); 
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
