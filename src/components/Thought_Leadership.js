@@ -7,7 +7,7 @@ const ThoughtLeadership = () => {
       id: 1,
       title: 'Why Machines Can\'t Act From Ethics',
       image: '/images/article-images/machine-ethics.jpg',
-      link: '/articles/ai-future',
+      link: '/articles/Machine_Ethics.js',
     },
     {
       id: 2,
@@ -131,7 +131,7 @@ const styles = {
   articleCard: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between', // Ensures the spacing is consistent
+    justifyContent: 'space-between', 
     border: '1px solid #ccc',
     borderRadius: '10px',
     overflow: 'hidden',
@@ -140,7 +140,7 @@ const styles = {
     padding: '15px',
     backgroundColor: '#d4e3fc',
     color: '#2e4075',
-    height: '100%', // Ensures cards have consistent height
+    height: '100%', 
   },
   articleImage: {
     width: '100%',
