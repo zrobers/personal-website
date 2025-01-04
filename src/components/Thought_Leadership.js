@@ -6,61 +6,61 @@ const ThoughtLeadership = () => {
     {
       id: 1,
       title: 'Why Machines Can\'t Act From Ethics',
-      image: '/path-to-article1-image.jpg',
+      image: '/images/article-images/machine-ethics.jpg',
       link: '/articles/ai-future',
     },
     {
       id: 2,
       title: 'Against Precautionary Basic Income: An Argument for the Survival or Suvival',
-      image: '/path-to-article2-image.jpg',
+      image: '/images/article-images/survival.jpg',
       link: '/articles/sustainable-tech',
     },
     {
       id: 3,
       title: 'Hacking Inductive Authenticity',
-      image: '/path-to-article3-image.jpg',
+      image: '/images/article-images/hacking-authenticity.webp',
       link: '/articles/tech-education',
     },
     {
         id: 4,
         title: 'Continuity and Consciousness',
-        image: '/path-to-article3-image.jpg',
+        image: '/images/article-images/consciousness.jpg',
         link: '/articles/tech-education',
     },
     {
         id: 5,
         title: 'The Easy Problem of AI Rights',
-        image: '/path-to-article3-image.jpg',
+        image: '/images/article-images/ai-rights.jpg',
         link: '/articles/tech-education',
     },
     {
         id: 6,
         title: 'Machine God: Theoria Superi',
-        image: '/path-to-article3-image.jpg',
+        image: '/images/article-images/machine-god.jpg',
         link: '/articles/tech-education',
     },
     {
         id: 7,
         title: 'How Often Do Men Think About the Roman Empire? Misconceptions of Roman Masculinity',
-        image: '/path-to-article3-image.jpg',
+        image: '/images/article-images/roman-masculinity.jpg',
         link: '/articles/tech-education',
     },
     {
         id: 8,
         title: 'Can teachers detect ChatGPT usage?',
-        image: '/path-to-article3-image.jpg',
+        image: '/images/article-images/chat.jpg',
         link: '/articles/tech-education',
     },
     {
         id: 9,
         title: 'Mathematical Investigation of the Buoyant Force in Non-Newtonian Fluids',
-        image: '/path-to-article3-image.jpg',
+        image: '/images/article-images/buoyancy.png',
         link: '/articles/tech-education',
     },
     {
         id: 10,
         title: 'Stock Pediction with Difference Equations and Custom Sentiment Analysis',
-        image: '/path-to-article3-image.jpg',
+        image: '/images/article-images/stocks.jpg',
         link: '/articles/tech-education',
     },
   ];
@@ -107,8 +107,8 @@ const styles = {
     margin: '0 auto',
     padding: '20px',
     textAlign: 'center',
-    borderRadius: '10px', // Optional for aesthetic
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Optional for a card-like look
+    borderRadius: '10px', 
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
   },
   header: {
     fontSize: '2.5rem',
@@ -129,6 +129,9 @@ const styles = {
     gap: '20px',
   },
   articleCard: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between', // Ensures the spacing is consistent
     border: '1px solid #ccc',
     borderRadius: '10px',
     overflow: 'hidden',
@@ -136,6 +139,8 @@ const styles = {
     textAlign: 'center',
     padding: '15px',
     backgroundColor: '#d4e3fc',
+    color: '#2e4075',
+    height: '100%', // Ensures cards have consistent height
   },
   articleImage: {
     width: '100%',
@@ -155,6 +160,7 @@ const styles = {
     backgroundColor: '#2e4075',
     borderRadius: '5px',
     textDecoration: 'none',
+    marginTop: 'auto'
   },
 };
 
