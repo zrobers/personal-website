@@ -11,6 +11,15 @@ import Contact from './components/Contact';
 
 // articles
 import MachineEthics from './components/articles/Machine_Ethics.js'
+import PrecuationaryBasicIncome from './components/articles/Precautionary_Basic_Income.js'
+import HackingAuthenticity from './components/articles/Hacking_Authenticity.js'
+import ContinuityConsciousnes from './components/articles/Continuity_Consciousness.js'
+import AIRights from './components/articles/AI_Rights.js'
+import MachineGod from './components/articles/Machine_God.js'
+import RomanMasculinity from './components/articles/Roman_Masculinity.js'
+import Chat from './components/articles/Chat.js'
+import Fluids from './components/articles/Fluids.js'
+import Stocks from './components/articles/Stocks.js'
 
 import './App.css';
 
@@ -28,6 +37,15 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             {/* Articles */}
             <Route path="/thought-leadership/machine-ethics" element={<MachineEthics />} />
+            <Route path="/thought-leadership/precautionary-basic-income" element={<PrecuationaryBasicIncome />} />
+            <Route path="/thought-leadership/hacking-authenticity" element={<HackingAuthenticity />} />
+            <Route path="/thought-leadership/continuity-consciousness" element={<ContinuityConsciousnes />} />
+            <Route path="/thought-leadership/ai-rights" element={<AIRights />} />
+            <Route path="/thought-leadership/machine-god" element={<MachineGod />} />
+            <Route path="/thought-leadership/roman-masculinity" element={<RomanMasculinity />} />
+            <Route path="/thought-leadership/chat" element={<Chat />} />
+            <Route path="/thought-leadership/fluids" element={<Fluids />} />
+            <Route path="/thought-leadership/stocks" element={<Stocks />} />
           </Routes>
       </div>
       <Footer />
