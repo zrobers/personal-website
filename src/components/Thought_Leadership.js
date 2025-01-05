@@ -19,7 +19,7 @@ const ThoughtLeadership = () => {
       id: 3,
       title: 'Hacking Inductive Authenticity',
       image: '/images/article-images/hacking-authenticity.webp',
-      link: '/thought-leadershup/hacking-authenticity',
+      link: '/thought-leadership/hacking-authenticity',
     },
     {
         id: 4,

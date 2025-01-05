@@ -12,17 +12,17 @@ const ArticleTemplate = () => {
     <div style={styles.container}>
       {/* Back Button at Top */}
       <button onClick={goBack} style={styles.backButtonTop}>
-        &larr; Back to Thought Leadership
+        &larr; Back
       </button>
 
       {/* Article Header */}
       <header style={styles.header}>
-        <h1 style={styles.title}>Why Machines Can't Act From Ethics</h1>
+        <h1 style={styles.title}>Hacking Inductive Authenticity</h1>
         <p style={styles.subtitle}>Zachary Robers</p>
-        <img 
-          src="/images/article-images/machine-ethics.jpg" 
-          alt="Placeholder for article image" 
-          style={styles.heroImage} 
+        <img
+          src="/images/article-images/hacking-authenticity.webp"
+          alt="Placeholder for article image"
+          style={styles.heroImage}
         />
       </header>
 
@@ -32,75 +32,166 @@ const ArticleTemplate = () => {
         <section style={styles.section}>
           <h2 style={styles.sectionTitle}>Introduction</h2>
           <p>
-            Captain Chesley “Sully” Sullenberger is rightly lauded as an American hero. After dual engine failure from a bird attack at low altitude, Sully was forced to decide the best course of action to protect his passengers of US Airways Flight 1549 and the people of New York City<sup style={styles.sup}>1</sup>. Undoubtedly, Sully faced many questions with limited time, grappling with ethical dilemmas such as his responsibility to protect the lives of his passengers over normal civilians and the value of infrastructure relative to human life. Ultimately, Sully made the decision to land the plane on the Hudson River. The remarkable survival of all 155 occupants led the event to later be coined the “Miracle on the Hudson.”<sup style={styles.sup}>2</sup>
+          Hi. It’s nice to meet you. My name is Zach. I am an American university student studying abroad at Oxford. I also have a challenge for you: determine the authenticity of our relationship. 
           </p>
+          <br />
           <p>
-            Despite the miraculous outcome, critics would later question whether Captain Sullenberger’s decision was indeed the right course of action. Flight simulations confirmed the possibility of successfully landing the plane at either LaGuardia or Teterboro airports if immediate action was taken to turn around the plane upon engine failure<sup style={styles.sup}>3</sup>. However, these simulations failed to account for the innate imperfection of human decision-making. That is, humans take time to make decisions—especially those with great ethical implications. The idea that Sully would immediately turn around the plane and return to the airport without properly assessing the weight of possible injury to civilians and damage to buildings near the airport should the plane not reach the runway runs counter to human nature. By this reasoning, any doubts of Sully’s decision are unfounded, supporting his reputation as a public hero.
+          You’re probably skeptical at this point. After all, I’ve only given you information about myself in the present. Despite my pleasantries, you probably don’t even consider our encounter thus far to be the onset of a relationship, let alone an authentic one. Maybe you doubt I’m even human - a modern-day chatbot is surely capable of the preceding ramblings. Was my use of first-person pronouns enough to project my self-awareness? 
           </p>
+          <br />
           <p>
-            While Sullenberger’s legacy is secure, the possibility of turning around the plane and landing safely at the airport without damage to occupants nor destruction of the aircraft lends way to some interesting hypotheticals. Namely, with the rise of artificial intelligence entities, it is a worthwhile exercise to consider the same situation but with an AI model at the helm. Given rapid advances in the field, it seems reasonable that an AI model would have the capability to weigh the possible outcomes at the point of engine failure. And not only would such a model yield the capability of making a decision: given the right training, this AI pilot should have been able to recognize the opportunity to land safely at LaGuardia or Teterboro, decide on such a course, and precisely navigate the plane to the airport just as the pilots later managed in the flight simulator. Armed with rapid processing speeds, more information, more knowledge, and better intuition from near limitless training, this hypothetical AI pilot seems better equipped to handle the situation and produce a near optimal outcome. It seems that while Sully’s actions produced the best outcome we could expect from a human in this scenario, an AI model has the capability to outperform the seasoned pilot, propelling a greater miracle.
+          I think you’re right to be skeptical, so let me tell you some more about myself. I was born and raised in a suburban town in North Carolina. There, I grew up alongside two loving parents, my sister, and a dog. I’ve always been into sports, particularly baseball, and math. The latter led me to pursue university study which brought us to where we are today.
           </p>
+          <br />
           <p>
-            Regardless of the advances in artificial intelligence, this AI pilot would still have to reconcile uncertainty in its decision-making. At the most fundamental level, chaotic systems such as weather prohibit the possibility of a successful emergency landing at LaGuardia from ever reaching 100 percent<sup style={styles.sup}>4</sup>. Ergo, an AI pilot must grapple with deciding between certain probabilities and levels of harm to humans and society depending on its course of action upon engine failure. This decision is inherently ethical as it must include the possibility of harm<sup style={styles.sup}>5</sup>. Thus, here we find a scenario distinct from the numerous autonomous trolley problems in that an AI poses a unique capability to make a better decision than a human, but the AI entity must make a decision with ethical implications.
+          Now, you probably have a good feeling of my origins. Using inference to fill in the gaps, you can picture my upbringing in your head. But you tell me you’re still not so sure - while this basic background makes our acquaintance seem more plausible, you need more:  “How do I know you’re not made up?”   
+          </p>
+          <br />
+          <p>
+          Fair enough. Let’s meet in person. Seeing my glistening smile, the shine of my greenish blue eyes, the chaotic disarray of my hair as I extend my hand to greet you, I look authentic. More, the warmth of my hind, the roughness of my calluses, the smoothness of my fingernails, feel right.   
+          </p>
+          <br />
+          <p>
+          Now, you’re sure I’m human. This would be grounds to dismiss authenticity, but you tell me an authentic relationship requires more than two acquainted humans.  
+          </p>
+          <br />
+          <p>
+          Fine. Let’s get to know each other. We laugh as my chopstick insufficiency causes me to drop the sushi roll on my lap. We reminisce over old family memories as we share in the joy of an ice cream sundae for dessert. As we watch a baseball game later, we share in the distraught as the other team walks off, leaving our team hanging their heads.   
+          </p>
+          <br />
+          <p>
+          These shared emotions bring us closer. But you’re a tough critic. You insist that an authentic relationship goes deeper than emotional bonding. It requires a degree of agency in my actions: you must feel that I continue to engage in our relationship because I care for you, not simply for the sake of it.  
+          </p>
+          <br />
+          <p>
+          More time passes. We see our ups and downs. You tell me you’re upset that I keep prioritizing my studies over spending time with each other. I jab back: “My future is more important than watching sports together.” We don’t speak for two weeks. Then your phone rings. It’s me. I tell you that I’m ready to change - I’ll cut off working at 5 if it means we can continue hanging out. Reluctantly, you agree to meet the next day. Everything seems well and good… for now. -----  
+          </p>
+          <br />
+          <p>
+          This introductory thought exercise illustrates the process of discerning the authenticity of a relationship. The following work suggests that judging authenticity of a virtue form relationship is an inductive process rooted in a series of hidden comparisons between oneself, the other person in the relationship, and one’s preconceived notions on relationships, influenced by evolutionary pressures. Furthermore, the inductivity of the process leaves open the possibility of “hacking” authenticity, leading to the consideration of a robot capable of forming seemingly authentic virtue form relationships over the whole range of the human sensory experience without the need for consciousness. From here, a world where such a robot exists is considered. In such a world, only the knowledge that the other entity is artificial remains to undermine the authenticity of virtue form human-robot relationships. If this knowledge is removed, the relationship with the robot is left to be found authentic by inductive means, and thus the relationship is authentic in the same sense we consider a human relationship authentic. Motivated by this scenario, this paper concludes by considering the ethics of removing the knowledge that an artificial entity capable of “hacking” authenticity considerations within a virtue form relationship is, in fact, artificial.   
           </p>
         </section>
 
-        {/* Acting From Ethics Section */}
+        {/* Considerations for Authentic Virtue Form Relationships */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>The Importance of Acting From Ethics</h2>
+          <h2 style={styles.sectionTitle}>Considerations for Authentic Virtue Form Relationships</h2>
           <p>
-            Kant’s “Groundwork for the Metaphysics of Morals” first addresses the difference between acting ethically and acting from ethics<sup style={styles.sup}>6</sup>. In doing so, he equates ethics to duty, but this debate is irrelevant to the argument at hand so we ignore this distinction and talk simply in terms of ethics. In essence, acting ethically amounts to making decisions that align with ethical principles while acting from ethics necessitates a deliberate effort to do the right thing. To act from ethics means that the desire to be ethical is an explicit motivation for one’s actions—being ethical is not the result of one’s actions but the reason for them.
+          Defined to be the epitome of friendship by Aristotle, virtue form relationships are marked by mutual good will and well-wishing pursued out of mutual admiration and shared values on both sides<sup style={styles.sup}>1</sup>. The good intent, admiration, and shared values which are necessary for virtue form relationships all exist on a conscious level, making their existence inaccessible to the other entity within the relationship. This presents additional motivation for considering whether these relationships are authentic. 
           </p>
+          <br />
           <p>
-            It takes little imagination to picture a machine capable of acting ethically. From a utilitarian standpoint, a machine as simple as an automatic door acts ethically as it maximizes happiness by providing a useful service. Some philosophers argue acting from ethics only requires a single additional layer of abstraction. James H Moor’s “Ethical Robots” suggests that an AI model’s understanding of ethics could be as trivial as a hard-coded script to determine the most ethical course of action<sup style={styles.sup}>7</sup>. He claims an explicit ethical agent can act from ethics so long as it selects from multiple courses of action depending on its parameters in an ethical way. This loose definition of acting from ethics disregards the previously asserted notion that to act from ethics, ethics must be a reason for a machine’s action. To act from something implies that that thing has a direct role in one's own explanation of one’s action. On the other hand, Kant insists that acting from ethics necessitates consciousness, but the abstract nature of what it means to be conscious makes it difficult to explicitly determine whether a machine can act from ethics and what would be required in order for a machine to do so. On this line, we deploy a stronger definition of acting from ethics in this work than Moor and a more concrete definition than Kant. In this paper, a machine is said to act from ethics if the machine can motivate its actions at the most granular level in part through ethical principles. We will touch more on the significance of this definition later.
+          Working under the definition of authenticity as the lack of wide-scale deception and  Judith Donath’s account of deception as an act or quality intended to cause the recipient to believe something that is not true, it is immediately clear that there’s a high degree of difficulty in proving something is authentic<sup style={styles.sup}>2</sup>. In proving authenticity, one must show that something designed to fool your senses (deception) does not exist. It is much simpler to show that something is not authentic: one must simply provide an example of an act or quality intended to cause the recipient to believe something is not true. Analogously, mathematical proofs often rely on complex, lengthy arguments whereas disproofs tend to simply provide a case incompatible with the sought after conclusion. 
           </p>
+          <br />
           <p>
-            The importance of teaching machines to act from ethics lies in the versatility of this form of reasoning. A machine capable of motivating its actions from ethics can apply ethical principles to any scenario just as a person can respond to a continuum of ideas with consistency of their moral principles. Even modern artificial intelligence techniques extrapolate. Machine learning (ML) enables an AI to learn from training data and then act in line with its training when faced with a variety of novel scenarios<sup style={styles.sup}>8</sup>. In many cases, ML uses a discrete set to prepare an AI to respond to a continuum of possible scenarios. The validity of this method hinges on the assumption that there will always be useful information from the training data to act in an appropriate manner. But with a continuum of possible scenarios, a discrete training set can never contain relevant information for every possible situation an AI may face<sup style={styles.sup}>9</sup>. Thus enters extrapolation—instances in which training data is extended beyond its relevance. The capability to act from ethics bypasses this concern by enabling an intelligence entity to simply apply ethical principles to any scenario. With an understanding of what it means to be ethical, a human can justify what they perceive to be an ethical course of action independent of their lived experiences. Teaching AI to act in a similar fashion would make the technology adaptable and more useful to society. Logically, the ensuing consideration is whether it is possible for machines to act from ethics. This consideration is next answered from two perspectives, one that relies on the necessity of responsibility in acting from ethics and another from the basis of distinctively mathematical explanations.
+          Unlike mathematics, there is no deductive framework one can deploy to definitively demonstrate the authenticity of virtue form relationships. There’s no checklist of sufficient conditions. No tools to reason from one’s observations to the necessity that something is authentic. Such is why determining authenticity follows a procedure similar to that provided in the introductory thought exercise. However, this process is not exclusively explicit and nor does it fall into such nice stages. More often, the process of determining the authenticity of a relationship involves a mix of conscious and non-conscious thought that does not follow an exact order. Regardless, the five explicit stages of the introductory thought exercise serve as five general considerations when judging the authenticity of a virtue form relationship under the full range of sensory experience. The considerations as chronologically introduced in the introductory thought exercise are as follows: 
+          </p>
+          <br />
+          <ul>
+                <li><b>Communication:</b> Can the entity communicate in a way consistent with human language?</li>
+                <li><b>History:</b> Does the entity have a plausible past?</li>
+                <li><b>Physical Presence:</b> Does the entity look like a human?</li>
+                <li><b>Emotion:</b> Does the entity share their emotions throughout the relationship?</li>
+                <li><b>Agency:</b> Does the entity engage in the relationship at large in individual acts within the relationship because they care for the other person?</li>
+          </ul>
+          <br />
+          <p>
+          Note that (a) and (c) are primarily concerned with whether the other entity is human and the remaining are more matters of authenticity within the relationship. Here, these matters are grouped together to consider a more holistic view of the authenticity of virtue form relationships. Even under the assumption that the other entity is human, (b), (d), and (e) are considered to judge whether one’s relationship is rooted in deceit. Moreover, these considerations exclude non-fundamental examples of lying as a violation of authenticity. While examples of lying such as hiding one’s whereabouts or falsely claiming to have performed some action are not advisable for a healthy relationship, they do not imply that the relationship at large is rooted in deceit.   
           </p>
         </section>
 
-        {/* Responsibility Section */}
+        {/* The Inductive Nature of Authenticity */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>The Role of Responsibility in Acting From Ethics</h2>
-          <p>
-            From an outsider’s perspective, a young child is most often free from responsibility for their actions. They are perceived to lack the moral agency to make ethical decisions. Instead, each time a child acts ethically or unethically, their parents are held responsible for their choices. A toddler’s insistence on not sharing or insisting on getting what they want is commonly attributed to “bad parenting.”
-          </p>
-          <p>
-            The notion of bad parenting has direct implications on the human perception of the causal structure of a child’s actions. We see the child’s parenting as so close to the causal sequence that led the child to act that we deem their impact greater than that of the child’s independent ethical faculties. Thus, we divert the responsibility for the child’s action to the parent rather than the child themselves. This is also the case with artificial intelligence entities. Numerous failures in AI, such as Uber’s self-driving car killing a pedestrian, have been ascribed to the creator of the technology rather than the technology itself<sup style={styles.sup}>10</sup>.
-          </p>
-          <p>
-            For humans, responsibility is eventually transferred to the younger generation. Rare are the instances in which one ascribes the actions of a 30-year-old to bad parenting. Instead, the actions of an adult are attributed to the adult themself. This is not to say that an adult's parent’s role is eliminated from the causal structure of their actions. Lewis’ counterfactual account of causation makes it clear that the parent raising the child will always be a link in the causal chain leading to an action<sup style={styles.sup}>11</sup>. At some point, this link is simply deemed too insignificant to warrant responsibility.
-          </p>
-          <p>
-            Only when this responsibility transfer occurs do we see a human as capable of acting from ethics. Thus, for a machine to act from ethics, we must see a division in the causal structure from the creator to the acts of the creation. Once more deploying a counterfactual framework, if a machine is responsible for its actions, then in the closest alternate world where the machine takes the ethically wrong course of action, it would be viewed as unethical. However, the validity of such an alternate world depends on the notion that the machine actively resists the impulse to take the ethically wrong course of action. Nyholm asserts that this is not a conceptual possibility as it runs counter to the machine’s guiding ethical principles necessary for it to be ethical in the first place<sup style={styles.sup}>12</sup>. Machines today are not capable of adhering to ethical principles by resisting the urge to violate them. Thus, we are unable to foresee a responsibility shift from the creators of artificial intelligence to AI itself without violating ethics. Granted this responsibility shift was previously argued to be essential to acting from ethics, we find considerable doubt in the ability of a machine to act from ethics through an analysis of its responsibility.
-          </p>
+            <h2 style={styles.sectionTitle}>The Inductive Nature of Authenticity</h2>
+            <p>
+            Throughout the introductory exercise, the person tasked to discern the authenticity of the relationship uses an inductive line of reasoning to determine whether their relationship is authentic in regard to each of the five characteristics. At each stage in the exercise, they are presented with a set of information or behaviors and using this knowledge, they compare what they have observed to what they envision the information and behaviors would be if the relationship were to be authentic. For certain considerations, the generalized process is more straightforward than others. In judging the authenticity of one’s physical presence, years of experience interacting with humans and being human gives a clear intuition as to whether or not the entity one interacts with is human. Such is why “you” were quick to adopt my humanity once you shook my hand in the opening exercise. The authenticity of one’s communication and background follow similarly simple inductive processes. 
+            </p>
+            <br />
+            <p>
+            Sharing emotion presents a more complex narrative. Theory of Mind (ToM) posits that we ascribe mental states to others based on observation alone, while Simulation Theory (ST) suggests that emotions are shared by internally simulating what we perceive others to be feeling<sup style={styles.sup}>3,4</sup>. That said, both theories imply that sharing emotion relies on inductive reasoning. In ToM, induction involves inferring another's emotion from their outward expressions, which is then directly understood. ST includes an additional step where the observer simulates the perceived emotion internally, but still relies on inference to interpret the initial perception. Therefore, to ensure that another's emotion is genuine and not deceitful, one must first observe their external emotional cues and apply inductive reasoning to interpret these signs as a specific emotion. 
+            </p>
+            <br />
+            <p>
+            The final and most highly contested consideration is agency<sup style={styles.sup}>5</sup>. In romantic settings, this manifests itself as the desire to be loved. More generally, “you” posit in the introductory exercise that you must feel that “I” care for you. Perhaps influenced by popular culture, many argue that love is an innate feeling. Phrases like “love at first sight” indicate that to love and thus act out of this love doesn’t follow some paradigmatic development process, but instead is mysteriously and suddenly inflicted upon someone. Similar lines have been drawn to articulate the process of detecting another’s love. This suggests that the inductive inference procedure which defines other authenticity considerations does not apply. 
+            </p>
+            <br />
+            <p>
+            A much more plausible proposal is that there is still some level of inductivity in discerning that one authentically cares for you. While this process is less concrete than for previous considerations since one must judge on their perception of another’s motivations which are inherently inaccessible to them, the most accepted theories say that there must be some action or information which prompts one to feel that another is acting out of their care for them. Humans infer motivations through behaviors by relating one’s perception of another’s behaviors to their motivations when they exhibited the same behaviors<sup style={styles.sup}>6</sup>. In the following section, I attempt to solidify the nature of such behaviors as I embark on attempting to fool this inductive framework into attributing authenticity to a relationship with an artificial entity. 
+            </p>
+            <br />
+    
         </section>
 
-        {/* Mathematical Explanations Section */}
+        {/* Let's Get to Hacking */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Distinctively Mathematical Explanations for Machine Action</h2>
-          <p>
-            Marc Lange’s “What Makes an Explanation Distinctively Mathematical?” defines a distinctively mathematical explanation as one that flows directly from mathematical truths<sup style={styles.sup}>13</sup>. These truths possess a necessity and stability which makes them more powerful than empirical truths. Any explanation one can base entirely from these truths extends the necessity and stability of the truths themselves, lending way to a stronger and more rigorous line of reasoning.
-          </p>
-          <p>
-            If something can be explained distinctively mathematically, no room is left for human agency and emotion which cannot be modeled mathematically due to their inherent chaos. This incompatibility makes it impossible to provide a motivation that contains ethical considerations as ethics is dependent on agency and emotion. Applying the definition in the previous discussion on acting from ethics, this means that no entity whose actions can be explained distinctively mathematically can act from ethics. Naturally, this conclusion leads one to consider whether all machine actions can be explained distinctively mathematically.
-          </p>
-          <p>
-            Despite remarkable capabilities, even the most advanced artificial intelligences can be reduced to a sequence of 1s and 0s—the most basic mathematical representation of numbers<sup style={styles.sup}>14</sup>. After all, they must be run on computers, which, despite advances in quantum computing, work simply in terms of reading and writing bits. Even seemingly stochastic processes often rely on pseudo-random generation which is a mathematically definable process<sup style={styles.sup}>15</sup>. The parameters entered into a machine are notably not necessarily mathematical, but by the time they are codified to be entered into the AI model, they too exist at the mathematical level—simply another sequence of 1s and 0s to execute a set of processes. Thus, if an AI model is simply a sequence of operations on 1s and 0s, its actions can be explained distinctively mathematically. Ergo, machine actions are a matter of mathematical necessity, leaving no room for the chaos of ethics.
-          </p>
+            <h2 style={styles.sectionTitle}>Let's Get to Hacking</h2>
+            <p>
+            Previously it has been shown that each of the five major authenticity considerations for virtue form relationships depend on an inductive inference process. 
+            </p>
+            <br />
+            <figure style={{ textAlign: 'center' }}>
+                <img src="/images/article-images/authenticity1.png" alt="Illustration of the deductive and inductive frameworks" style={styles.figureImage} />
+                <figcaption style={{ fontSize: 'smaller', fontStyle: 'italic' }}>
+                    Figure 1:  Inductive and deductive frameworks for determining the authenticity of a relationship are applied on the basis of origin. The rounded square shape marks the inductive step within the framework for determining the authenticity of a relationship where the other entity is of unknown origin.
+                </figcaption>
+            </figure>
+            <br />
+            <p>
+            Absent the knowledge that the other entity is artificial, the deductive framework for proving the relationship is inauthentic, as outlined in the right side of Figure 1, does not apply. Instead one must default to an inductive framework for evaluating the authenticity of a virtue form relationship. As the left side of Figure 1 illustrates, there is a possibility of causing one to falsely infer the authenticity of a certain consideration given their perception of whether the other entity's behaviors aligns with what they expect in an authentic relationship. Here, this process is referred to as “hacking” authenticity and the methods and viability of an artificial entity hacking authenticity is discussed for each of the five authenticity considerations.  
+            </p>
+            <br />
+            <p>
+            To a large extent, these considerations can already be “hacked” by modern technologies. Sophisticated Large Language Models (LLMs) have been shown to consistently persuade humans that the AI-generated communications were produced by a human<sup style={styles.sup}>7</sup>. On similar lines, a plausible history is equally vulnerable to generative AI. Surely, one will require more information throughout a virtue form relationship than that the other entity was born in suburban North Carolina and played baseball, to reference the introductory thought exercise. But the idea that artificial intelligence can be used to provide a consistent history that is not vulnerable to outside contradictions seems plausible. Seemingly authentic physical presence remains beyond the grasp of current hardware capabilities, but humanoids are headed into the direction of indistinguishability. According to creator Hanson Robotics, humanoid Sofia can simulate every major muscle in the human face<sup style={styles.sup}>8</sup>. Admittedly, there’s still a lot of ground to cover, including the simulation of biological processes, but there does not seem to be a technical barrier preventing advancement. Likewise, existing artificial intelligences also suffice as examples of sharing emotion. While it has yet to be seen whether AI can encompass the whole spectrum of human emotion, the early success in sharing common emotions such as fear and distress by relational artifacts suggests that technologists are quickly on their way to successfully portraying this critical piece of human interaction<sup style={styles.sup}>9</sup>.     
+            </p>
+            <br />
+            <p>
+            Hacking agency within a relationship is a more sophisticated endeavor less supported by existing technology. Agency within relationships can be divided into two intertwined viewpoints: agency in the relationship at large and agency with regard to individual actions within the relationship. Rejecting the “love at first sight” narrative, the introductory exercise serves to illustrate that the two types of agency can be achieved through the notions of loss and sacrifice, both of which can be simulated without consciousness and detected inductively. Here loss is tied to the agency within the relationship at large. The idea is that if one infers that the other entity has the ability to no longer engage in the relationship, then they will feel more strongly that they are choosing to be in the relationship out of their care for the other person. The notion of loss is incorporated in the introductory exercise through the two week pause in the relationship. Sacrifice follows a similar rationale. If one feels that the other entity in the relationship must make a sacrifice, like reducing their focus on their studies, in order to engage in the relationship, then they are more likely to feel that they engage in individual actions within the relationship on account of their care for the other person.     
+            </p>
+            <br />
+            <p>
+            Furthermore, evolutionary pressures will further aid in the “hacking” process by providing a secondary motive for accepting the relationship. These pressures have been noted as a factor in leading children to nurture Tamagotchi robots, toys designed to simulate a dependent relationship, as humans have evolved to provide nourishment to one another as a means to ensure survival<sup style={styles.sup}>10</sup>. Similarly, evolutionary pressures to find friends and a romantic partner are bound to increase one’s susceptibility to accept a virtue-based relationship as authentic. 
+            </p>
         </section>
 
-        {/* Conclusion Section */}
+         {/* Ignorance is Bliss? */}
+         <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>Ignorance is Bliss?</h2>
+            <p>
+            Turning to a world where there exists a humanoid robot which has hacked the inductive framework for determining authenticity, all that remains to dissuade one from believing that their relationship with an artificial entity is authentic in the same sense as an authentic virtue form relationship between humans is the knowledge that the other entity is artificial. Absent this critical premise, the deductive framework for proving inauthenticity on the right side of Figure 1 seizes to apply, and the humanoid is left to deceive the inductive framework on the left side of Figure 1. This poses an ethical dilemma: should these robots be introduced to society such that humans don’t have access to this critical premise, leaving humans free to form locally authentic relationships with robots? Simply put, is ignorance bliss?
+            </p>
+            <br />
+            <p>
+            From a human rights angle, many will undoubtedly argue that one has a right to know the origin of the entity with whom they share a virtue form relationship. Others will fight back by extending an egalitarian argument to these seemingly authentic entities. Proponents of instituting ignorance will also cite the social pressures which currently serve to devalidate inductively inauthentic virtue form machine relationships as destructive. Don’t people who aren’t capable of finding a human friend or partner deserve the right to have an authentic virtue form relationship? Inevitably, there will be concern over reproduction: if the artificial entity is capable of producing a new being, will it be human or artificial? How would we even know? Will it even matter at this point?  
+            </p>
+        </section>
+
+        {/* Conclusion */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Conclusion</h2>
-          <p>
-            The Sullenberger scenario presents the advantages of teaching AI to be ethical. Technical advances in machine learning can and have yielded machines with the capability of acting ethically. But machines acting from ethics, a key distinction that makes machine ethics generalizable to a continuum of scenarios, is proven unlikely given the current state of technological progress both from the standpoint of responsibility and the distinctively mathematical basis for machine action. Given the progress of theoretical computing techniques like quantum computing, we cannot limit the conceptual possibility of a machine reaching this level of thinking. However, this work suggests that fundamental technological advancement is necessary to act from ethics, specifically in a way that shifts responsibility towards AI and differentiates the explanations for its actions from a distinctively mathematical line of reasoning.
-          </p>
+            <h2 style={styles.sectionTitle}>Conclusion</h2>
+            <p>
+            Regardless of the solution to this ethical dilemma, the preceding work serves to suggest that society may need to come to a judgment sooner than later. The introductory thought exercise initially demonstrates the inductive nature of determining the authenticity of core considerations for virtue form relationships. Later, this framework is formalized by defining five key considerations for weighing the authenticity of virtue form relationships and individually reasoning how the process of evaluating these considerations is rooted in inductive inference. The idea of “hacking” the authenticity of relationships is proposed and stipulated to be a feasible endeavor given recent technological advances and the inductive nature of the process of evaluating authenticity. Lastly, the ethical dilemma of introducing a humanoid robot which is successful in hacking the inductive framework for authenticity is introduced and briefly discussed, paving the way for a future discourse to more exhaustively evaluate the scenario. 
+            </p>
+        </section>
+        
+       {/* Sources Section */}
+        <section style={styles.sources}>
+        <h3 style={styles.sectionTitle}>Sources</h3>
+        <ol style={styles.sourceList}>
+            <li>Donath, Judith. "Ethical issues in our relationship with artificial entities." The Oxford Handbook of Ethics of AI (2020): 53-73.</li>
+            <li>Hauskeller, Michael. "Automatic sweethearts for transhumanists." (2017).</li>
+            <li>Turkle, Sherry. "Authenticity in the age of digital companions." Interaction Studies 8, no. 3 (2007): 501-517.</li>
+            <li>Danaher, John. "The philosophical case for robot friendship." Journal of Posthuman Studies 3, no. 1 (2019): 5-24.</li>
+            <li>Chung, Stephy. “Meet Sophia: The Robot Who Laughs, Smiles and Frowns Just Like Us.” CNN, November 2, 2018. https://amp.cnn.com/cnn/style/article/sophia-robot-artificial-intelligence-smart-creativity.</li>
+            <li>Liao, Q. Vera, and Jennifer Wortman Vaughan. “AI Transparency in the Age of LLMs: A Human-Centered Research Roadmap.” Harvard Data Science Review, February 29, 2024.</li>
+            <li>Malle, Bertram F. "Attribution Theories: How People Sense of Behavior." In Theories in Social Psychology, edited by Derek Chadee, 72-95. Malden, MA: Wiley-Blackwell, 2011.</li>
+            <li>Baron-Cohen, S. (2001). "Theory of mind in normal development and autism." Prisme.</li>
+            <li>Niedenthal, P. M., et al. (2010). "The Simulation of Smiles (SIMS) model: Embodied simulation and the meaning of facial expression." Behavioral and Brain Sciences.</li>
+        </ol>
         </section>
 
         {/* Back Button at Bottom */}
         <button onClick={goBack} style={styles.backButtonBottom}>
-          &larr; Back to Thought Leadership
+          Thought Leadership Home
         </button>
       </article>
     </div>
@@ -117,25 +208,24 @@ const styles = {
     color: '#333',
   },
   backButtonTop: {
-    display: 'block',
     margin: '10px 0',
     padding: '10px 15px',
     fontSize: '1rem',
-    color: '#0073b1',
+    color: '#2e4075',
     background: 'none',
-    border: '1px solid #0073b1',
-    borderRadius: '5px',
+    border: 'none',
     cursor: 'pointer',
     textAlign: 'left',
+    textDecoration: 'underline',
   },
   backButtonBottom: {
     display: 'block',
     margin: '20px auto',
     padding: '10px 15px',
     fontSize: '1rem',
-    color: '#0073b1',
+    color: '#2e4075',
     background: 'none',
-    border: '1px solid #0073b1',
+    border: '1px solid #2e4075',
     borderRadius: '5px',
     cursor: 'pointer',
     textAlign: 'center',
@@ -143,7 +233,7 @@ const styles = {
   header: {
     textAlign: 'center',
     marginBottom: '30px',
-    color: '#2e4075'
+    color: '#2e4075',
   },
   title: {
     fontSize: '2.5rem',
@@ -175,6 +265,10 @@ const styles = {
   sup: {
     fontSize: '0.8rem',
     verticalAlign: 'super',
+  },
+  sourceList: {
+    paddingLeft: '20px',
+    fontSize: '1rem',
   },
 };
 
