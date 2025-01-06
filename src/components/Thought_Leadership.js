@@ -25,7 +25,7 @@ const ThoughtLeadership = () => {
         id: 4,
         title: 'Continuity and Consciousness',
         image: '/images/article-images/consciousness.jpg',
-        link: '/thought-leadership/continuity-and-consciousness',
+        link: '/thought-leadership/continuity-consciousness',
     },
     {
         id: 5,

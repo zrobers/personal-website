@@ -12,15 +12,15 @@ const ArticleTemplate = () => {
     <div style={styles.container}>
       {/* Back Button at Top */}
       <button onClick={goBack} style={styles.backButtonTop}>
-        &larr; Back to Thought Leadership
+        &larr; Back
       </button>
 
       {/* Article Header */}
       <header style={styles.header}>
-        <h1 style={styles.title}>Why Machines Can't Act From Ethics</h1>
+        <h1 style={styles.title}>The Easy Problem of AI Rights</h1>
         <p style={styles.subtitle}>Zachary Robers</p>
         <img 
-          src="/images/article-images/machine-ethics.jpg" 
+          src="/images/article-images/ai-rights.jpg" 
           alt="Placeholder for article image" 
           style={styles.heroImage} 
         />
@@ -28,79 +28,135 @@ const ArticleTemplate = () => {
 
       {/* Article Body */}
       <article style={styles.article}>
-        {/* Introduction Section */}
+
+        {/* Introduction */}
         <section style={styles.section}>
           <h2 style={styles.sectionTitle}>Introduction</h2>
           <p>
-            Captain Chesley “Sully” Sullenberger is rightly lauded as an American hero. After dual engine failure from a bird attack at low altitude, Sully was forced to decide the best course of action to protect his passengers of US Airways Flight 1549 and the people of New York City<sup style={styles.sup}>1</sup>. Undoubtedly, Sully faced many questions with limited time, grappling with ethical dilemmas such as his responsibility to protect the lives of his passengers over normal civilians and the value of infrastructure relative to human life. Ultimately, Sully made the decision to land the plane on the Hudson River. The remarkable survival of all 155 occupants led the event to later be coined the “Miracle on the Hudson.”<sup style={styles.sup}>2</sup>
+          It appears that any normative framework for determining which entities can possess direct rights inevitably intersects with the question of consciousness. Leading rights theories, such as moral status-based rights, the fundamental conditions approach, interest theory, and will theory, provide valuable insights on what aspects of conscious experience lend way to holding rights. However, applying these frameworks in an evaluative sense hinges on the ability to first assess consciousness or at least the aspects of consciousness relevant to the individual rights theory. While there are multiple possible moral-status-conferring properties such as being able to desire and being capable of rational agency, each of the leading candidates other than simply “being alive” requires a degree of consciousness. Here, the candidacy of this property is rejected on the seeming absurdity of “bacteria rights”, leaving consciousness as a requisite condition for moral status-based rights. The fundamental conditions approach relies on the idea that rights-warranting entities need to fulfill certain conditions. Once more, the notion that an entity needs something is dependent on a notion of self experience. Similar connections can be drawn between interest theory, will theory, and other rights theories and some aspect of consciousness.
           </p>
+          <br />
           <p>
-            Despite the miraculous outcome, critics would later question whether Captain Sullenberger’s decision was indeed the right course of action. Flight simulations confirmed the possibility of successfully landing the plane at either LaGuardia or Teterboro airports if immediate action was taken to turn around the plane upon engine failure<sup style={styles.sup}>3</sup>. However, these simulations failed to account for the innate imperfection of human decision-making. That is, humans take time to make decisions—especially those with great ethical implications. The idea that Sully would immediately turn around the plane and return to the airport without properly assessing the weight of possible injury to civilians and damage to buildings near the airport should the plane not reach the runway runs counter to human nature. By this reasoning, any doubts of Sully’s decision are unfounded, supporting his reputation as a public hero.
+          Granted consciousness is unlikely to develop in distinct phases, the scenario in which aspects of consciousness relevant to one rights theory are present in some entity while other aspects relevant to different rights theories are not present does not seem to warrant consideration. This is not to say that determining a universal rights theory is not a worthwhile philosophical endeavor. However, if all reasonable theories are irreducible beyond the question of consciousness, the content of these theories is irrelevant in the practice of determining whether an entity can have rights. Therefore, to ask whether an entity can have rights is simply to ask whether an entity is conscious. 
           </p>
+          <br />
           <p>
-            While Sullenberger’s legacy is secure, the possibility of turning around the plane and landing safely at the airport without damage to occupants nor destruction of the aircraft lends way to some interesting hypotheticals. Namely, with the rise of artificial intelligence entities, it is a worthwhile exercise to consider the same situation but with an AI model at the helm. Given rapid advances in the field, it seems reasonable that an AI model would have the capability to weigh the possible outcomes at the point of engine failure. And not only would such a model yield the capability of making a decision: given the right training, this AI pilot should have been able to recognize the opportunity to land safely at LaGuardia or Teterboro, decide on such a course, and precisely navigate the plane to the airport just as the pilots later managed in the flight simulator. Armed with rapid processing speeds, more information, more knowledge, and better intuition from near limitless training, this hypothetical AI pilot seems better equipped to handle the situation and produce a near optimal outcome. It seems that while Sully’s actions produced the best outcome we could expect from a human in this scenario, an AI model has the capability to outperform the seasoned pilot, propelling a greater miracle.
+          Critics of this conclusion are likely to point to those who reason against the ability to hold rights while entirely avoiding the question of consciousness. Certain arguments against the ability for artificial intelligences to hold rights (hereafter AI rights), such as the objection from duplicability, the objection from otherness, the objection from existential debt, flow in this manner. Schwitzgebel and Garza provide strong rebukes to the viability of these objections, largely attributing their basis to speciesism and unjustified analogy. Here, the strength of Schwitzgebel and Garza’s rebukes of these objections to AI rights serves as sufficient basis that the questions of rights and consciousness remain inextricably bound.  
           </p>
+          <br />
           <p>
-            Regardless of the advances in artificial intelligence, this AI pilot would still have to reconcile uncertainty in its decision-making. At the most fundamental level, chaotic systems such as weather prohibit the possibility of a successful emergency landing at LaGuardia from ever reaching 100 percent<sup style={styles.sup}>4</sup>. Ergo, an AI pilot must grapple with deciding between certain probabilities and levels of harm to humans and society depending on its course of action upon engine failure. This decision is inherently ethical as it must include the possibility of harm<sup style={styles.sup}>5</sup>. Thus, here we find a scenario distinct from the numerous autonomous trolley problems in that an AI poses a unique capability to make a better decision than a human, but the AI entity must make a decision with ethical implications.
+          Absent an answer to David Chalmers’ “hard problem of consciousness,” it appears that there also lacks a framework to deem an entity, from other humans to animals to futuristic robots, capable of bearing rights. While a robust framework would indeed necessitate an answer to the hard problem, the fact that humans consider entities other than themselves, for which they do not truly know the status of their consciousness, as bearing rights suggests a possible work around.   First, I argue along the lines of Adam Andreotta that the hard problem in relation to rights can be circumvented through a comparison-based approach, making the subtle distinction that this approach is self-comparative rather than human-comparative. I then take the opposite stance of Andreotta with regard to AI rights, arguing that using comparative means to assess the worthiness of AI entities of rights is just as appropriate if not more appropriate than the case of animal rights. Pending technological developments, this claim implies that an AI can become a rights-holder in the same sense that animals bear rights. This claim is developed in the face of popular counterarguments to extending the comparative approach to AI such as the argument for the necessity of a shared evolutionary history, the argument that tendencies for deception violate the comparative framework, and remaining biological concerns. Lastly, I propose that with regard to the question of what rights artificial intelligence capable of becoming a rights holder via comparative means would have, a similar evaluative framework to the one used in recent years with animal rights should be deployed. 
           </p>
         </section>
 
-        {/* Acting From Ethics Section */}
+        {/* The Self-Comparative Approach */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>The Importance of Acting From Ethics</h2>
+          <h2 style={styles.sectionTitle}>The Self-Comparative Approach</h2>
           <p>
-            Kant’s “Groundwork for the Metaphysics of Morals” first addresses the difference between acting ethically and acting from ethics<sup style={styles.sup}>6</sup>. In doing so, he equates ethics to duty, but this debate is irrelevant to the argument at hand so we ignore this distinction and talk simply in terms of ethics. In essence, acting ethically amounts to making decisions that align with ethical principles while acting from ethics necessitates a deliberate effort to do the right thing. To act from ethics means that the desire to be ethical is an explicit motivation for one’s actions—being ethical is not the result of one’s actions but the reason for them.
+          The reasoning and rhetoric of the animal rights movement is rooted in the following inductive argument for animal consciousness:
           </p>
-          <p>
-            It takes little imagination to picture a machine capable of acting ethically. From a utilitarian standpoint, a machine as simple as an automatic door acts ethically as it maximizes happiness by providing a useful service. Some philosophers argue acting from ethics only requires a single additional layer of abstraction. James H Moor’s “Ethical Robots” suggests that an AI model’s understanding of ethics could be as trivial as a hard-coded script to determine the most ethical course of action<sup style={styles.sup}>7</sup>. He claims an explicit ethical agent can act from ethics so long as it selects from multiple courses of action depending on its parameters in an ethical way. This loose definition of acting from ethics disregards the previously asserted notion that to act from ethics, ethics must be a reason for a machine’s action. To act from something implies that that thing has a direct role in one's own explanation of one’s action. On the other hand, Kant insists that acting from ethics necessitates consciousness, but the abstract nature of what it means to be conscious makes it difficult to explicitly determine whether a machine can act from ethics and what would be required in order for a machine to do so. On this line, we deploy a stronger definition of acting from ethics in this work than Moor and a more concrete definition than Kant. In this paper, a machine is said to act from ethics if the machine can motivate its actions at the most granular level in part through ethical principles. We will touch more on the significance of this definition later.
+          <br />
+          <p style={{ marginLeft: '2em' }}>
+            <b>P1:</b> I am conscious.<br />
+            <b>P2:</b> A subset of animals are similar to me.<br />
+            <b>C:</b> A subset of animals are conscious.
           </p>
+          <br />
           <p>
-            The importance of teaching machines to act from ethics lies in the versatility of this form of reasoning. A machine capable of motivating its actions from ethics can apply ethical principles to any scenario just as a person can respond to a continuum of ideas with consistency of their moral principles. Even modern artificial intelligence techniques extrapolate. Machine learning (ML) enables an AI to learn from training data and then act in line with its training when faced with a variety of novel scenarios<sup style={styles.sup}>8</sup>. In many cases, ML uses a discrete set to prepare an AI to respond to a continuum of possible scenarios. The validity of this method hinges on the assumption that there will always be useful information from the training data to act in an appropriate manner. But with a continuum of possible scenarios, a discrete training set can never contain relevant information for every possible situation an AI may face<sup style={styles.sup}>9</sup>. Thus enters extrapolation—instances in which training data is extended beyond its relevance. The capability to act from ethics bypasses this concern by enabling an intelligence entity to simply apply ethical principles to any scenario. With an understanding of what it means to be ethical, a human can justify what they perceive to be an ethical course of action independent of their lived experiences. Teaching AI to act in a similar fashion would make the technology adaptable and more useful to society. Logically, the ensuing consideration is whether it is possible for machines to act from ethics. This consideration is next answered from two perspectives, one that relies on the necessity of responsibility in acting from ethics and another from the basis of distinctively mathematical explanations.
+          Accepting consciousness as the unifying necessary condition for holding rights thus enables these animals to be considered possible rights holders. From the scientific arguments which compare aspects of animal and human brains to personifying marketing campaigns which emphasize individuality by referring to animals as “someone” rather than “something,” this inductive argument and claims of similarity underlie the entire push for animal rights. Philosophers are largely sympathetic to this logic and have provided specific similarities which seem reasonable to ground the inference of consciousness. Christof Koch points to evolutionary history, the nervous system, and behavioral commonalities as the foremost similarities which ground P2. 
+          </p>
+          <br />
+          <p>
+          Assuming consciousness and thus the possibility to hold rights based on similarity becomes a seeming necessity when one considers that this inductive argument is also how one human assumes the consciousness of another human. Granted P2 is much stronger in this case, induction via similarity to oneself is still needed to conquer the non-reductive nature of consciousness in the human case. Yes, there is a possibility that I am living in an advanced simulation in which no other entity has any degree of personal experience. Thanks to the inductive argument for consciousness, however, the high degree of similarity between myself and those around me leads me to be virtually certain that other humans are conscious and rights-bearing. This caveat leads me to conclude that assigning consciousness through similarity is ultimately self-comparative even if the final step of comparison to oneself is oftentimes neglected.  
+          </p>
+          <br />
+          <p>
+          Despite the apparent necessity of inferring consciousness in other humans through similarity and near total acceptance of inferring consciousness via similarity in animals, this self-comparative approach has faced significant pushback in application to artificial intelligences. Standard arguments against determining AI rights by self-comparison use the lack of a shared evolutionary history, a tendency for deception, and additional biological and epistemological concerns as grounds to dismiss the traditional inductive framework. Since this framework has reigned as the paradigmatic approach to handling questions of consciousness and thus the possibility for holding rights, the burden is on those who wish to deny its extension to find reasonable grounds for its dismissal. Ergo, by countering each of these objections, this work argues that a self-comparative approach remains an acceptable means of assessing AI as a rights-bearer in the same sense that the approach has been applied to animals.  
           </p>
         </section>
 
-        {/* Responsibility Section */}
+        {/* Evolutionary History */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>The Role of Responsibility in Acting From Ethics</h2>
+          <h2 style={styles.sectionTitle}>Evolutionary History</h2>
           <p>
-            From an outsider’s perspective, a young child is most often free from responsibility for their actions. They are perceived to lack the moral agency to make ethical decisions. Instead, each time a child acts ethically or unethically, their parents are held responsible for their choices. A toddler’s insistence on not sharing or insisting on getting what they want is commonly attributed to “bad parenting.”
+          Daniel Dennet’s “Kinds of Minds: Toward an Understanding of Consciousness” in part bases his assertion of the consciousness of animals on the idea that human and animal minds exist on an evolutionary continuum, meaning that any differences are a matter of degree, not kind. Andreotta argues that this shared evolutionary history is a critical piece to the legitimacy of applying the self-comparative approach to granting rights. He reasons that given that artificial intelligences clearly do not lie on Dennet’s “evolutionary continuum,” there are reasonable grounds to dismiss similarity comparisons. Dennet and Andreotta are mistaken on two accounts. (1) They overstate the extent to which a human shares an evolutionary history with animals. (2) They fail to recognize that the process of AI development is similar to evolution and in multiple ways offers a more reasonable process to appeal to on grounds of similarity. 
           </p>
+          <br />
           <p>
-            The notion of bad parenting has direct implications on the human perception of the causal structure of a child’s actions. We see the child’s parenting as so close to the causal sequence that led the child to act that we deem their impact greater than that of the child’s independent ethical faculties. Thus, we divert the responsibility for the child’s action to the parent rather than the child themselves. This is also the case with artificial intelligence entities. Numerous failures in AI, such as Uber’s self-driving car killing a pedestrian, have been ascribed to the creator of the technology rather than the technology itself<sup style={styles.sup}>10</sup>.
+          On the first account, the idea of an “evolutionary continuum” in a literal or metaphorical sense lacks scientific grounding. Evolution, in terms of the natural selection of desirable traits for survival, is fundamentally linked to the discrete events of conception, birth, and death. While animals must survive continuously in time in order to reproduce, the instances at which genes enter and exit the gene pool are discrete. An animal does not evolve continuously through time. A species evolves at discrete instances in time based on instances of conception, birth, and death. Furthermore, statistics indicating the extent to which humans “share” their DNA with other species lead to false equivalences of similarity. A chimpanzee that shares 98% of its DNA with the average human is not 98% of the average human. The 2% discrepancy in DNA between humans and chimpanzees, leading to the realization of traits such as bipedalism, increased cranial capacity and dexterity should be treated with increased significance compared to the 98% of DNA also possessed by certain primates.  
           </p>
+          <br />
           <p>
-            For humans, responsibility is eventually transferred to the younger generation. Rare are the instances in which one ascribes the actions of a 30-year-old to bad parenting. Instead, the actions of an adult are attributed to the adult themself. This is not to say that an adult's parent’s role is eliminated from the causal structure of their actions. Lewis’ counterfactual account of causation makes it clear that the parent raising the child will always be a link in the causal chain leading to an action<sup style={styles.sup}>11</sup>. At some point, this link is simply deemed too insignificant to warrant responsibility.
-          </p>
-          <p>
-            Only when this responsibility transfer occurs do we see a human as capable of acting from ethics. Thus, for a machine to act from ethics, we must see a division in the causal structure from the creator to the acts of the creation. Once more deploying a counterfactual framework, if a machine is responsible for its actions, then in the closest alternate world where the machine takes the ethically wrong course of action, it would be viewed as unethical. However, the validity of such an alternate world depends on the notion that the machine actively resists the impulse to take the ethically wrong course of action. Nyholm asserts that this is not a conceptual possibility as it runs counter to the machine’s guiding ethical principles necessary for it to be ethical in the first place<sup style={styles.sup}>12</sup>. Machines today are not capable of adhering to ethical principles by resisting the urge to violate them. Thus, we are unable to foresee a responsibility shift from the creators of artificial intelligence to AI itself without violating ethics. Granted this responsibility shift was previously argued to be essential to acting from ethics, we find considerable doubt in the ability of a machine to act from ethics through an analysis of its responsibility.
+          The process of evolution is similar to the process of AI development. As technology companies release new models and iterations of Artificial General Intelligence (AGI), they select for features and methodologies that pose the greatest chance of leading to improved capabilities. While there are no natural forces present in the selection process, advantageous attributes continue to remain in cutting edge technologies while dated or limiting ones fall out of the technological gene pool. Instead of natural forces, the guiding force in such efforts is oftentimes the desire to intentionally and accurately imitate the human brain. Deep learning and neural networks are among the techniques realized in current AGIs which are based on a working understanding of the human brain. Along these lines, AGI development can be considered an intentional process to mimic the human brain which (using the self-comparative approach) is agreed upon to be a conscious and rights-bearing entity. In contrast, appeals to a shared evolutionary history between humans and animals are limited by the fact that these histories have long parted ways through unintentional processes, perhaps before the onset of consciousness.  In this sense, appeals to the development process of AGIs may even be more reasonable grounds for similarity than appeals to evolutionary history.  
           </p>
         </section>
 
-        {/* Mathematical Explanations Section */}
+        {/* Folly Functionalism */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Distinctively Mathematical Explanations for Machine Action</h2>
+          <h2 style={styles.sectionTitle}>Folly Functionalism</h2>
           <p>
-            Marc Lange’s “What Makes an Explanation Distinctively Mathematical?” defines a distinctively mathematical explanation as one that flows directly from mathematical truths<sup style={styles.sup}>13</sup>. These truths possess a necessity and stability which makes them more powerful than empirical truths. Any explanation one can base entirely from these truths extends the necessity and stability of the truths themselves, lending way to a stronger and more rigorous line of reasoning.
+          Newton’s rule, which posits that similar effects can be attributed to similar causes, has been extended to attributing animal behaviors to underlying mental states. This functional argument that behaviors underlie mental states has rightly been critiqued by Andreotta in extension to artificial intelligence due to tendencies for deception. Simply put, if AIs are designed to purposely exhibit behaviors indicative of mental states without the means to possess these mental states, this seems reasonable grounds to dismiss self-comparison as viable means to determine consciousness and the possibility of having rights. 
           </p>
+          <br />
           <p>
-            If something can be explained distinctively mathematically, no room is left for human agency and emotion which cannot be modeled mathematically due to their inherent chaos. This incompatibility makes it impossible to provide a motivation that contains ethical considerations as ethics is dependent on agency and emotion. Applying the definition in the previous discussion on acting from ethics, this means that no entity whose actions can be explained distinctively mathematically can act from ethics. Naturally, this conclusion leads one to consider whether all machine actions can be explained distinctively mathematically.
+          The self-comparison argument is, in practice, denied on grounds of deception. Artificial intelligences currently have the ability to exhibit behaviors indicative of consciousness while undeniably lacking any notion of first-person experience. For instance, a chatbot that claims to understand your frustration about your flight cancellation, is thought by no one in the rational scientific community to possess any degree of consciousness which would be necessary for the shared understanding it claims to experience.
           </p>
+          <br />
           <p>
-            Despite remarkable capabilities, even the most advanced artificial intelligences can be reduced to a sequence of 1s and 0s—the most basic mathematical representation of numbers<sup style={styles.sup}>14</sup>. After all, they must be run on computers, which, despite advances in quantum computing, work simply in terms of reading and writing bits. Even seemingly stochastic processes often rely on pseudo-random generation which is a mathematically definable process<sup style={styles.sup}>15</sup>. The parameters entered into a machine are notably not necessarily mathematical, but by the time they are codified to be entered into the AI model, they too exist at the mathematical level—simply another sequence of 1s and 0s to execute a set of processes. Thus, if an AI model is simply a sequence of operations on 1s and 0s, its actions can be explained distinctively mathematically. Ergo, machine actions are a matter of mathematical necessity, leaving no room for the chaos of ethics.
+          The current denial of rights is a good sign that humans have an in built-in safeguard for limiting rights-worthiness and consciousness on grounds of deception. The real question is if there will ever be reasonable grounds to lift, weaken, or circumvent this precondition on deception, freeing the use of a functionalist aspect to the self-comparative approach to assess the consciousness of an artificial entity. One promising approach is to closely monitor the technical basis for consciousness. It remains highly unlikely that a conscious artificial intelligence would be created by happenstance. Even absent an answer to Chalmers’ hard problem, we can evaluate the computational realization of neural processes which appear correlated with consciousness as we assess the legitimacy that seemingly experience-based AI behaviors are truly rooted in consciousness. 
+          </p>
+          <br />
+          <p>
+          The critic of this approach is likely to argue that the correlation between the computational realization of neural processes and the deceptive capabilities will likely complicate the practical application of merging structuralism and functionalism. This is indeed a valid concern, but not an insurmountable one. Any Bayesian framework for assessing consciousness via similarity in the wake of a new computational realization will simply need to account for the increased deceptive capabilities in the computation of the likelihoods. Furthermore, adopting Susan Schneider’s suggestion to isolate artificial intelligence and implement more sophisticated means of selectively assessing behaviors will provide additional safeguards against deception.
           </p>
         </section>
 
-        {/* Conclusion Section */}
+        {/* Biological Concerns */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Conclusion</h2>
+          <h2 style={styles.sectionTitle}>Biological Concerns</h2>
           <p>
-            The Sullenberger scenario presents the advantages of teaching AI to be ethical. Technical advances in machine learning can and have yielded machines with the capability of acting ethically. But machines acting from ethics, a key distinction that makes machine ethics generalizable to a continuum of scenarios, is proven unlikely given the current state of technological progress both from the standpoint of responsibility and the distinctively mathematical basis for machine action. Given the progress of theoretical computing techniques like quantum computing, we cannot limit the conceptual possibility of a machine reaching this level of thinking. However, this work suggests that fundamental technological advancement is necessary to act from ethics, specifically in a way that shifts responsibility towards AI and differentiates the explanations for its actions from a distinctively mathematical line of reasoning.
+          The most steadfast critics are likely to insist the self-comparative argument cannot extend to artificial intelligences on biological grounds. These concerns can be partitioned into two categories: (i) biological functions and (ii) biological makeup. Here, the former is argued to be irrelevant and the latter insignificant to measures of similarity.  
           </p>
+          <br />
+          <p>
+          Among the biological functions, Dennett and Andreotta point to the shared presence of a nervous system as the most crucial for establishing grounds of similarity. However, leading humanoid robots already have some sort of technical equivalent to the nervous system in terms of functionality. A central processing unit (CPU) which can receive sensory input from devices dispersed throughout the entity, process this information, and send signals to output devices essentially operates as a rudimentary form of the nervous system. By the time there is an artificial intelligence entity worthy of consideration for consciousness and holding rights, the functional aspects of this technical nervous system will likely be close to indistinguishable from the nervous systems of humans.    
+          </p>
+          <br />
+          <p>
+          Even if the functions of the nervous system among other biological systems are replicated by an artificial entity, the actual materials which constitute the hardware for this system will be synthetic rather than biologic. The widely popularized view of substrate independence, however, asserts that there is no special property of biological substrates for enabling first person experience. For all relevant purposes, silicon seems equally adequate for implementing a computation. Even in the case that there is an element of continuity involved in neural processes, the principles of neuromorphic and quantum computing demonstrate that it is not essential for biologic materials to be utilized as a continuous medium.   
+          </p>
+        </section>
+
+         {/* AI Rights as Animal Rights */}
+         <section style={styles.section}>
+          <h2 style={styles.sectionTitle}>AI Rights as Animal Rights</h2>
+          <p>
+          Echoing Thomas Kuhn and Elliott Sober’s contributions to scientific theory choice, simplicity is a desirable factor when choosing between paradigms. The argument of this work is uniquely simple in that it suggests the correct approach to evaluating AI rights is to utilize the framework already in existence for evaluating rights. Given that the leading rights theories are irreducible beyond the problem to consciousness, the self-comparative approach has served as the guiding framework to circumvent the hard problem of consciousness and justify the case for animal rights. The primary objections to extending the self-comparative approach to AI on the grounds of lack of a shared evolutionary history, deceptive tendencies, and absence of traditional biology are here shown to be not strong enough to warrant a paradigm shift.  
+          </p>
+          <br />
+          <p>
+          With regard to the issue of deception, it is conceded that some additional measures must be in place to ensure the behaviors of artificial agents reflect their mental state. Namely, it is posited that a combined functionalist and structuralist approach can be used to assess underlying mental states from behaviors according to Newton’s principle. From here, the self-comparative approach remains an acceptable means to assess the capability of an artificial entity to bear rights. Just as animals have been assigned different levels of rights based on their similarity, sufficiently advanced artificial entities can be awarded rights based on the presence of neural processes correlated with consciousness and similarities to one’s first person experience. Such is the nature of the easy problem of AI rights- there is no need to determine the exact basis of consciousness, just a need to identify similarities.  
+          </p>
+        </section>
+        
+        <section style={styles.sources}>
+        <h3 style={styles.sectionTitle}>Sources</h3>
+        <ol style={styles.sourceList}>
+            <li>Liao, S. Matthew. "The moral status and rights of artificial intelligence." Ethics of artificial intelligence (2020): 480-503.</li>
+            <li>Schwitzgebel, Eric, and Mara Garza. "A defense of the rights of artificial intelligences." Midwest Studies in Philosophy 39, no. 1 (2015): 98-119.</li>
+            <li>Chalmers, David. "The hard problem of consciousness." The Blackwell companion to consciousness (2017): 32-42.</li>
+            <li>Andreotta, Adam J. "The hard problem of AI rights." AI & society 36, no. 1 (2021): 19-32.</li>
+            <li>Koch, Christof. The feeling of life itself: why consciousness is widespread but can't be computed. Mit Press, 2019.</li>
+            <li>Dennett, Daniel C. Kinds of minds: Toward an understanding of consciousness. Basic Books, 2008.</li>
+            <li>LeCun, Yann, Yoshua Bengio, and Geoffrey Hinton. "Deep learning." Nature 521, no. 7553 (2015): 436-444.</li>
+            <li>Tye, Michael. Tense bees and shell-shocked crabs: Are animals conscious?. Oxford University Press, 2016.</li>
+            <li>Schneider, Susan. "How to catch an AI zombie." Ethics of artificial intelligence (2020): 439.</li>
+        </ol>
         </section>
 
         {/* Back Button at Bottom */}
         <button onClick={goBack} style={styles.backButtonBottom}>
-          &larr; Back to Thought Leadership
+          Thought Leadership Home
         </button>
       </article>
     </div>
@@ -117,25 +173,24 @@ const styles = {
     color: '#333',
   },
   backButtonTop: {
-    display: 'block',
     margin: '10px 0',
     padding: '10px 15px',
     fontSize: '1rem',
-    color: '#0073b1',
+    color: '#2e4075',
     background: 'none',
-    border: '1px solid #0073b1',
-    borderRadius: '5px',
+    border: 'none',
     cursor: 'pointer',
     textAlign: 'left',
+    textDecoration: 'underline',
   },
   backButtonBottom: {
     display: 'block',
     margin: '20px auto',
     padding: '10px 15px',
     fontSize: '1rem',
-    color: '#0073b1',
+    color: '#2e4075',
     background: 'none',
-    border: '1px solid #0073b1',
+    border: '1px solid #2e4075',
     borderRadius: '5px',
     cursor: 'pointer',
     textAlign: 'center',
@@ -143,7 +198,7 @@ const styles = {
   header: {
     textAlign: 'center',
     marginBottom: '30px',
-    color: '#2e4075'
+    color: '#2e4075',
   },
   title: {
     fontSize: '2.5rem',
@@ -176,6 +231,13 @@ const styles = {
     fontSize: '0.8rem',
     verticalAlign: 'super',
   },
+  sourceList: {
+    paddingLeft: '20px',
+    fontSize: '1rem',
+  },
 };
 
 export default ArticleTemplate;
+
+
+

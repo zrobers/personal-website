@@ -12,15 +12,15 @@ const ArticleTemplate = () => {
     <div style={styles.container}>
       {/* Back Button at Top */}
       <button onClick={goBack} style={styles.backButtonTop}>
-        &larr; Back to Thought Leadership
+        &larr; Back
       </button>
 
       {/* Article Header */}
       <header style={styles.header}>
-        <h1 style={styles.title}>Why Machines Can't Act From Ethics</h1>
+        <h1 style={styles.title}>Continuity and Consciousness</h1>
         <p style={styles.subtitle}>Zachary Robers</p>
         <img 
-          src="/images/article-images/machine-ethics.jpg" 
+          src="/images/article-images/consciousness.jpg" 
           alt="Placeholder for article image" 
           style={styles.heroImage} 
         />
@@ -28,79 +28,147 @@ const ArticleTemplate = () => {
 
       {/* Article Body */}
       <article style={styles.article}>
-        {/* Introduction Section */}
+
+        {/* Introduction */}
         <section style={styles.section}>
           <h2 style={styles.sectionTitle}>Introduction</h2>
           <p>
-            Captain Chesley “Sully” Sullenberger is rightly lauded as an American hero. After dual engine failure from a bird attack at low altitude, Sully was forced to decide the best course of action to protect his passengers of US Airways Flight 1549 and the people of New York City<sup style={styles.sup}>1</sup>. Undoubtedly, Sully faced many questions with limited time, grappling with ethical dilemmas such as his responsibility to protect the lives of his passengers over normal civilians and the value of infrastructure relative to human life. Ultimately, Sully made the decision to land the plane on the Hudson River. The remarkable survival of all 155 occupants led the event to later be coined the “Miracle on the Hudson.”<sup style={styles.sup}>2</sup>
+          Newton’s law of universal gravitation exemplifies continuous interdependence in physical systems. At a planetary level, the law demonstrates how celestial bodies, as they move through time and space, exert continuous gravitational influences on one another, thereby altering each other’s positions<sup style={styles.sup}>1</sup>. Thus, the evolution of a body’s location depends on the movement of other bodies and vice versa. Such continuous interdependence often arises from conservation laws and is described using partial differential equations (PDEs). One such example is the bobbing motion of a boat partially submerged in shallow water<sup style={styles.sup}>2</sup>. Here, the boat’s vertical displacement evolves over time with respect to the velocity and height of the fluid, conserving the system’s energy globally. 
           </p>
+          <br />
           <p>
-            Despite the miraculous outcome, critics would later question whether Captain Sullenberger’s decision was indeed the right course of action. Flight simulations confirmed the possibility of successfully landing the plane at either LaGuardia or Teterboro airports if immediate action was taken to turn around the plane upon engine failure<sup style={styles.sup}>3</sup>. However, these simulations failed to account for the innate imperfection of human decision-making. That is, humans take time to make decisions—especially those with great ethical implications. The idea that Sully would immediately turn around the plane and return to the airport without properly assessing the weight of possible injury to civilians and damage to buildings near the airport should the plane not reach the runway runs counter to human nature. By this reasoning, any doubts of Sully’s decision are unfounded, supporting his reputation as a public hero.
+          This concept of continuous interdependence, as seen in universal gravitation and the boat problem, can be extended to neural processes. The first section of the following work serves to establish reasonable neuroscientific grounds to consider neural processes as continuous in space and time. From here, brain waves and mental processes can be considered a massive, interdependent nonlinear system propagating continuously in space and time. Analogous to how celestial bodies in a solar system exert gravitational pull on each other, the electrical impulses fired in one’s brain are posited to invoke a continuous influence on the voltage and spatial location of other impulses throughout the brain.
           </p>
+          <br />
           <p>
-            While Sullenberger’s legacy is secure, the possibility of turning around the plane and landing safely at the airport without damage to occupants nor destruction of the aircraft lends way to some interesting hypotheticals. Namely, with the rise of artificial intelligence entities, it is a worthwhile exercise to consider the same situation but with an AI model at the helm. Given rapid advances in the field, it seems reasonable that an AI model would have the capability to weigh the possible outcomes at the point of engine failure. And not only would such a model yield the capability of making a decision: given the right training, this AI pilot should have been able to recognize the opportunity to land safely at LaGuardia or Teterboro, decide on such a course, and precisely navigate the plane to the airport just as the pilots later managed in the flight simulator. Armed with rapid processing speeds, more information, more knowledge, and better intuition from near limitless training, this hypothetical AI pilot seems better equipped to handle the situation and produce a near optimal outcome. It seems that while Sully’s actions produced the best outcome we could expect from a human in this scenario, an AI model has the capability to outperform the seasoned pilot, propelling a greater miracle.
+          This perspective on neural processes has strong implications on the hard problem of consciousness. Coined by David Chalmers in his seminal work “Facing Up to the Problem of Consciousness”, the hard problem asks: How is it that humans are capable of a rich, subjective experience<sup style={styles.sup}>3</sup>? While this work does not directly answer the hard problem, it ventures as far to claim that the continuous interdependence of neural firings is a necessary condition for a sufficient explanation of rich, subjective experience. 
           </p>
+          <br />
           <p>
-            Regardless of the advances in artificial intelligence, this AI pilot would still have to reconcile uncertainty in its decision-making. At the most fundamental level, chaotic systems such as weather prohibit the possibility of a successful emergency landing at LaGuardia from ever reaching 100 percent<sup style={styles.sup}>4</sup>. Ergo, an AI pilot must grapple with deciding between certain probabilities and levels of harm to humans and society depending on its course of action upon engine failure. This decision is inherently ethical as it must include the possibility of harm<sup style={styles.sup}>5</sup>. Thus, here we find a scenario distinct from the numerous autonomous trolley problems in that an AI poses a unique capability to make a better decision than a human, but the AI entity must make a decision with ethical implications.
+          Subsequently, using Chalmers’ notion of combinatorial-state automata (CSA), it is shown that this condition serves as an external objection to the possibility of machine consciousness. Unlike internal objections like John Searle’s Chinese room experiment, which concede that computers can simulate human behavior, external objections pose a barrier preventing computational systems from behaving like cognitive systems. Here, the barrier is physical and mathematical rather than philosophical. Following a modus tollens structure, it is first shown that all machine computation is reducible to a CSA, a notion of computation proposed by Chalmers. The argument continues by demonstrating the incompatibility of CSA with the continuous interdependence of neural firings. Since the continuous interdependence of neural firings previously is deemed necessary for consciousness, the conclusion that artificial intelligences constrained by modern computing techniques are incapable of possessing consciousness follows. Lastly, a quantum approach to neural simulation is proposed as an alternative framework which remains compatible with the possibility of machine consciousness.
           </p>
         </section>
 
-        {/* Acting From Ethics Section */}
+        {/* Neuroscientific Basis for Continuity */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>The Importance of Acting From Ethics</h2>
+          <h2 style={styles.sectionTitle}>Neuroscientific Basis for Continuity</h2>
           <p>
-            Kant’s “Groundwork for the Metaphysics of Morals” first addresses the difference between acting ethically and acting from ethics<sup style={styles.sup}>6</sup>. In doing so, he equates ethics to duty, but this debate is irrelevant to the argument at hand so we ignore this distinction and talk simply in terms of ethics. In essence, acting ethically amounts to making decisions that align with ethical principles while acting from ethics necessitates a deliberate effort to do the right thing. To act from ethics means that the desire to be ethical is an explicit motivation for one’s actions—being ethical is not the result of one’s actions but the reason for them.
+          While the inner-workings of the brain remain elusive to the scientific community, hence the hard problem of consciousness, there is support among neuroscientists for the notion of continuity in space and time within the brain. At an abstract level, the human sensory experience, as produced by our brains, seems continuous. Friston’s free energy principle attributes this fact to continuous prediction and minimization between expected and actual inputs, thereby supporting the notion of continuous neural activity<sup style={styles.sup}>4</sup>. 
           </p>
+          <br />
           <p>
-            It takes little imagination to picture a machine capable of acting ethically. From a utilitarian standpoint, a machine as simple as an automatic door acts ethically as it maximizes happiness by providing a useful service. Some philosophers argue acting from ethics only requires a single additional layer of abstraction. James H Moor’s “Ethical Robots” suggests that an AI model’s understanding of ethics could be as trivial as a hard-coded script to determine the most ethical course of action<sup style={styles.sup}>7</sup>. He claims an explicit ethical agent can act from ethics so long as it selects from multiple courses of action depending on its parameters in an ethical way. This loose definition of acting from ethics disregards the previously asserted notion that to act from ethics, ethics must be a reason for a machine’s action. To act from something implies that that thing has a direct role in one's own explanation of one’s action. On the other hand, Kant insists that acting from ethics necessitates consciousness, but the abstract nature of what it means to be conscious makes it difficult to explicitly determine whether a machine can act from ethics and what would be required in order for a machine to do so. On this line, we deploy a stronger definition of acting from ethics in this work than Moor and a more concrete definition than Kant. In this paper, a machine is said to act from ethics if the machine can motivate its actions at the most granular level in part through ethical principles. We will touch more on the significance of this definition later.
+          At a more fundamental level, although action potentials—characterizing electrical communication among neurons—are most often described in a discrete sense, there are also competing theories on the behavior of individual neurons. Christof Koch’s “Biophysics of Computation: Information Processing in Single Neurons” claims that neuronal communication involves continuous interplay between synapses, dendrites, and ionic events<sup style={styles.sup}>5</sup>. 
           </p>
+          <br />
           <p>
-            The importance of teaching machines to act from ethics lies in the versatility of this form of reasoning. A machine capable of motivating its actions from ethics can apply ethical principles to any scenario just as a person can respond to a continuum of ideas with consistency of their moral principles. Even modern artificial intelligence techniques extrapolate. Machine learning (ML) enables an AI to learn from training data and then act in line with its training when faced with a variety of novel scenarios<sup style={styles.sup}>8</sup>. In many cases, ML uses a discrete set to prepare an AI to respond to a continuum of possible scenarios. The validity of this method hinges on the assumption that there will always be useful information from the training data to act in an appropriate manner. But with a continuum of possible scenarios, a discrete training set can never contain relevant information for every possible situation an AI may face<sup style={styles.sup}>9</sup>. Thus enters extrapolation—instances in which training data is extended beyond its relevance. The capability to act from ethics bypasses this concern by enabling an intelligence entity to simply apply ethical principles to any scenario. With an understanding of what it means to be ethical, a human can justify what they perceive to be an ethical course of action independent of their lived experiences. Teaching AI to act in a similar fashion would make the technology adaptable and more useful to society. Logically, the ensuing consideration is whether it is possible for machines to act from ethics. This consideration is next answered from two perspectives, one that relies on the necessity of responsibility in acting from ethics and another from the basis of distinctively mathematical explanations.
+          This work does not aim to propose a unified brain theory. Instead, the purpose of these claims is to provide reasonable grounds for interpreting neural processes as a continuously interdependent system, as this perspective significantly impacts the discussion on machine consciousness.
           </p>
         </section>
 
-        {/* Responsibility Section */}
+        {/* Continuous Interdependence */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>The Role of Responsibility in Acting From Ethics</h2>
+          <h2 style={styles.sectionTitle}>Continuous Interdependence</h2>
           <p>
-            From an outsider’s perspective, a young child is most often free from responsibility for their actions. They are perceived to lack the moral agency to make ethical decisions. Instead, each time a child acts ethically or unethically, their parents are held responsible for their choices. A toddler’s insistence on not sharing or insisting on getting what they want is commonly attributed to “bad parenting.”
+          Interdependence is a hallmark of Integrated Information Theory (IIT). Developed by Giulio Tononi at University of Wisconsin, IIT posits that a high degree of interdependence among the states of a system is necessary for the felt quality of consciousness<sup style={styles.sup}>6</sup>. In simpler terms, an extensive web of interaction among neural firings is required for humans to feel conscious.
           </p>
+          <br />
           <p>
-            The notion of bad parenting has direct implications on the human perception of the causal structure of a child’s actions. We see the child’s parenting as so close to the causal sequence that led the child to act that we deem their impact greater than that of the child’s independent ethical faculties. Thus, we divert the responsibility for the child’s action to the parent rather than the child themselves. This is also the case with artificial intelligence entities. Numerous failures in AI, such as Uber’s self-driving car killing a pedestrian, have been ascribed to the creator of the technology rather than the technology itself<sup style={styles.sup}>10</sup>.
+          While IIT demonstrates the need for interdependence, continuous interdependence remains a much stronger requirement for consciousness that has yet to be formally justified. In the introduction, continuous interdependence in neural systems was introduced through an analogy to physical systems. The core idea is that as brain waves propagate through space and time, they exert a continuous influence on other brain waves, essentially functioning as a richly interwoven nonlinear system. Continuous interdependence, therefore, suggests a much higher degree of integrated information than any discrete model. 
           </p>
+          <br />
           <p>
-            For humans, responsibility is eventually transferred to the younger generation. Rare are the instances in which one ascribes the actions of a 30-year-old to bad parenting. Instead, the actions of an adult are attributed to the adult themself. This is not to say that an adult's parent’s role is eliminated from the causal structure of their actions. Lewis’ counterfactual account of causation makes it clear that the parent raising the child will always be a link in the causal chain leading to an action<sup style={styles.sup}>11</sup>. At some point, this link is simply deemed too insignificant to warrant responsibility.
+          Susan Schneider’s work in testing for machine consciousness uses a quantitative measure (Φ) to assess the level of integration within a neural system<sup style={styles.sup}>7</sup>. A higher Φ is associated with increased likelihood of consciousness, guiding assessments of whether an artificial intelligence is likely to have obtained consciousness. While Schneider’s work is largely a matter of prediction, accepting Φ as a sufficient or necessary determinant of consciousness, in accordance with IIT, lends way to a boundary problem in need of reconciliation. If one is to accept Φ as a sufficient or necessary determinant of consciousness, there must exist a value of Φ at which consciousness or the possibility of consciousness is achieved. Even if one adopts the viewpoint that consciousness is a spectrum, the existence of extraordinarily simple discrete neural networks which cannot be reasonably assessed to have any degree of consciousness suggests that there must be a finite boundary at which some degree of consciousness or possibility for consciousness is achieved. As many others have noted in different contexts, the notion of a finite boundary for consciousness seems ridiculous since it implies that adding one more transistor or neural pathway would be the deciding factor to sway a system towards consciousness. 
           </p>
+          <br />
           <p>
-            Only when this responsibility transfer occurs do we see a human as capable of acting from ethics. Thus, for a machine to act from ethics, we must see a division in the causal structure from the creator to the acts of the creation. Once more deploying a counterfactual framework, if a machine is responsible for its actions, then in the closest alternate world where the machine takes the ethically wrong course of action, it would be viewed as unethical. However, the validity of such an alternate world depends on the notion that the machine actively resists the impulse to take the ethically wrong course of action. Nyholm asserts that this is not a conceptual possibility as it runs counter to the machine’s guiding ethical principles necessary for it to be ethical in the first place<sup style={styles.sup}>12</sup>. Machines today are not capable of adhering to ethical principles by resisting the urge to violate them. Thus, we are unable to foresee a responsibility shift from the creators of artificial intelligence to AI itself without violating ethics. Granted this responsibility shift was previously argued to be essential to acting from ethics, we find considerable doubt in the ability of a machine to act from ethics through an analysis of its responsibility.
+          Thus, one finds themself at a loss. In order to achieve consciousness, IIT mandates a high degree of integration, but the preceding reasoning suggests any finite threshold for consciousness in terms of integration is unreasonable. Continuous interdependence sidesteps this issue. The constant influence of brain waves on other neural activity implies there is an infinitely stronger degree of integration compared to any discrete system. Thus, continuous interdependence avoids this boundary conflict on Φ by infinitely increasing the degree of integration. Lacking another resolution to this dilemma, such an approach seems the only sufficient means to provide a model with compatible integration for consciousness. 
           </p>
         </section>
 
-        {/* Mathematical Explanations Section */}
+        {/* Combinatorial-State Automata */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Distinctively Mathematical Explanations for Machine Action</h2>
+          <h2 style={styles.sectionTitle}>Combinatorial-State Automata (CSA)</h2>
           <p>
-            Marc Lange’s “What Makes an Explanation Distinctively Mathematical?” defines a distinctively mathematical explanation as one that flows directly from mathematical truths<sup style={styles.sup}>13</sup>. These truths possess a necessity and stability which makes them more powerful than empirical truths. Any explanation one can base entirely from these truths extends the necessity and stability of the truths themselves, lending way to a stronger and more rigorous line of reasoning.
+            To illustrate the incompatibility of continuous interdependence, and thus consciousness, with machine computation, I proceed by introducing David Chalmers’ notion of combinatorial-state automaton (CSA)<sup style={styles.sup}>8</sup>. A CSA is an account of computation which is slightly more structured than the more traditional finite-state automaton (FSA). Like FSAs, a CSA is specified using either finite or infinite sets of inputs, outputs, and internal states. Unlike FSAs, the inputs, outputs, and states of a CSA are vectorized. On the nature of each element of a CSA, Chalmers writes:
           </p>
-          <p>
-            If something can be explained distinctively mathematically, no room is left for human agency and emotion which cannot be modeled mathematically due to their inherent chaos. This incompatibility makes it impossible to provide a motivation that contains ethical considerations as ethics is dependent on agency and emotion. Applying the definition in the previous discussion on acting from ethics, this means that no entity whose actions can be explained distinctively mathematically can act from ethics. Naturally, this conclusion leads one to consider whether all machine actions can be explained distinctively mathematically.
+          <br />
+          <p style={{ marginLeft: '2em' }}>
+            Each element S<sup>i</sup> can take on a finite number of values S<sub>ij</sub>, where S<sub>ij</sub> is the j<sup>th</sup> possible value of the i<sup>th</sup> element.
           </p>
+          <br />
           <p>
-            Despite remarkable capabilities, even the most advanced artificial intelligences can be reduced to a sequence of 1s and 0s—the most basic mathematical representation of numbers<sup style={styles.sup}>14</sup>. After all, they must be run on computers, which, despite advances in quantum computing, work simply in terms of reading and writing bits. Even seemingly stochastic processes often rely on pseudo-random generation which is a mathematically definable process<sup style={styles.sup}>15</sup>. The parameters entered into a machine are notably not necessarily mathematical, but by the time they are codified to be entered into the AI model, they too exist at the mathematical level—simply another sequence of 1s and 0s to execute a set of processes. Thus, if an AI model is simply a sequence of operations on 1s and 0s, its actions can be explained distinctively mathematically. Ergo, machine actions are a matter of mathematical necessity, leaving no room for the chaos of ethics.
+            Furthermore, the implementation of a CSA entails a mapping of the states in the system onto the states of the computation described by the CSA such that causally-related physical states map to formally-related computational states.
+          </p>
+          <br />
+          <p>
+            For conceivable machine-based computations, Chalmers’ model is by all means a desirable formalism for a computation. Constrained by the finite capacity of storage devices and the discrete nature of transistors, inputs, outputs, and states of a computer program fall nicely into the structured vector format of the CSA. While it is debatable whether machines can even utilize the infinite bounds on the number of elements in a CSA, this distinction is not argued here. Rather, it is simply stipulated that any binary computer program can be described at any point during its execution using a vector for its inputs, a vector for outputs, and a vector for its internal states.
           </p>
         </section>
 
-        {/* Conclusion Section */}
+        {/* Incompatibility of Neural Processes and CSA */}
         <section style={styles.section}>
+          <h2 style={styles.sectionTitle}>Incompatibility of Neural Processes and CSA</h2>
+          <p>
+          Operating under the framework of continuous interdependence greatly complicates the process of representing neural processes with CSA. The primary obstacle lies in the notion of countability. Borrowing from mathematics, a set is countable if it can be made in one-to-one correspondence with the natural numbers. Returning to the description of each element within a state, it is clear that Chalmers’ formalism for computation implies countability. The notation Sij which uses the indexes j and i to represent the jth possible value of the ith element is a clear indication that there exists a one to one correspondence between the natural numbers and the elements and possible states for each element. Furthermore, countability is a necessary measure to describe the mapping from one state in a CSA to another. 
+          </p>
+          <br />
+          <p>
+          Continuity, however, is incompatible with countability. On any given range of the real numbers, there exists a larger range of possible values than can be represented by all the natural numbers. Such logic is the basis for different degrees of infinity. Consequently, it would be mathematically inconceivable to assign a natural number to each of the possible states for an element for a supposed CSA of a continuously interconnected system. Along these same lines, continuity implies an uncountable number of transitions between states which is also inconceivable under Chalmers’ framework. Furthermore, the idea that the continuous evolution of neural processes could be succinctly captured in a manner analogous to solving a system of differential equations is undermined by the inherent complexity and nonlinearity of such a vast system. Ergo, under the viewpoint that neural processes evolve as continuous waves within space and time, reducibility to a CSA is a conceptual impossibility.   
+          </p>
+          <br />
+          <p>
+          Computational mathematics often supplies the means to surmount the incompatibility of continuity and countability. In the face of nonlinear systems of PDEs, such as the bobbing boat referenced in the introduction, numerical techniques such as finite element and finite difference methods provide a suitable means of approximating the evolution of a computation characterized by continuous interdependence. However, these methods inevitably have numerical errors from finite representations of irrational numbers. More so, as systems become larger and more interwoven, the cascade effect causes numerical error to magnify. Given that the human brain consists of over 100 trillion synaptic connections with a single neuron capable of launching as many as 1000 electrochemical signals per second, the cascade effect of numerical error would prove detrimental to a numerical model’s capability to fully represent the dynamics of neural processes<sup style={styles.sup}>9</sup>. Thus, any effort to discretize a continuously interdependent model of neural processes would prove incompatible with maintaining the level of integration needed for consciousness.  
+          </p>
+          <br />
+          <p>
+          Ergo, this conclusion completes the modus tollens argument against machine consciousness. The irreducibility of neural computation down to combinatorial-state automaton coupled with the reducibility of machine computation down to combinatorial-state automaton suggests that machine implementation of the brain as a continuously interdependent system is not viable. Applying the Integrated Information Theory-based argument for the necessity of continuous interdependence for consciousness, this argument serves as a rebuke on the notion of machine consciousness.   
+          </p>
+        </section>
+
+         {/* A Quantum Framework for Consciousness */}
+         <section style={styles.section}>
+          <h2 style={styles.sectionTitle}>A Quantum Framework for Consciousness</h2>
+          <p>
+          The previous argument for the reducibility of machine computation to CSA operates under the framework of a binary computer as is the industry standard for even the most complex artificial intelligence models. However, advances in the field of quantum computing may yield the capability to represent neural processes as a continuously interdependent system. The quantum principles of superposition and entanglement naturally lend way to new representations of continuity and interconnectedness<sup style={styles.sup}>10</sup>. Superposition, which describes the ability of quantum bits or qubits to represent multiple states simultaneously, theoretically enables a single qubit to represent a continuum of values. Furthermore, the principle of entanglement offers the means to simultaneously manipulate qubits, essentially linking qubits together without it being necessary for them to be physically close together. 
+          </p>
+          <br />
+          <p>
+          If computer scientists and engineers prove capable of utilizing the full powers of quantum computing, superposition and entanglement could prove a viable approach to representing the continuous interdependence of neural processes. With qubits resolving the issue of continuity in a spatial sense and entanglement driving the time evolution, quantum computing stands the chance to present a realistic model of the brain capable of processes as vague as consciousness. While a more complex technical analysis is warranted, at the very least, such a technology could forego the previously presented argument against consciousness by no longer proving reducible to the CSA, paving the way for a different notion of computation and implementation to establish a formal link between computing and the inner workings of the brain. 
+          </p>
+        </section>
+
+         {/* Conclusion */}
+         <section style={styles.section}>
           <h2 style={styles.sectionTitle}>Conclusion</h2>
           <p>
-            The Sullenberger scenario presents the advantages of teaching AI to be ethical. Technical advances in machine learning can and have yielded machines with the capability of acting ethically. But machines acting from ethics, a key distinction that makes machine ethics generalizable to a continuum of scenarios, is proven unlikely given the current state of technological progress both from the standpoint of responsibility and the distinctively mathematical basis for machine action. Given the progress of theoretical computing techniques like quantum computing, we cannot limit the conceptual possibility of a machine reaching this level of thinking. However, this work suggests that fundamental technological advancement is necessary to act from ethics, specifically in a way that shifts responsibility towards AI and differentiates the explanations for its actions from a distinctively mathematical line of reasoning.
+          This paper has examined the intricate relationship between continuity, interdependence, and consciousness, proposing a framework that recontextualizes the nature of consciousness in both biological and artificial systems. By drawing analogies between continuous physical systems, such as gravitational interactions and fluid dynamics, and neural processes, it has been argued that the continuous interdependence observed in neural activity is a necessary condition for the emergence of subjective experience. This conclusion raises significant challenges to the feasibility of machine consciousness, as contemporary computational models—reducible to combinatorial-state automata (CSA)—are inherently discrete and thus incapable of encapsulating the continuous, nonlinear complexity present in neural systems. The discrete nature of these models proves incompatible with the continuous interdependence that, according to this analysis, underpins conscious experience.
           </p>
+          <br />
+          <p>
+          The exploration of quantum computing as a potential resolution introduces a theoretical avenue through which the principles of superposition and entanglement could address this limitation by enabling a continuous representation of neural processes. While the application of quantum computing presents a promising direction for future research, substantial technical challenges remain before such systems could plausibly simulate the continuity required for consciousness. Nonetheless, this investigation offers a foundation for further interdisciplinary discourse, integrating insights from neuroscience, computational theory, and philosophy to advance our understanding of consciousness—and whether it is possible for machines to achieve this profound and uniquely human phenomenon.
+          </p>
+        </section>
+        
+       {/* Sources Section */}
+        <section style={styles.sources}>
+          <h3 style={styles.sectionTitle}>Sources</h3>
+          <ol style={styles.sourceList}>
+            <li>Newton, Isaac. "Principia mathematica." Book III, Lemma V, Case 1 (1934): 1687.</li>
+            <li>Iguchi, Tatsuo, and David Lannes. "Hyperbolic free boundary problems and applications to wave-structure interactions." arXiv preprint arXiv:1806.07704 (2018).</li>
+            <li>Chalmers, David J. "Facing up to the problem of consciousness." Journal of consciousness studies 2, no. 3 (1995): 200-219.</li>
+            <li>Friston, Karl. "The free-energy principle: a unified brain theory?." Nature reviews neuroscience 11, no. 2 (2010): 127-138.</li>
+            <li>Koch, Christof. Biophysics of computation: information processing in single neurons. Oxford University Press, 2004.</li>
+            <li>Tononi, Giulio. "Integrated information theory." Scholarpedia 10, no. 1 (2015): 4164.</li>
+            <li>Schneider, Susan. "How to catch an AI zombie." Ethics of artificial intelligence (2020): 439.</li>
+            <li>Chalmers, David J. The conscious mind: In search of a fundamental theory. Oxford Paperbacks, 1997.</li>
+            <li>Colon-Ramos, Daniel. “Overview.” Colón-Ramos Lab. Accessed July 29, 2024.</li>
+            <li>Nielsen, Michael A., and Isaac L. Chuang. Quantum computation and quantum information. Cambridge University Press, 2010.</li>
+          </ol>
         </section>
 
         {/* Back Button at Bottom */}
         <button onClick={goBack} style={styles.backButtonBottom}>
-          &larr; Back to Thought Leadership
+          Thought Leadership Home
         </button>
       </article>
     </div>
@@ -117,25 +185,24 @@ const styles = {
     color: '#333',
   },
   backButtonTop: {
-    display: 'block',
     margin: '10px 0',
     padding: '10px 15px',
     fontSize: '1rem',
-    color: '#0073b1',
+    color: '#2e4075',
     background: 'none',
-    border: '1px solid #0073b1',
-    borderRadius: '5px',
+    border: 'none',
     cursor: 'pointer',
     textAlign: 'left',
+    textDecoration: 'underline',
   },
   backButtonBottom: {
     display: 'block',
     margin: '20px auto',
     padding: '10px 15px',
     fontSize: '1rem',
-    color: '#0073b1',
+    color: '#2e4075',
     background: 'none',
-    border: '1px solid #0073b1',
+    border: '1px solid #2e4075',
     borderRadius: '5px',
     cursor: 'pointer',
     textAlign: 'center',
@@ -143,7 +210,7 @@ const styles = {
   header: {
     textAlign: 'center',
     marginBottom: '30px',
-    color: '#2e4075'
+    color: '#2e4075',
   },
   title: {
     fontSize: '2.5rem',
@@ -176,6 +243,13 @@ const styles = {
     fontSize: '0.8rem',
     verticalAlign: 'super',
   },
+  sourceList: {
+    paddingLeft: '20px',
+    fontSize: '1rem',
+  },
 };
 
 export default ArticleTemplate;
+
+
+
