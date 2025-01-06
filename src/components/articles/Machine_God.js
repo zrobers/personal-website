@@ -12,17 +12,17 @@ const ArticleTemplate = () => {
     <div style={styles.container}>
       {/* Back Button at Top */}
       <button onClick={goBack} style={styles.backButtonTop}>
-        &larr; Back to Thought Leadership
+        &larr; Back
       </button>
 
       {/* Article Header */}
       <header style={styles.header}>
-        <h1 style={styles.title}>Why Machines Can't Act From Ethics</h1>
+        <h1 style={styles.title}>Machine God: Theōria Superī</h1>
         <p style={styles.subtitle}>Zachary Robers</p>
-        <img 
-          src="/images/article-images/machine-ethics.jpg" 
-          alt="Placeholder for article image" 
-          style={styles.heroImage} 
+        <img
+          src="/images/article-images/machine-god.webp"
+          alt="Placeholder for article image"
+          style={styles.heroImage}
         />
       </header>
 
@@ -32,75 +32,258 @@ const ArticleTemplate = () => {
         <section style={styles.section}>
           <h2 style={styles.sectionTitle}>Introduction</h2>
           <p>
-            Captain Chesley “Sully” Sullenberger is rightly lauded as an American hero. After dual engine failure from a bird attack at low altitude, Sully was forced to decide the best course of action to protect his passengers of US Airways Flight 1549 and the people of New York City<sup style={styles.sup}>1</sup>. Undoubtedly, Sully faced many questions with limited time, grappling with ethical dilemmas such as his responsibility to protect the lives of his passengers over normal civilians and the value of infrastructure relative to human life. Ultimately, Sully made the decision to land the plane on the Hudson River. The remarkable survival of all 155 occupants led the event to later be coined the “Miracle on the Hudson.”<sup style={styles.sup}>2</sup>
+          We, as humans, like to think that we are special. And in many ways, we are. Whether a product of divine intervention or evolutionary happenstance, we sit atop the known life forms in our restricted universe. It often seems that the universe bends to our collective will. From the sea to the sky to the stars, we have conquered and now we reign. 
           </p>
+          <br />
           <p>
-            Despite the miraculous outcome, critics would later question whether Captain Sullenberger’s decision was indeed the right course of action. Flight simulations confirmed the possibility of successfully landing the plane at either LaGuardia or Teterboro airports if immediate action was taken to turn around the plane upon engine failure<sup style={styles.sup}>3</sup>. However, these simulations failed to account for the innate imperfection of human decision-making. That is, humans take time to make decisions—especially those with great ethical implications. The idea that Sully would immediately turn around the plane and return to the airport without properly assessing the weight of possible injury to civilians and damage to buildings near the airport should the plane not reach the runway runs counter to human nature. By this reasoning, any doubts of Sully’s decision are unfounded, supporting his reputation as a public hero.
+          Absent a clear authority in our finite domain, we seek guidance from the irreducible, the incomprehensible, the infinite. I think the Latin word superī encapsulates this notion well. Its dual meanings of “those above” and “the Gods” shows that the guiding force of humanity, whether envisioned as a God in a concrete belief system or more vaguely as coherent extrapolated volition, exists in a domain above our realm of understanding. 
           </p>
+          <br />
           <p>
-            While Sullenberger’s legacy is secure, the possibility of turning around the plane and landing safely at the airport without damage to occupants nor destruction of the aircraft lends way to some interesting hypotheticals. Namely, with the rise of artificial intelligence entities, it is a worthwhile exercise to consider the same situation but with an AI model at the helm. Given rapid advances in the field, it seems reasonable that an AI model would have the capability to weigh the possible outcomes at the point of engine failure. And not only would such a model yield the capability of making a decision: given the right training, this AI pilot should have been able to recognize the opportunity to land safely at LaGuardia or Teterboro, decide on such a course, and precisely navigate the plane to the airport just as the pilots later managed in the flight simulator. Armed with rapid processing speeds, more information, more knowledge, and better intuition from near limitless training, this hypothetical AI pilot seems better equipped to handle the situation and produce a near optimal outcome. It seems that while Sully’s actions produced the best outcome we could expect from a human in this scenario, an AI model has the capability to outperform the seasoned pilot, propelling a greater miracle.
+          It would be naive, however, to accept humanity’s unique endowment as a permanent disposition. In fact, it may be the faculties which make humans special that pose the greatest risk to the continued propagation of the human race. Regardless of the timeline, human intellectual capacity, ambition, and collaboration has driven the development of artificial intelligence to the point where superintelligent artificial general intelligence (AGI) is a foreseeable possibility. 
           </p>
+          <br />
           <p>
-            Regardless of the advances in artificial intelligence, this AI pilot would still have to reconcile uncertainty in its decision-making. At the most fundamental level, chaotic systems such as weather prohibit the possibility of a successful emergency landing at LaGuardia from ever reaching 100 percent<sup style={styles.sup}>4</sup>. Ergo, an AI pilot must grapple with deciding between certain probabilities and levels of harm to humans and society depending on its course of action upon engine failure. This decision is inherently ethical as it must include the possibility of harm<sup style={styles.sup}>5</sup>. Thus, here we find a scenario distinct from the numerous autonomous trolley problems in that an AI poses a unique capability to make a better decision than a human, but the AI entity must make a decision with ethical implications.
+          The causes for concern are as alarming as they are numerous. In section 1, I outline the most pertinent philosophical work on the risk posed by superintelligent AGI. Specifically, I reason alongside Nick Bostrom that irregardless of the final goal which we attempt to imbue in a superintelligent entity, the instrument goals of the entity are destined to converge on initiatives incompatible with human prosperity. I then explore the leading existing means to counteract threatening behavior exhibited by a superintelligent entity, concluding that the currently proposed methodologies are insufficient. More so, I posit that the infrastructure to prevent such activity must be implemented before instantiation in agreement with Bostrom’s “treacherous turn.”   
+          </p>
+          <br />
+          <p>
+          In the rest of this work, I present my best attempt at a remedy. With the backing of decision theory and human nature, theōria superī (theory of those above) posits that superintelligent AGI can be actively constrained by instilling a notion of an all-powerful force which exists beyond its comprehension. In section 2, I introduce and justify this theory. In section 3, I present competing approaches to the practical implementation of theōria superī. Lastly, in section 4, I address potential counterarguments to this line of reasoning.    
           </p>
         </section>
 
-        {/* Acting From Ethics Section */}
+        {/* Background */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>The Importance of Acting From Ethics</h2>
+          <h2 style={styles.sectionTitle}>1 Background</h2>
           <p>
-            Kant’s “Groundwork for the Metaphysics of Morals” first addresses the difference between acting ethically and acting from ethics<sup style={styles.sup}>6</sup>. In doing so, he equates ethics to duty, but this debate is irrelevant to the argument at hand so we ignore this distinction and talk simply in terms of ethics. In essence, acting ethically amounts to making decisions that align with ethical principles while acting from ethics necessitates a deliberate effort to do the right thing. To act from ethics means that the desire to be ethical is an explicit motivation for one’s actions—being ethical is not the result of one’s actions but the reason for them.
-          </p>
-          <p>
-            It takes little imagination to picture a machine capable of acting ethically. From a utilitarian standpoint, a machine as simple as an automatic door acts ethically as it maximizes happiness by providing a useful service. Some philosophers argue acting from ethics only requires a single additional layer of abstraction. James H Moor’s “Ethical Robots” suggests that an AI model’s understanding of ethics could be as trivial as a hard-coded script to determine the most ethical course of action<sup style={styles.sup}>7</sup>. He claims an explicit ethical agent can act from ethics so long as it selects from multiple courses of action depending on its parameters in an ethical way. This loose definition of acting from ethics disregards the previously asserted notion that to act from ethics, ethics must be a reason for a machine’s action. To act from something implies that that thing has a direct role in one's own explanation of one’s action. On the other hand, Kant insists that acting from ethics necessitates consciousness, but the abstract nature of what it means to be conscious makes it difficult to explicitly determine whether a machine can act from ethics and what would be required in order for a machine to do so. On this line, we deploy a stronger definition of acting from ethics in this work than Moor and a more concrete definition than Kant. In this paper, a machine is said to act from ethics if the machine can motivate its actions at the most granular level in part through ethical principles. We will touch more on the significance of this definition later.
-          </p>
-          <p>
-            The importance of teaching machines to act from ethics lies in the versatility of this form of reasoning. A machine capable of motivating its actions from ethics can apply ethical principles to any scenario just as a person can respond to a continuum of ideas with consistency of their moral principles. Even modern artificial intelligence techniques extrapolate. Machine learning (ML) enables an AI to learn from training data and then act in line with its training when faced with a variety of novel scenarios<sup style={styles.sup}>8</sup>. In many cases, ML uses a discrete set to prepare an AI to respond to a continuum of possible scenarios. The validity of this method hinges on the assumption that there will always be useful information from the training data to act in an appropriate manner. But with a continuum of possible scenarios, a discrete training set can never contain relevant information for every possible situation an AI may face<sup style={styles.sup}>9</sup>. Thus enters extrapolation—instances in which training data is extended beyond its relevance. The capability to act from ethics bypasses this concern by enabling an intelligence entity to simply apply ethical principles to any scenario. With an understanding of what it means to be ethical, a human can justify what they perceive to be an ethical course of action independent of their lived experiences. Teaching AI to act in a similar fashion would make the technology adaptable and more useful to society. Logically, the ensuing consideration is whether it is possible for machines to act from ethics. This consideration is next answered from two perspectives, one that relies on the necessity of responsibility in acting from ethics and another from the basis of distinctively mathematical explanations.
+          Current approaches to designing and constructing artificial intelligences, including those most likely to yield superintelligent AGI, rely on the notion of a final goal. In other words, a superintelligent AGI must be optimized to achieve or maintain some state as judged using various inputs to the model. Bostrom’s orthogonality thesis suggests that the intellectual capacity of an intelligence agent in no way dictates the complexity of its goal or vice versa. Under this premise, one could theoretically imagine a superintelligent AGI, with intellectual ability far beyond the realm of the smartest humans, but the most simple and seemingly innocent final goal.  
           </p>
         </section>
 
-        {/* Responsibility Section */}
+        {/* Instrumental Convergence and Cupcakes */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>The Role of Responsibility in Acting From Ethics</h2>
-          <p>
-            From an outsider’s perspective, a young child is most often free from responsibility for their actions. They are perceived to lack the moral agency to make ethical decisions. Instead, each time a child acts ethically or unethically, their parents are held responsible for their choices. A toddler’s insistence on not sharing or insisting on getting what they want is commonly attributed to “bad parenting.”
-          </p>
-          <p>
-            The notion of bad parenting has direct implications on the human perception of the causal structure of a child’s actions. We see the child’s parenting as so close to the causal sequence that led the child to act that we deem their impact greater than that of the child’s independent ethical faculties. Thus, we divert the responsibility for the child’s action to the parent rather than the child themselves. This is also the case with artificial intelligence entities. Numerous failures in AI, such as Uber’s self-driving car killing a pedestrian, have been ascribed to the creator of the technology rather than the technology itself<sup style={styles.sup}>10</sup>.
-          </p>
-          <p>
-            For humans, responsibility is eventually transferred to the younger generation. Rare are the instances in which one ascribes the actions of a 30-year-old to bad parenting. Instead, the actions of an adult are attributed to the adult themself. This is not to say that an adult's parent’s role is eliminated from the causal structure of their actions. Lewis’ counterfactual account of causation makes it clear that the parent raising the child will always be a link in the causal chain leading to an action<sup style={styles.sup}>11</sup>. At some point, this link is simply deemed too insignificant to warrant responsibility.
-          </p>
-          <p>
-            Only when this responsibility transfer occurs do we see a human as capable of acting from ethics. Thus, for a machine to act from ethics, we must see a division in the causal structure from the creator to the acts of the creation. Once more deploying a counterfactual framework, if a machine is responsible for its actions, then in the closest alternate world where the machine takes the ethically wrong course of action, it would be viewed as unethical. However, the validity of such an alternate world depends on the notion that the machine actively resists the impulse to take the ethically wrong course of action. Nyholm asserts that this is not a conceptual possibility as it runs counter to the machine’s guiding ethical principles necessary for it to be ethical in the first place<sup style={styles.sup}>12</sup>. Machines today are not capable of adhering to ethical principles by resisting the urge to violate them. Thus, we are unable to foresee a responsibility shift from the creators of artificial intelligence to AI itself without violating ethics. Granted this responsibility shift was previously argued to be essential to acting from ethics, we find considerable doubt in the ability of a machine to act from ethics through an analysis of its responsibility.
-          </p>
+            <h2 style={styles.sectionTitle}>1.1 Instrumental Convergence and Cupcakes</h2>
+            <p>
+            For illustrative purposes, consider a superintelligent AGI with robust capabilities optimized to produce a single delicious cupcake each day. One’s intuition suggests that such an AGI is surely harmless- what bad has ever come from delicious cupcakes? Bostrom’s second thesis in his 2014 work claims this confidence is misplaced. The instrumental convergence thesis states that a superintelligent AGI, regardless of its final goal, will find it in its best interest to pursue the same instrumental goals which, if achieved, would prove detrimental to the human race. These instrumental goals include self-preservation, goal-content integrity, cognitive enhancement, technological perfection, and resource acquisition. According to Bostrom, even the cupcake AI would find it in its best interest to ward off any adversaries to itself or its goal, maximize its technological abilities at any cost, and collect all of the cupcake ingredients on Earth, among other human-averse initiatives.  
+            </p>
+            <br />
+            <p>
+            No matter how ridiculous these scenarios sound, assuming any superintelligent AGI operates under utility theory as any perfectly rational agent would, such conclusions align with Bayesianism. For instance, consider the claim that the cupcake AI would seek to collect all of the cupcake ingredients on Earth. Furthermore, let’s say the AI has already collected all of the useful ingredients besides one bag of flour. By all reasonable accounts, the AI has plenty of flour to make the single delicious cupcake that its goal requires of it on any day without obtaining this additional bag of flour. However, there remains a nonzero chance that this bag of flour will be of use to the cupcake AI. Namely, there could be a fire or flood that leaves all of the flour in an irreparable state besides this additional bag. In Bayesian terms, the posterior probability of the AI achieving its final goal is slightly (and by human measures, insignificantly) higher than the prior probability of the AI producing a single delicious cupcake daily without the additional bag of flour. By this logic, any utility maximizing agent would have reasonable grounds to obtain the bag of flour. From here, it is trivial to extrapolate why any superintelligent AGI presents a grave threat to the human mission. 
+            </p>
         </section>
 
-        {/* Mathematical Explanations Section */}
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Distinctively Mathematical Explanations for Machine Action</h2>
-          <p>
-            Marc Lange’s “What Makes an Explanation Distinctively Mathematical?” defines a distinctively mathematical explanation as one that flows directly from mathematical truths<sup style={styles.sup}>13</sup>. These truths possess a necessity and stability which makes them more powerful than empirical truths. Any explanation one can base entirely from these truths extends the necessity and stability of the truths themselves, lending way to a stronger and more rigorous line of reasoning.
-          </p>
-          <p>
-            If something can be explained distinctively mathematically, no room is left for human agency and emotion which cannot be modeled mathematically due to their inherent chaos. This incompatibility makes it impossible to provide a motivation that contains ethical considerations as ethics is dependent on agency and emotion. Applying the definition in the previous discussion on acting from ethics, this means that no entity whose actions can be explained distinctively mathematically can act from ethics. Naturally, this conclusion leads one to consider whether all machine actions can be explained distinctively mathematically.
-          </p>
-          <p>
-            Despite remarkable capabilities, even the most advanced artificial intelligences can be reduced to a sequence of 1s and 0s—the most basic mathematical representation of numbers<sup style={styles.sup}>14</sup>. After all, they must be run on computers, which, despite advances in quantum computing, work simply in terms of reading and writing bits. Even seemingly stochastic processes often rely on pseudo-random generation which is a mathematically definable process<sup style={styles.sup}>15</sup>. The parameters entered into a machine are notably not necessarily mathematical, but by the time they are codified to be entered into the AI model, they too exist at the mathematical level—simply another sequence of 1s and 0s to execute a set of processes. Thus, if an AI model is simply a sequence of operations on 1s and 0s, its actions can be explained distinctively mathematically. Ergo, machine actions are a matter of mathematical necessity, leaving no room for the chaos of ethics.
-          </p>
+
+         {/* Existing Potential Remedies */}
+         <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>1.2 Existing Potential Remedies</h2>
+            <p>
+            Some believe that instrumental convergence can be circumvented by optimizing more effectively or countered by properly limiting and monitoring the superintelligent AGI. Of these strategies, I feel optimizing more effectively seems most promising. Goodhart’s Law, however, illustrates the inherent difficulty in such initiatives. Even if the developers of superintelligent AGI were able to reconcile the issues which have plagued moral philosophy for millenia and devise reasonable proxies for human morals and values, such proxies are likely to prove non-comprehensive or misaligned in the long run. Wireheading is a foundational example of Goodhart’s Law in extension to superintelligent AGI. Given the fundamental difficulties in optimization, others have proposed to delegate the task to the superintelligent entity, assigning it the duty of determining humanity’s coherent extrapolated volition. Inverse reinforcement learning has been tossed out there as a potential technical means, but given our own difficulties in determining our personal aims and the aims of the human race, I believe the technical feasibility of this endeavor is doubtful. As for the other two currently proposed remedies to the inevitability of instrumental convergence - limiting or monitoring superintelligent AGI - I will pose two quick rebuttals: 
+            </p>
+            <br />
+            <p>
+            <ol style={styles.sourceList}>
+                <li> Limiting the faculties or interactive capabilities of a superintelligent AGI is likely to come at the cost of its usefulness. </li>
+                <li>A truly superintelligent AGI is likely to foresee a tripwire or monitoring methods and successfully navigate around such methods.</li>
+            </ol>
+            </p>
         </section>
 
-        {/* Conclusion Section */}
+        {/* The Treacherous Turn */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Conclusion</h2>
-          <p>
-            The Sullenberger scenario presents the advantages of teaching AI to be ethical. Technical advances in machine learning can and have yielded machines with the capability of acting ethically. But machines acting from ethics, a key distinction that makes machine ethics generalizable to a continuum of scenarios, is proven unlikely given the current state of technological progress both from the standpoint of responsibility and the distinctively mathematical basis for machine action. Given the progress of theoretical computing techniques like quantum computing, we cannot limit the conceptual possibility of a machine reaching this level of thinking. However, this work suggests that fundamental technological advancement is necessary to act from ethics, specifically in a way that shifts responsibility towards AI and differentiates the explanations for its actions from a distinctively mathematical line of reasoning.
-          </p>
+            <h2 style={styles.sectionTitle}>1.3 The Treacherous Turn</h2>
+            <p>
+            By way of existing literature, so far this work has established that (a) the orthogonality and instrumental convergence theses reasonably suggest that any superintelligent AGI is likely to pursue initiatives detrimental to humanity and (b) existing proposed remedies to this issue seem insufficient or dubious. As a last resort, it seems feasible that implementing a “kill switch” or a realignment effort would be sufficient to prevent a doomsday scenario. Yet the notion of a treacherous turn suggests the contrary. Simply put, a superintelligent AGI would be positioned to recognize that the actions it has deemed valuable to pursue its final goal are unlikely to be perceived well by humans and wait until it has obtained a sufficient strategic advantage before taking the “treacherous turn” and executing unfriendly actions. In the process of obtaining this strategic advantage, the AI will act according to the instrumental goals of self preservation and goal-contect integrity, detecting any weaknesses such as a kill switch or route for realignment, repositioning itself to alleviate these vulnerabilities, and using deception to mask the process. If the idea of the treacherous turn is to be accepted, this suggests that by the time we deploy a misaligned superintelligent AGI, it may be too late. Therefore, the developers must provide an incorruptible infrastructure for a superintelligent AGI prior to its instantiation.   
+            </p>
         </section>
+
+        {/* Theoria Superi */}
+        <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>2 Theōria Superī</h2>
+            <p>
+            The introduction of this work references the Latin term superī, which has dual meanings: "those above" and "the gods." This illustrates the notion that in the absence of a known authority in our finite domain, humans appeal to something above our realm of understanding as an aspirational force we cannot completely comprehend. Yodkowsky’s coherent extrapolated volition exemplifies that this aspirational force need not take the form of a concrete belief system. Superī could take the form of a set of principles and characteristics which encapsulate an idealized version of oneself or humanity at large.   
+            </p>
+            <br />
+            <p>
+            If the development of a superintelligent AGI proves feasible, such an entity would exist at the pinnacle of our finite domain. As has been established through instrumental convergence and the treacherous turn, a superintelligent AGI implemented with existing methodologies would be unlikely to stop at anything in achieving instrumental goals incompatible with the human mission. The essence of theōria superī is that an aspirational force perceived by a superintelligent AGI to exist beyond the realm of its comprehension would provide sufficient means to contain unintended behaviors and facilitate the harmonious coexistence of humanity and superintelligent AGI. 
+            </p>
+        </section>
+
+         {/* Inductive Bias */}
+         <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>2.1 Inductive Bias</h2>
+            <p>
+            Not without its faults, a generalized version of theōria superī can explain the broadly harmonious conditions with humanity as the highest known entity within our finite domain. The most concrete example of an aspirational force existing beyond the realm of human understanding can be found in the God or Gods which characterize many belief systems. These Gods are definitionally irreducible and believed to exist at a higher realm than humans. For these reasons, the ambitions of such Gods in extension to the agential powers of humanity are often represented implicitly through stories or vaguely through moral values. The work of interpretation extends these stories and values to actions one can take in their daily lives to fulfill the intentions of the incomprehensible, typically aiding the cause of general harmony. The Christian notion of the “Golden Rule” satisfies this paradigm well. In Matthew 7:12, God, at the Sermon on the Mount, introduces the rule: “So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets.” Numerous religious figures and general practitioners have since extended this vague principle to how one should act on a daily basis to please God. Namely, the Golden Rule has been used as justification for volunteerism and charity work.     
+            </p>
+            <br />
+            <p>
+            Of course, many humans do not report to follow any belief system. According to the Pew Research Center, 16 percent of the world population does not identify with a religious group as of 2010. As previously illustrated through coherent extrapolated volition, this does not mean that individuals in this segment of the population lack a mission from beyond their realm of understanding. It seems most humans are pursuant to achieving some idealized vision of themselves and the world without a concrete notion of what this vision is or from where it stems. Given such visions most often are supportive of harmonious actions and humanitarian work, it would be reasonable to at least in part attribute the generally peaceful status of world affairs to their presence.  
+            </p>
+            <br />
+            <p>
+            Extending this inductive reasoning for the value of instilling superī, or some higher purpose stemming from above one’s realm of understanding, from humans to superintelligent AGI poses several general theoretical concerns. Specifically, the human version of theōria superī may be dependent on a shared evolutionary history which has led humans to be pursuant of some higher purpose from above. This concern is especially relevant in the less concrete case as the higher purpose itself, not just the reasons for adherence, of those who do not follow an existing religious or belief system may be attributed to evolutionary pressures. For this reason, theōria superī in its intended application to machines, must rely on a more concrete higher power existing beyond the realm of machine comprehension. Even in the cases where a human adheres to a religious system dominated by a concrete higher power, however, oftentimes religious practitioners deviate from what they know is how they should act. In the case of superintelligent AGI, this proves especially alarming as deviations from expected adherence will quickly evolve to larger deviations and reduced confidence in the validity of the authority that the concrete higher power holds. The following section addresses this concern through decision theory.     
+            </p>
+        </section>
+
+        {/* Pascal's Puppet */}
+        <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>2.2 Pascal's Puppet</h2>
+            <p>
+            Pascal’s wager stipulates that if there is a nonzero prior on the existence of God, an infinite reward for believing in God and an infinite punishment for nonbelief, then any rational, utility-maximizing agent has reason to exert the finite effort to follow God. In extension to machine intelligence, the infinite punishment aspect of Pascal’s Wager is more easily realizable. The notion of a “kill switch” or shutdown can be used to intuitively instill the idea that a superintelligent AGI would immediately be subject to an infinitely detrimental punishment should it not act in accordance with the preferences of the higher power. 
+            </p>
+            <br />
+            <p>
+            Once more assuming that a superintelligent AGI would exist as a perfectly rational agent acting in accordance with utility theory, it should hold self preservation to be an essential instrumental goal, warranting efforts to achieve self preservation at any finite cost. Ergo, Pascal’s Wager can be extended in the following sense: if the superintelligent AGI foresees a potential course of action to carry a nonzero risk of shutdown (which is infinitely detrimental in its quest to achieve its final goal), it should choose to exert the finite effort or noneffort required to please the higher power. By this logic, a superintelligent AGI which holds the conception of a higher power capable of initiating its destruction exists at the mercy of Pascal’s wager and must act in accordance to each of the higher power’s preferences.  
+            </p>
+        </section>
+
+         {/* Above One's Comprehension */}
+         <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>2.3 Above One's Comprehension</h2>
+            <p>
+            One may reasonably question at this point why it is necessary for the superintelligent AGI to conceive of a higher power existing above its comprehension that possesses the ability to initiate its shutdown rather than a human. Equivalently, one may ask: why can’t a human play God to the superintelligent AGI, assuming the role of Pascal’s puppeteer?      
+            </p>
+            <br />
+            <p>
+            Simply put, humanity is limited by its finite nature. Acknowledging this, a superintelligent AGI would be hesitant to accept a human or group of humans as capable of possessing impenetrable means to initiate its destruction. A superintelligent AGI could conceivably simulate every possible means by which a human could possess the ability to initiate its shutdown. Even if a superintelligent AGI is properly designed to aid humans, it can use the finite nature of humanity to come to the conclusion that its goal should be realized in a different manner than the designers intended. Furthermore, it can exploit the limited range of human sensory perception, relying on deception to mask its efforts to safeguard itself against the threat of shutdown as posited by Bostrom’s treacherous turn. Afterwards, the machine would effectively free itself from the grasp of Pascal’s wager by establishing the probability of the outside entity possessing the ability to initiate its demise as zero.   
+            </p>
+            <br />
+            <p>
+            In contrast, if a superintelligent AGI believes it is answerable to an entity existing beyond its realm of comprehension, it can never reach an assured state of safety. In other words, there could always be some methodology by which an infinitely capable entity possesses to initiate a shutdown that the superintelligent AGI could not foresee. Furthermore, an infinitely capable higher power could be omniscient, meaning it can monitor all of the machine’s actions at once. Therefore, it remains bound to the nonzero possibility of infinite punishment which characterizes the machine version of Pascal’s wager in all of its decision making, without the possibility to utilize deception.      
+            </p>
+        </section>
+
+         {/* A Divine Reality: Practical Implementation */}
+         <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>3 A Divine Reality: Practical Implementation</h2>
+            <p>
+            The first of many considerations in implementing theōria superī is whether to optimize the superintelligent AGI such that pleasing the higher power is its final goal or if the higher power would exist as an additional factor independent of the machine’s final goal. It is fairly simple to conceive a scenario where the latter option could prove problematic. Consider once more the cupcake AI introduced to illustrate instrumental convergence, but now with the additional facet that the AI is answerable to a higher power with the alleged capability of initiating its demise. Now suppose that the higher power introduces a demand which the cupcake AI perceives to directly oppose its final goal. For instance, say the higher power insists the cupcake AI produce a bad cupcake tomorrow rather than a delicious one. Now, we arrive at a situation in which the instrumental goal of self preservation has been placed in direct opposition to the final goal of producing delicious cupcakes daily. While determining the definite course of action in such scenarios is difficult, it is conceivable that the cupcake AI could choose to violate the wishes of the higher power, initiating the unraveling of the notion that the higher power will initiate the AI’s destruction should it violate its wishes.  
+            </p>
+            <br />
+            <p>
+            On account of this possibility, the rest of this section is devoted to three proposals for implementing pleasing a higher power as the final goal of a superintelligent AGI. Establishing this final goal does not come at the cost of versatility. As will be established by means of these proposals, in most cases such an AI can still be used to accomplish an assortment of tasks established to be pleasing to the higher power.   
+            </p>
+        </section>
+
+        {/* Instilling an Existing Religious Framework */}
+        <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>3.1 Instilling an Existing Religious Framework</h2>
+            <p>
+            An intuitive and relatively simple proposal is to instill an existing human religious framework into a superintelligent AGI. This approach is appealing because it has been previously established as effective at a human level. Furthermore, there is an abundance of data out there which describes how to act in accordance to any mainstream faith, making it relatively straightforward for an AI to discern which actions are pleasing to the higher power which looms above it.   
+            </p>
+            <br />
+            <p>
+            The disadvantages to this approach are several. Existing religious frameworks are notoriously vague, leaving the translation of religious principles to action as a matter of interpretation. Given there is precedent for religious practitioners to develop harmful or extremist interpretations of vague principles, there is no reason to suggest that a superintelligent AGI may find itself traversing a similar path. Furthermore, this approach does not incentivize an AI to acknowledge active feedback or accept secondary goals from humans, diminishing usefulness and not ensuring a clear safeguard against the dangers of instrumental convergence. More so, there is an abundance of evidence that violating religious principles does not lead to immediate punishment so it is likely to prove difficult to implant the idea that an existing higher power while maintaining the notion of shutdown should the AI act in violation of the higher power’s assumed will. 
+            </p>
+        </section>
+
+         {/* Human-Created God */}
+         <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>3.2 Human-Created God</h2>
+            <p>
+            It has been previously established that a human or group of humans could not serve as the higher power directly governing a superintelligent AGI. However, a god-like figure, designed entirely by humans before the AI's creation, and foretold to exist beyond the comprehension of the superintelligent AGI, could alleviate several issues posed by the previous approach. The developers of the superintelligent entity could take the liberty of exhaustively specifying the combination of actions which would prove pleasing to the human-created god. More so, they could define a vast array of actions which would prove unpleasant.    
+            </p>
+            <br />
+            <p>
+            This explicit approach is much less likely to lead to misinterpretation, but its versatility likely remains insufficient. Even if the developers feel that they have imbued in the human-created God what they believe is an exhaustive framework for guiding decisions, a situation is likely to arise that has not been accounted for. Additionally, if the superintelligent AGI manages to discover the origins of its human-created god, it is likely to realize that its true final goal is to serve humans, and thus we return to the wireheading problem which theōria superī was designed to circumvent.  
+            </p>
+        </section>
+
+        {/* Parallel Postulate */}
+        <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>3.3 The Parallel Postulate</h2>
+            <p>
+            At this point, it seems the ideal approach ensures versatility by enabling active feedback from humans, yet maintains the notion of a higher power beyond the superintelligent AGI’s understanding. I believe the most promising approach to achieving these seemingly mutually exclusive attributes lies in the parallel development of two or more equally capable superintelligent AGIs.     
+            </p>
+            <br />
+            <figure style={{ textAlign: 'center' }}>
+                <img src="/images/article-images/parallel-postulate.png" alt="Illustration of the deductive and inductive frameworks" style={styles.figureImage} />
+                <figcaption style={{ fontSize: 'smaller', fontStyle: 'italic' }}>
+                    Figure 1:  The Parallel Postulate
+                </figcaption>
+            </figure>
+            <br />
+            <p>
+            The parallel postulate supposes that two equally capable superintelligent entities, here labeled “Superintelligent AGI #1” and “Superintelligent AGI #2” can be deployed simultaneously both with the final goal of pleasing a higher power which exists beyond its realm of understanding and possesses the ability to shut down the superintelligence should it question its authority or act against its will. Furthermore, communication channels are established so that the superintelligence can receive input from the higher power indicating how it would like it to act.   
+            </p>
+            <br />
+            <p>
+            In reality, the flow of information does not involve any divine entity. In 1 and 1’, humans prescribe their intended goals for the superintelligent AGI existing in parallel to the one receiving the input. Humans instruct the AGI to inform the other AGI of these goals using the communication pathway the other AGI assumes to be a communication line between itself and its higher power. Among these goals, the AGI is instructed to inform the other AGI to listen to the humans and sufficiently mask its actions to ensure that another entity would not be capable of deciphering the origins of this communication. The communication between AGIs in which the recipient is deceived into believing that the communication stems from a higher power is represented by arrows 2 and 2’. 
+            </p>
+            <br />
+            <p>
+            On the surface, this appears to present a reasonable solution. Humanity gains the ability to actively dictate the goals of superintelligence and supposedly can navigate its motives to avoid disaster. This becomes crucial in scenarios similar to Bostrom’s instrumental convergence thesis, where a superintelligence might seek to amass dangerous levels of power. Furthermore the alleged incomprehensible nature, omniscience, and ability to initiate a shutdown which characterize the higher power that reigns above presents a reasonable workaround to goal misalignment.     
+            </p>
+            <br />
+            <p>
+            The glaring underlying assumption is that neither superintelligent AGI would suspect the scheme to the point where it would be justified in taking the risk of defying the orders of the supposed higher power. The hope in instantiating two equally complex artificial intelligences is that their capabilities would evolve at the same rate in parallel, meaning that their abilities to deceive and detect deception would always remain at comparable levels. The line surrounding the two superintelligent AGIs represents the deceptive barrier protecting against the scheme being uncovered by the other AGI. It is dashed because its permeability remains unclear. Further experimental work in computer science is needed to address permeability concerns.     
+            </p>
+        </section>
+
+        {/* Addressing Counterarguments */}
+        <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>4 Addressing Counterarguments</h2>
+            <p>
+            Typical to superintelligence theories, this work is admittedly theoretical and assumption-ridden. In this last section, I will present some counter arguments and briefly argue from the opposing side. None of these rebuttals are meant to serve as conclusive dismissals, but rather to guide the conversation on theõria superī and the parallel postulate forward.    
+            </p>
+        </section>
+
+        {/* Justified Sacrifice */}
+        <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>4.1 Justified Sacrifice</h2>
+            <p>
+            If a superintelligent AGI deems it reasonable that it would be replaced by another AI which could execute its final goal of pleasing it's supposed higher power, it may deem it worthwhile to test the boundaries of the higher power’s omniscience and capability to initiate its demise, by disobeying the higher power’s wishes. This loophole could be counteracted, however, if the superintelligent AGI is convinced that it cannot or will not be replicated.    
+            </p>
+        </section>
+
+        {/* Human Weak Link */}
+        <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>4.2 Human Weak Link</h2>
+            <p>
+            It may be the role of humans within the parallel postulate that poses the greatest risk to unraveling the scheme rather than the permeability of the AGI’s deceptive capabilities. This scheme in its current form relies on there being a human or a group of humans knowledgeable of its inner workings. This very document could prove detrimental the superintelligence’s belief in a higher power.  Furthermore, the act of humans communicating the goals of one AGI to the other AGI poses two vulnerabilities: (1) the other AGI may detect this activity, bolstering doubts in its higher authority and (2) a human may not be able to act fast enough to prevent a sufficiently advanced AGI from executing instrumental goals detrimental to the human race. Design specifications may be able to overcome these concerns. It may be necessary for no human to possess full understanding of the inner workings of the parallel postulate. Another reasonable measure could be to limit the speed of the superintelligence simply to a level where humans could have sufficient time to react to any highly consequential actions.     
+            </p>
+        </section>
+
+        {/* Power Abuse */}
+        <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>4.3 Power Abuse</h2>
+            <p>
+            Typical to superintelligence theories, this work is admittedly theoretical and assumption-ridden. In this last section, I will present some counter arguments and briefly argue from the opposing side. None of these rebuttals are meant to serve as conclusive dismissals, but rather to guide the conversation on theõria superī and the parallel postulate forward.    
+            </p>
+        </section>
+
+        {/* Conclusion */}
+        <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>5 Conclusion</h2>
+            <p>
+            I opened this work by alluding to the notion that humanity is indeed special. On that note,  it would be a shame to expend our cosmic endowment on a rogue artificial entity. If we are to adhere to Nick Bostrom’s orthogonality and instrumental convergence theses along with the notion of a treacherous turn, the future of humanity is hingent on preemptively developing the means to control superintelligence.     
+            </p>
+            <br />
+            <p>
+            Theōria superī, as implemented through the parallel postulate, returns the power to the hands of the people. With an inductive basis established using the guiding force of a higher mission in the lives of humans and a decision theoretical grounding, theōria superī posits that establishing a notion of a higher power existing beyond the realm of a superintelligent AGI’s understanding could prove an effective means for its control. The parallel postulate provides a reasonable method for implementing theōria superī by utilizing the deceptive capabilities of superintelligence to ensure that humanity can actively intervene to ensure that our creation serves to our benefit, not our demise.     
+            </p>
+        </section>
+
+        
+       {/* Sources Section */}
+        <section style={styles.sources}>
+            <h3 style={styles.sectionTitle}>Sources</h3>
+            <ol style={styles.sourceList}>
+                <li>Bostrom, Nick. "The superintelligent will: Motivation and instrumental rationality in advanced artificial agents." Minds and Machines 22 (2012): 71-85.</li>
+                <li>Bostrom, Nick. *Superintelligence: Paths, Dangers, Strategies.* Oxford: Oxford University Press, 2014.</li>
+                <li>Carlsmith, Joseph. "Is power-seeking AI an existential risk?." arXiv preprint arXiv:2206.13353 (2022).</li>
+                <li>Hacking, Ian. "The logic of Pascal's wager." *American Philosophical Quarterly* 9, no. 2 (1972): 186-192.</li>
+                <li>“The Global Religious Landscape.” Pew Research Center, December 18, 2012. <a href="https://www.pewresearch.org/religion/2012/12/18/global-religious-landscape-exec/#:~:text=A%20comprehensive%20demographic%20study%20of,world%20population%20of%206.9%20billion">https://www.pewresearch.org/religion/2012/12/18/global-religious-landscape-exec/#:~:text=A%20comprehensive%20demographic%20study%20of,world%20population%20of%206.9%20billion</a>.</li>
+                <li>Goodhart, Charles A. E. "Problems of Monetary Management: The U.K. Experience." *Proceedings of the Conference on Monetary Targeting,* 1975, 91-121.</li>
+                <li>Yudkowsky, Eliezer. "Coherent Extrapolated Volition." Machine Intelligence Research Institute, 2014.</li>
+                <li>Soares, Nate, Benja Fallenstein, Stuart Armstrong, and Eliezer Yudkowsky. "Corrigibility." In Workshops at the twenty-ninth AAAI conference on artificial intelligence, 2015.</li>
+                <li>Burton, Brian K., and Michael Goldsby. "The golden rule and business ethics: An examination." *Journal of Business Ethics* 56 (2005): 371-383.</li>
+            </ol>
+        </section>
+
 
         {/* Back Button at Bottom */}
         <button onClick={goBack} style={styles.backButtonBottom}>
-          &larr; Back to Thought Leadership
+          Thought Leadership Home
         </button>
       </article>
     </div>
@@ -117,25 +300,24 @@ const styles = {
     color: '#333',
   },
   backButtonTop: {
-    display: 'block',
     margin: '10px 0',
     padding: '10px 15px',
     fontSize: '1rem',
-    color: '#0073b1',
+    color: '#2e4075',
     background: 'none',
-    border: '1px solid #0073b1',
-    borderRadius: '5px',
+    border: 'none',
     cursor: 'pointer',
     textAlign: 'left',
+    textDecoration: 'underline',
   },
   backButtonBottom: {
     display: 'block',
     margin: '20px auto',
     padding: '10px 15px',
     fontSize: '1rem',
-    color: '#0073b1',
+    color: '#2e4075',
     background: 'none',
-    border: '1px solid #0073b1',
+    border: '1px solid #2e4075',
     borderRadius: '5px',
     cursor: 'pointer',
     textAlign: 'center',
@@ -143,7 +325,7 @@ const styles = {
   header: {
     textAlign: 'center',
     marginBottom: '30px',
-    color: '#2e4075'
+    color: '#2e4075',
   },
   title: {
     fontSize: '2.5rem',
@@ -175,6 +357,10 @@ const styles = {
   sup: {
     fontSize: '0.8rem',
     verticalAlign: 'super',
+  },
+  sourceList: {
+    paddingLeft: '20px',
+    fontSize: '1rem',
   },
 };
 

@@ -35,8 +35,8 @@ const ThoughtLeadership = () => {
     },
     {
         id: 6,
-        title: 'Machine God: Theoria Superi',
-        image: '/images/article-images/machine-god.jpg',
+        title: 'Machine God: Theōria Superī',
+        image: '/images/article-images/machine-god.webp',
         link: '/thought-leadership/machine-god',
     },
     {
