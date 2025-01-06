@@ -12,15 +12,15 @@ const ArticleTemplate = () => {
     <div style={styles.container}>
       {/* Back Button at Top */}
       <button onClick={goBack} style={styles.backButtonTop}>
-        &larr; Back to Thought Leadership
+        &larr; Back
       </button>
 
       {/* Article Header */}
       <header style={styles.header}>
-        <h1 style={styles.title}>Why Machines Can't Act From Ethics</h1>
+        <h1 style={styles.title}>How often do men think about the Roman Empire? Misconceptions of Roman Masculinity</h1>
         <p style={styles.subtitle}>Zachary Robers</p>
         <img 
-          src="/images/article-images/machine-ethics.jpg" 
+          src="/images/article-images/roman-masculinity.jpg" 
           alt="Placeholder for article image" 
           style={styles.heroImage} 
         />
@@ -32,75 +32,112 @@ const ArticleTemplate = () => {
         <section style={styles.section}>
           <h2 style={styles.sectionTitle}>Introduction</h2>
           <p>
-            Captain Chesley “Sully” Sullenberger is rightly lauded as an American hero. After dual engine failure from a bird attack at low altitude, Sully was forced to decide the best course of action to protect his passengers of US Airways Flight 1549 and the people of New York City<sup style={styles.sup}>1</sup>. Undoubtedly, Sully faced many questions with limited time, grappling with ethical dilemmas such as his responsibility to protect the lives of his passengers over normal civilians and the value of infrastructure relative to human life. Ultimately, Sully made the decision to land the plane on the Hudson River. The remarkable survival of all 155 occupants led the event to later be coined the “Miracle on the Hudson.”<sup style={styles.sup}>2</sup>
-          </p>
-          <p>
-            Despite the miraculous outcome, critics would later question whether Captain Sullenberger’s decision was indeed the right course of action. Flight simulations confirmed the possibility of successfully landing the plane at either LaGuardia or Teterboro airports if immediate action was taken to turn around the plane upon engine failure<sup style={styles.sup}>3</sup>. However, these simulations failed to account for the innate imperfection of human decision-making. That is, humans take time to make decisions—especially those with great ethical implications. The idea that Sully would immediately turn around the plane and return to the airport without properly assessing the weight of possible injury to civilians and damage to buildings near the airport should the plane not reach the runway runs counter to human nature. By this reasoning, any doubts of Sully’s decision are unfounded, supporting his reputation as a public hero.
-          </p>
-          <p>
-            While Sullenberger’s legacy is secure, the possibility of turning around the plane and landing safely at the airport without damage to occupants nor destruction of the aircraft lends way to some interesting hypotheticals. Namely, with the rise of artificial intelligence entities, it is a worthwhile exercise to consider the same situation but with an AI model at the helm. Given rapid advances in the field, it seems reasonable that an AI model would have the capability to weigh the possible outcomes at the point of engine failure. And not only would such a model yield the capability of making a decision: given the right training, this AI pilot should have been able to recognize the opportunity to land safely at LaGuardia or Teterboro, decide on such a course, and precisely navigate the plane to the airport just as the pilots later managed in the flight simulator. Armed with rapid processing speeds, more information, more knowledge, and better intuition from near limitless training, this hypothetical AI pilot seems better equipped to handle the situation and produce a near optimal outcome. It seems that while Sully’s actions produced the best outcome we could expect from a human in this scenario, an AI model has the capability to outperform the seasoned pilot, propelling a greater miracle.
-          </p>
-          <p>
-            Regardless of the advances in artificial intelligence, this AI pilot would still have to reconcile uncertainty in its decision-making. At the most fundamental level, chaotic systems such as weather prohibit the possibility of a successful emergency landing at LaGuardia from ever reaching 100 percent<sup style={styles.sup}>4</sup>. Ergo, an AI pilot must grapple with deciding between certain probabilities and levels of harm to humans and society depending on its course of action upon engine failure. This decision is inherently ethical as it must include the possibility of harm<sup style={styles.sup}>5</sup>. Thus, here we find a scenario distinct from the numerous autonomous trolley problems in that an AI poses a unique capability to make a better decision than a human, but the AI entity must make a decision with ethical implications.
+          In September 2023, women worldwide asked their male friends or partners a simple question: “How often do you think about the Roman Empire?” Short clips of men responding to this question rapidly circulated across the social media platforms TikTok and Instagram, driven by shockingly high responses. Entertainment value aside, these clips imply a strong correlation between gender and the amount of time one spends pondering the likes of Caesar and Constantine, underscoring the prevalent belief that Ancient Rome has distinctly masculine undertones. USA Today Columnist Rex Huppke was not immune to the gendered connotations of the trend, satirically commenting that his lack of thoughts about the Roman Empire made him feel “insecure.” In his column, Huppke doubles down on the perceived manliness of Ancient Rome, citing “gladiators and swords and towering marble columns” as evidence that Roman society was “man-centric.” This social media trend and Huppke’s column contribute to general misconceptions of the degree to which Roman Society conforms to modern interpretations of masculinity. While the power dynamic in Ancient Rome was undoubtedly dominated by men, the claim that Rome was distinctly a man’s world, as perpetuated by the “How often do men think about the Roman Empire?” trend and Huppke’s column, is often exaggerated and falsely justified. Ultimately, the modern narrative overstates the degree to which warfare dominated Rome, diminishes the behind-the-scenes role of women, and discounts the presence of art, literature, and philosophy relative to barbaric spectacles such as the gladiatorial games. Furthermore, standards for masculinity in the ancient world fundamentally differ from modern interpretations of manliness, further separating beliefs that Ancient Rome was manly from reality.
           </p>
         </section>
 
-        {/* Acting From Ethics Section */}
+        {/* Overstated Military Presence in the Republic and Empire */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>The Importance of Acting From Ethics</h2>
+          <h2 style={styles.sectionTitle}>Overstated Military Presence in the Republic and Empire</h2>
           <p>
-            Kant’s “Groundwork for the Metaphysics of Morals” first addresses the difference between acting ethically and acting from ethics<sup style={styles.sup}>6</sup>. In doing so, he equates ethics to duty, but this debate is irrelevant to the argument at hand so we ignore this distinction and talk simply in terms of ethics. In essence, acting ethically amounts to making decisions that align with ethical principles while acting from ethics necessitates a deliberate effort to do the right thing. To act from ethics means that the desire to be ethical is an explicit motivation for one’s actions—being ethical is not the result of one’s actions but the reason for them.
+          Given the historical delegation of military operations to men, it is no surprise that the notion of Rome as a militaristic, war-mongering society is used to perpetuate the conception that Rome was especially masculine. In particular, Huppke suggests a return to a “Roman-Empire-style patriarchy” would “create a place of near-constant war.” However, the prevalence of warfare within the Roman world is often overstated. For much of the history of Roman Civilization, military service was reserved for property owners. Until the tribuneship of Gaius Marius and the Marian Reforms, property ownership was required for Roman military service. Considering land was highly concentrated among the Patricians, this policy limited warfare to a practice of the ruling elites. 
           </p>
+          <br />
           <p>
-            It takes little imagination to picture a machine capable of acting ethically. From a utilitarian standpoint, a machine as simple as an automatic door acts ethically as it maximizes happiness by providing a useful service. Some philosophers argue acting from ethics only requires a single additional layer of abstraction. James H Moor’s “Ethical Robots” suggests that an AI model’s understanding of ethics could be as trivial as a hard-coded script to determine the most ethical course of action<sup style={styles.sup}>7</sup>. He claims an explicit ethical agent can act from ethics so long as it selects from multiple courses of action depending on its parameters in an ethical way. This loose definition of acting from ethics disregards the previously asserted notion that to act from ethics, ethics must be a reason for a machine’s action. To act from something implies that that thing has a direct role in one's own explanation of one’s action. On the other hand, Kant insists that acting from ethics necessitates consciousness, but the abstract nature of what it means to be conscious makes it difficult to explicitly determine whether a machine can act from ethics and what would be required in order for a machine to do so. On this line, we deploy a stronger definition of acting from ethics in this work than Moor and a more concrete definition than Kant. In this paper, a machine is said to act from ethics if the machine can motivate its actions at the most granular level in part through ethical principles. We will touch more on the significance of this definition later.
+          Furthermore, mainstream interpretations of Roman History suggest that Rome was a civilization constantly at war. Yet, relative to modern nations, such as the United States, Rome was typically engaged in less external conflicts, as indicated by the figure below.   
           </p>
+          <br />
+          <figure style={{ textAlign: 'center' }}>
+                <img src="/images/article-images/conflict-chart.png" alt="Illustration of the deductive and inductive frameworks" style={styles.figureImage} />
+                <figcaption style={{ fontSize: 'smaller', fontStyle: 'italic' }}>
+                    Figure 1:  Comparison of Active External Conflicts at a Given Time Between the United States and the Roman Republic and Empire
+                </figcaption>
+          </figure>
+          <br />
           <p>
-            The importance of teaching machines to act from ethics lies in the versatility of this form of reasoning. A machine capable of motivating its actions from ethics can apply ethical principles to any scenario just as a person can respond to a continuum of ideas with consistency of their moral principles. Even modern artificial intelligence techniques extrapolate. Machine learning (ML) enables an AI to learn from training data and then act in line with its training when faced with a variety of novel scenarios<sup style={styles.sup}>8</sup>. In many cases, ML uses a discrete set to prepare an AI to respond to a continuum of possible scenarios. The validity of this method hinges on the assumption that there will always be useful information from the training data to act in an appropriate manner. But with a continuum of possible scenarios, a discrete training set can never contain relevant information for every possible situation an AI may face<sup style={styles.sup}>9</sup>. Thus enters extrapolation—instances in which training data is extended beyond its relevance. The capability to act from ethics bypasses this concern by enabling an intelligence entity to simply apply ethical principles to any scenario. With an understanding of what it means to be ethical, a human can justify what they perceive to be an ethical course of action independent of their lived experiences. Teaching AI to act in a similar fashion would make the technology adaptable and more useful to society. Logically, the ensuing consideration is whether it is possible for machines to act from ethics. This consideration is next answered from two perspectives, one that relies on the necessity of responsibility in acting from ethics and another from the basis of distinctively mathematical explanations.
+          The analysis presented by this figure is complicated by differences in the scale and impact of modern and ancient conflicts along with the availability and reliability of data on the existence and duration of each ancient conflict. However, it demonstrates the critical qualitative observation that modern nations, such as the United States, tend to engage in external military conflicts at a comparable or higher rate to the Roman Republic and Empire. Effectively, this observation counters the perception that Ancient Rome was more eager to engage in military conflict. 
+          </p>
+          <br />
+          <p>
+          Furthermore, extended periods of peace and prosperity, rather than rampant warfare, characterized many Roman Eras. During the Pax Romana under Augustus (27 BC - 14 AD), economic expansion dominated the Roman landscape as opposed to military conquest and masculine displays of force. Likewise, the Period of Five Good Emperors (96 AD - 180 AD) proved so prosperous that 18th-century historian Edward Gibbon would later proclaim: “If a man were called to fix the period in the history of the world, during which the condition of the human race was the most happy and prosperous, he would, without hesitation, name that which elapsed from the death of Domitian to the accession of Commodus”. As Gibbon’s testimony indicates, war did not always dominate the Roman landscape as the Roman Empire also fostered unparalleled periods of peace and prosperity.
+          </p>
+          <br />
+          <p>
+          Altogether, the limited participation in warfare, prevalence of periods of war relative to modern societies, and existence of significant periods of peace serve to reject the narrative that the Roman Empire was a society characterized by unprecedented militarism and constant warfare. Given military force and war are commonly associated with modern masculinity, the overstatement of Ancient Rome’s militarism contributes to the false notion that Rome was notably “man-centric” by modern standards.
           </p>
         </section>
 
-        {/* Responsibility Section */}
+        {/* Diminished Role of the Roman Woman */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>The Role of Responsibility in Acting From Ethics</h2>
+          <h2 style={styles.sectionTitle}>Diminished Role of the Roman Woman</h2>
           <p>
-            From an outsider’s perspective, a young child is most often free from responsibility for their actions. They are perceived to lack the moral agency to make ethical decisions. Instead, each time a child acts ethically or unethically, their parents are held responsible for their choices. A toddler’s insistence on not sharing or insisting on getting what they want is commonly attributed to “bad parenting.”
+          Huppke’s column is among numerous written works that perpetuate the idea that Roman society was characterized by limited rights for women, leading him and others to falsely conflate Rome with masculinity. Indeed, Roman law ensured that men dominated leadership positions and controlled financial matters, contributing to the conception that Rome was a man’s world. However, Roman women played a consistent behind-the-scenes role in influencing the course of Roman History that is often missing or understated in historical accounts. Amidst the heightened tensions spurred by the land reforms of Tiberius Gracchus, it was Cornelia, the mother of the Gracchi brothers, who stepped in as a moral force to guide the republic to stability. In response to the imposition of a tax on wealthy Roman women, Hortensia stood up for her rights, making a speech directed at the second triumvirate. And it was Fulvia, the wife of Mark Antony, who engaged Octavian in the Perusine War, escalating political tensions that eventually led to the dissolution of the republic.
           </p>
+          <br />
           <p>
-            The notion of bad parenting has direct implications on the human perception of the causal structure of a child’s actions. We see the child’s parenting as so close to the causal sequence that led the child to act that we deem their impact greater than that of the child’s independent ethical faculties. Thus, we divert the responsibility for the child’s action to the parent rather than the child themselves. This is also the case with artificial intelligence entities. Numerous failures in AI, such as Uber’s self-driving car killing a pedestrian, have been ascribed to the creator of the technology rather than the technology itself<sup style={styles.sup}>10</sup>.
-          </p>
-          <p>
-            For humans, responsibility is eventually transferred to the younger generation. Rare are the instances in which one ascribes the actions of a 30-year-old to bad parenting. Instead, the actions of an adult are attributed to the adult themself. This is not to say that an adult's parent’s role is eliminated from the causal structure of their actions. Lewis’ counterfactual account of causation makes it clear that the parent raising the child will always be a link in the causal chain leading to an action<sup style={styles.sup}>11</sup>. At some point, this link is simply deemed too insignificant to warrant responsibility.
-          </p>
-          <p>
-            Only when this responsibility transfer occurs do we see a human as capable of acting from ethics. Thus, for a machine to act from ethics, we must see a division in the causal structure from the creator to the acts of the creation. Once more deploying a counterfactual framework, if a machine is responsible for its actions, then in the closest alternate world where the machine takes the ethically wrong course of action, it would be viewed as unethical. However, the validity of such an alternate world depends on the notion that the machine actively resists the impulse to take the ethically wrong course of action. Nyholm asserts that this is not a conceptual possibility as it runs counter to the machine’s guiding ethical principles necessary for it to be ethical in the first place<sup style={styles.sup}>12</sup>. Machines today are not capable of adhering to ethical principles by resisting the urge to violate them. Thus, we are unable to foresee a responsibility shift from the creators of artificial intelligence to AI itself without violating ethics. Granted this responsibility shift was previously argued to be essential to acting from ethics, we find considerable doubt in the ability of a machine to act from ethics through an analysis of its responsibility.
+          These women exemplified a sense of agency and social influence uncharacteristic of most civilizations until modern times. Furthermore, the limited rights of aristocratic women were notably generous for their time. According to historian Jane F. Gardner, “[Roman] women had rights and legal protections that were unusual in the ancient world ”. For instance, the “Ius trium liberorum” or “the right of three children” provided elite women with financial and legal autonomy should they bear three or more children. While Huppke and others are correct to brand Ancient Rome as “highly man-centric” relative to modern times, policies like the right of three children serve to support the idea that Rome embodied progressive viewpoints on gender roles, rejecting claims of unconfined male dominance.
           </p>
         </section>
 
-        {/* Mathematical Explanations Section */}
+        {/* The Prominence of Art, Literature, and Philosophy in Roman Society */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Distinctively Mathematical Explanations for Machine Action</h2>
+          <h2 style={styles.sectionTitle}>The Prominence of Art, Literature, and Philosophy in Roman Society</h2>
           <p>
-            Marc Lange’s “What Makes an Explanation Distinctively Mathematical?” defines a distinctively mathematical explanation as one that flows directly from mathematical truths<sup style={styles.sup}>13</sup>. These truths possess a necessity and stability which makes them more powerful than empirical truths. Any explanation one can base entirely from these truths extends the necessity and stability of the truths themselves, lending way to a stronger and more rigorous line of reasoning.
+          Huppke presents the extracurricular endeavors of Ancient Romans as especially barbaric, noting the presence of “gladiators and swords.” This justification for the masculinity of the Roman world fails to account for the academic endeavors of the Roman elites. An astute focus on the arts, literature, and philosophy suggests a more civilized society with an intent focus on non-gendered activities. 
           </p>
+          <br />
           <p>
-            If something can be explained distinctively mathematically, no room is left for human agency and emotion which cannot be modeled mathematically due to their inherent chaos. This incompatibility makes it impossible to provide a motivation that contains ethical considerations as ethics is dependent on agency and emotion. Applying the definition in the previous discussion on acting from ethics, this means that no entity whose actions can be explained distinctively mathematically can act from ethics. Naturally, this conclusion leads one to consider whether all machine actions can be explained distinctively mathematically.
+          The Roman Forum serves as perhaps the most outward sign of the attention the Romans paid to the arts. Decadent architecture and detailed statues capture an immense focus on the perceived beauty of one’s surroundings. Roman architectural advancements, formed through careful reflection on structural stability and aesthetics, proved so prominent that buildings today still contain many Roman characteristics. 
           </p>
+          <br />
           <p>
-            Despite remarkable capabilities, even the most advanced artificial intelligences can be reduced to a sequence of 1s and 0s—the most basic mathematical representation of numbers<sup style={styles.sup}>14</sup>. After all, they must be run on computers, which, despite advances in quantum computing, work simply in terms of reading and writing bits. Even seemingly stochastic processes often rely on pseudo-random generation which is a mathematically definable process<sup style={styles.sup}>15</sup>. The parameters entered into a machine are notably not necessarily mathematical, but by the time they are codified to be entered into the AI model, they too exist at the mathematical level—simply another sequence of 1s and 0s to execute a set of processes. Thus, if an AI model is simply a sequence of operations on 1s and 0s, its actions can be explained distinctively mathematically. Ergo, machine actions are a matter of mathematical necessity, leaving no room for the chaos of ethics.
+          From Vergil’s Aneid to Ovid’s Metamorphoses, Roman literature deploys poetic language to conjure complex emotional responses, again displaying an academic and civilized side of Roman society. For instance, Ovid writes in Metamorphoses, “In the make-up of human beings, intelligence counts for more than our hands, and that is our true strength”. Not only does this profound statement serve as a literal rejection of the barbarian narrative, one can see in the writing of Ovid and others a desire to express language artfully. 
+          </p>
+          <br />
+          <p>
+          Rather than supporting the endless pursuit of conquest, Roman philosophies champion living a life with a nuanced appreciation for existence and morality. One prominent school of thought in Ancient Rome, stoicism, emphasizes living a virtuous life. Emperor Marcus Aurelius, a stoic, wrote that a man should “waste no more time arguing about what a good man should be” and rather just “be one”. Auerulius’ desire for personal growth and self-control once more defies the barbaric narrative as Roman philosophies place values over pleasure and brute masculinity.   
           </p>
         </section>
 
-        {/* Conclusion Section */}
+        {/* Differences in Ancient and Modern Conceptions of Masculinity */}
         <section style={styles.section}>
+          <h2 style={styles.sectionTitle}>Differences in Ancient and Modern Conceptions of Masculinity</h2>
+          <p>
+          While numerous factors demonstrate how Ancient Roman society failed to conform to modern masculinity, it is also important to note a disconnect between how the Romans defined masculinity compared to the present day. In the Greco-Roman world, masculinity was less intertwined with anatomical sex, functioning as an idealized way to live one’s life. Masculinity centered on virtue, with a particular emphasis on self-control. The Romans did not idolize the pursuit of tyrannical power and luxury but rather felt that such pursuits made one effeminate. Furthermore, the gender of one’s sexual partners did not play a role in determining their masculinity. Men could freely engage in homosexual acts without damage to their perception, so long as they were the dominant/active partner.
+          </p>
+          <br />
+          <p>
+          In contrast, modern masculinity is far more superficial, centering around strength, aggression, and power while disparaging homosexual relations. These critical differences between modern and ancient masculinity further invalidate claims that Rome was a distinctly masculine civilization by modern standards as Roman men did not seek to espouse the same characteristics as modern masculinity idolizes. Furthermore, pursuing masculinity was not solely a matter for the Roman man, making it more difficult to associate Rome with a particular gender.  
+          </p>
+        </section>
+
+         {/* Conclusion */}
+         <section style={styles.section}>
           <h2 style={styles.sectionTitle}>Conclusion</h2>
           <p>
-            The Sullenberger scenario presents the advantages of teaching AI to be ethical. Technical advances in machine learning can and have yielded machines with the capability of acting ethically. But machines acting from ethics, a key distinction that makes machine ethics generalizable to a continuum of scenarios, is proven unlikely given the current state of technological progress both from the standpoint of responsibility and the distinctively mathematical basis for machine action. Given the progress of theoretical computing techniques like quantum computing, we cannot limit the conceptual possibility of a machine reaching this level of thinking. However, this work suggests that fundamental technological advancement is necessary to act from ethics, specifically in a way that shifts responsibility towards AI and differentiates the explanations for its actions from a distinctively mathematical line of reasoning.
+          The “How often do men think about the Roman Empire?” social media trend and Huppke’s column support the notion that the Roman Republic and Empire was a particularly masculine civilization. However, an examination of the justification for these claims, including militarism, barbaric activities, and the diminished role of the Roman woman results, shows that relative to other historical groups, the Romans did not possess a tendency to prioritize the Roman man or manly characteristics. Instead, the Romans offered progressive social standing and rights to aristocratic women, engaged in less warfare than mainstream interpretations of Roman History suggest, and prioritized scholarly endeavors. Along with a discrepancy between Roman and modern interpretations of masculinity, these findings disrupt the gendered foundation for the “How often do men think about the Roman Empire?” social media trend and Huppke’s claim that Rome was “highly man-centric.”
           </p>
+        </section>
+
+        {/* Sources Section */}
+        <section style={styles.sources}>
+            <h3 style={styles.sectionTitle}>Sources</h3>
+            <ol style={styles.sourceList}>
+                <li>Huppke, Rex. “I Never Think about the Roman Empire. Does This Mean I’ll Lose My Man Card?” *USA Today,* September 21, 2023. <a href="https://www.usatoday.com/story/opinion/columnist/2023/09/21/men-think-roman-empire-tiktok-trend-state-masculinity/70912148007/">https://www.usatoday.com/story/opinion/columnist/2023/09/21/men-think-roman-empire-tiktok-trend-state-masculinity/70912148007/</a>.</li>
+                <li>Gambino, Michael C. "The Military Reforms of Gaius Marius in their Social, Economic, and Political Context." August 2015.</li>
+                <li>Stephenson, Andrew. *Public Lands and Agrarian Laws of the Roman Republic.* Project Gutenberg, 2004. Accessed April 26, 2024.</li>
+                <li>Goldsworthy, Adrian. *Pax Romana: War, Peace and Conquest in the Roman World.* Hachette UK, 2016.</li>
+                <li>Gibbon, Edward. *The History of the Decline and Fall of the Roman Empire.* Edited by David Womersley. 3 vols. Penguin Classics, 1994.</li>
+                <li>Gardner, Jane F. *Women in Roman Law and Society.* Routledge, 2008.</li>
+                <li>Anderson, William S., ed. *Ovid's Metamorphoses.* University of Oklahoma Press, 1997.</li>
+                <li>Aurelius, Marcus. *Meditations.* Penguin, 2015.</li>
+                <li>Asikainen, Susanna. "Masculinities in the Ancient Greco-Roman World." In *Jesus and Other Men,* pp. 19-45. Brill, 2018.</li>
+            </ol>
         </section>
 
         {/* Back Button at Bottom */}
         <button onClick={goBack} style={styles.backButtonBottom}>
-          &larr; Back to Thought Leadership
+        Thought Leadership Home 
         </button>
       </article>
     </div>
@@ -117,25 +154,24 @@ const styles = {
     color: '#333',
   },
   backButtonTop: {
-    display: 'block',
     margin: '10px 0',
     padding: '10px 15px',
     fontSize: '1rem',
-    color: '#0073b1',
+    color: '#2e4075',
     background: 'none',
-    border: '1px solid #0073b1',
-    borderRadius: '5px',
+    border: 'none', 
     cursor: 'pointer',
     textAlign: 'left',
+    textDecoration: 'underline', 
   },
   backButtonBottom: {
     display: 'block',
     margin: '20px auto',
     padding: '10px 15px',
     fontSize: '1rem',
-    color: '#0073b1',
+    color: '#2e4075',
     background: 'none',
-    border: '1px solid #0073b1',
+    border: '1px solid #2e4075',
     borderRadius: '5px',
     cursor: 'pointer',
     textAlign: 'center',
@@ -175,6 +211,10 @@ const styles = {
   sup: {
     fontSize: '0.8rem',
     verticalAlign: 'super',
+  },
+  sourceList: {
+    paddingLeft: '20px',
+    fontSize: '1rem',
   },
 };
 
