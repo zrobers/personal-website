@@ -48,7 +48,7 @@ const ArticleTemplate = () => {
           </p>
           <br />
           <figure style={{ textAlign: 'center' }}>
-                <img src="/images/article-images/conflict-chart.png" alt="Illustration of the deductive and inductive frameworks" style={styles.figureImage} />
+                <img src="/images/article-images/conflict-chart.png" alt="Conflict Graphs" style={styles.figureImage} />
                 <figcaption style={{ fontSize: 'smaller', fontStyle: 'italic' }}>
                     Figure 1:  Comparison of Active External Conflicts at a Given Time Between the United States and the Roman Republic and Empire
                 </figcaption>
