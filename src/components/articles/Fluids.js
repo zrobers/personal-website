@@ -19,9 +19,9 @@ const BuoyantForceAnalysis = () => {
       {/* Article Header */}
       <header style={styles.header}>
         <h1 style={styles.title}>Mathematical Analysis of the Buoyant Force in Non-Newtonian Fluids</h1>
-        <p style={styles.subtitle}>Zachary M. Robers</p>
+        <p style={styles.subtitle}>Zachary Robers</p>
         <img 
-          src="/images/article-images/buoyancy.jpg" 
+          src="/images/article-images/buoyancy.png" 
           alt="Placeholder for article image" 
           style={styles.heroImage} 
         />
@@ -36,7 +36,7 @@ const BuoyantForceAnalysis = () => {
             This paper details the construction of a physical apparatus for measuring the position of an object
             submerged in liquid rising due to the buoyant force. Physical data is then analyzed alongside a
             differential equation derived from Newton’s Second Law, which when solved, models the
-            position of an object rising due to the buoyant force as a function of time...
+            position of an object rising due to the buoyant force as a function of time. Subsequently, these methods are extended to the analysis of the buoyant force inside oobleck, a dilatant non-Newtonian fluid. A revised apparatus is constructed to allow for physical observation in spite of oobleck’s opaque nature. Mathematical and physical theory to explain the abnormal behavior of oobleck’s buoyant force is proposed and analyzed using second order differential equations.
           </p>
         </section>
 
@@ -53,8 +53,15 @@ const BuoyantForceAnalysis = () => {
           </div>
           <p>
             Where &rho; is the fluid density, g is the gravitational constant (9.81), and V is the volume of the object
-            submerged in the fluid...
+            submerged in the fluid.
           </p>
+          <br />
+          <p> 
+          When an object rises due to the buoyant force, it is subject to resistance in the form of drag. In this case, we will use Stoke’s Law to approximate drag of our spherical object: 
+          </p>
+          <div style={styles.equation}>
+            F<sub>D</sub> = 6&pi;&nu;Rv
+          </div>
         </section>
 
         {/* Oobleck Section */}
