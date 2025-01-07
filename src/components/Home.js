@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
 import Slideshow from '../components/Slideshow'; // slideshow component
+import ArticleCarousel from '../components/Article_Carousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faBrain, faChartLine, faCogs } from '@fortawesome/free-solid-svg-icons';
 import { FaSchool, FaMapMarkerAlt, FaLaptopCode, FaHiking, FaCalendar, FaGraduationCap } from 'react-icons/fa';
@@ -136,27 +137,20 @@ const Home = () => {
             <img src="/images/echhsaa.png" alt="The ECHHS Alumni Association" style={styles.logo} />
           </a>
         </div>
-        <a href="/nonprofit" style={styles.learnMoreLink}>
+        <a href="/nonprofit" style={styles.learnMoreLinkInverted}>
           Learn More
         </a>
       </div>
 
       {/* Thought Leadership Section */}
-      <div style={styles.nonprofitSection}>
-        <h2 style={styles.nonprofitTitle}>Thought Leadership</h2>
-        <p style={styles.nonprofitDescription}>
+      <div style={styles.thoughtLeadershipSection}>
+        <h2 style={styles.thoughtLeadershipTitle}>Thought Leadership</h2>
+        <p style={styles.thoughtLeadershipDescription}>
           Modern challenges necessitate novel insights. Read my unique thoughts on the ethics and philosophy of AI, leadership in a digital age, and the intersection of classical antiquity and the modern day.
         </p>
-        <div style={styles.nonprofitLogos}>
-          <a href="https://www.sailea.org" target="_blank" rel="noopener noreferrer">
-            <img src="/images/sailea.png" alt="The Scholastic Artificial Intelligence League" style={styles.logo} />
-          </a>
-          <a href="https://www.echhsalumni.org" target="_blank" rel="noopener noreferrer">
-            <img src="/images/echhsaa.png" alt="The ECHHS Alumni Association" style={styles.logo} />
-          </a>
-        </div>
-        <a href="/nonprofit" style={styles.learnMoreLink}>
-          Learn More
+        <ArticleCarousel />
+        <a href="/thought-leadership" style={styles.learnMoreLink}>
+          Thought Leadership Home
         </a>
       </div>
 
@@ -309,15 +303,33 @@ const styles = {
     padding: '40px',
     backgroundImage: 'url("/images/modern-pattern.png")', // Replace with your modern pattern image
     backgroundSize: 'cover',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#2e4075',
   },
   nonprofitTitle: {
+    fontSize: '2.5rem',
+    color: '#fff',
+    fontWeight: 'bold',
+    marginBottom: '20px',
+  },
+  nonprofitDescription: {
+    fontSize: '1.2rem',
+    color: '#fff',
+    marginBottom: '30px',
+  },
+  thoughtLeadershipSection: {
+    textAlign: 'center',
+    padding: '40px',
+    backgroundImage: 'url("/images/modern-pattern.png")', // Replace with your modern pattern image
+    backgroundSize: 'cover',
+    backgroundColor: '#ffffff',
+  },
+  thoughtLeadershipTitle: {
     fontSize: '2.5rem',
     color: '#2e4075',
     fontWeight: 'bold',
     marginBottom: '20px',
   },
-  nonprofitDescription: {
+  thoughtLeadershipDescription: {
     fontSize: '1.2rem',
     color: '#2e4075',
     marginBottom: '30px',
@@ -339,6 +351,16 @@ const styles = {
     fontSize: '1.2rem',
     color: '#ffffff',
     backgroundColor: '#2e4075',
+    padding: '10px 20px',
+    textDecoration: 'none',
+    borderRadius: '5px',
+    fontWeight: 'bold',
+  },
+  learnMoreLinkInverted: {
+    display: 'inline-block',
+    fontSize: '1.2rem',
+    color: '#2e4075',
+    backgroundColor: '#ffffff',
     padding: '10px 20px',
     textDecoration: 'none',
     borderRadius: '5px',
