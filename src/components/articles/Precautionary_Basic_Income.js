@@ -68,7 +68,7 @@ const ArticleTemplate = () => {
             </p>
             <br />
             <p>
-              James provides several worthwhile alternatives to work, mentioning volunteering and creative or sporting pursuits as key components of the new social contract<sup style={styles.sup}>13</sup>. James and others plead that meaning-related goods can still be obtained without work, picturing a utopia in which humans take pleasure in using their newfound free time to deepen relationships, engage in service, and actively partake in games. However, these claims rely on two key assumptions. First, James takes it as given that humans will willingly engage in these activities under the new social contract. Second, he assumes that humans will receive the same kind of meaning and pleasure from these activities as under the previous social contract. In the following paragraphs, this work argues that the decreased prevalence of survival under this new social contract causes both of these assumptions to not hold.
+              James provides several worthwhile alternatives to work, mentioning volunteering and creative or sporting pursuits as key components of the new social contract<sup style={styles.sup}>5</sup>. James and others plead that meaning-related goods can still be obtained without work, picturing a utopia in which humans take pleasure in using their newfound free time to deepen relationships, engage in service, and actively partake in games. However, these claims rely on two key assumptions. First, James takes it as given that humans will willingly engage in these activities under the new social contract. Second, he assumes that humans will receive the same kind of meaning and pleasure from these activities as under the previous social contract. In the following paragraphs, this work argues that the decreased prevalence of survival under this new social contract causes both of these assumptions to not hold.
             </p>
             <br />
             <p>
@@ -76,7 +76,7 @@ const ArticleTemplate = () => {
             </p>
             <br />
             <p>
-              Furthermore, there is reasonable doubt to whether these activities will continue to conjure the same meaning as under the current social contract. Feelings of purpose and accomplishment, two of the prized meaning-related goods found in work, are often linked to the notion of survival. Weber’s analysis of the Protestant work ethic ties survival as obtained through economic success or other means to salvation, the defining purpose and aim of many faiths<sup style={styles.sup}>14</sup>. With a shift away from survival, it’s questionable whether these forms of meaning which often complement survival will continue to remain in the same sense in other endeavors. 
+              Furthermore, there is reasonable doubt to whether these activities will continue to conjure the same meaning as under the current social contract. Feelings of purpose and accomplishment, two of the prized meaning-related goods found in work, are often linked to the notion of survival. Weber’s analysis of the Protestant work ethic ties survival as obtained through economic success or other means to salvation, the defining purpose and aim of many faiths<sup style={styles.sup}>13</sup>. With a shift away from survival, it’s questionable whether these forms of meaning which often complement survival will continue to remain in the same sense in other endeavors. 
             </p>
         </section>
 
@@ -84,11 +84,11 @@ const ArticleTemplate = () => {
         <section style={styles.section}>
             <h2 style={styles.sectionTitle}>Reevaluation James' Utilitarian Argument for PBI</h2>
             <p>
-              Both Aaron James and John Danaher deny the plausibility of work as a necessary means to achieve meaning-related goods,. The preceding text argues that survival is a necessary connection linking work to meaning-relating goods<sup style={styles.sup}>15,16</sup>. A new social contract prompted by precautionary basic income is shown to undermine the modern notion of survival, breaking this link, and thus inhibiting access to meaning-related goods and other positive characteristics associated with survival. Under these pretenses, the utilitarian framework by which James argues that PBI comes at a low cost compared to the risk of disproportionately allocated consequences from AI automation needs to be reevaluated. 
+              Both Aaron James and John Danaher deny the plausibility of work as a necessary means to achieve meaning-related goods,. The preceding text argues that survival is a necessary connection linking work to meaning-relating goods<sup style={styles.sup}>5,14</sup>. A new social contract prompted by precautionary basic income is shown to undermine the modern notion of survival, breaking this link, and thus inhibiting access to meaning-related goods and other positive characteristics associated with survival. Under these pretenses, the utilitarian framework by which James argues that PBI comes at a low cost compared to the risk of disproportionately allocated consequences from AI automation needs to be reevaluated. 
             </p>
             <br />
             <p>
-              Social scientists have found eudaimonic well-being, centered on meaning and self-realization, to be essential for long-term mental health and life satisfaction<sup style={styles.sup}>17</sup>. Accordingly, prohibiting access to meaning-related goods presents a cost to human prosperity far greater than the financial barriers which James ascribes as the primary downside to implementing PBI. Despite the scope and disproportionate impact of AI-based automation, which is argued in the introduction to be quite strong, the upsides of PBI cannot justify its degradation of the human condition. Ergo, an alternative proposal to protect against AI-based automation must distribute the risk of AI without rewriting the social contract. 
+              Social scientists have found eudaimonic well-being, centered on meaning and self-realization, to be essential for long-term mental health and life satisfaction<sup style={styles.sup}>15</sup>. Accordingly, prohibiting access to meaning-related goods presents a cost to human prosperity far greater than the financial barriers which James ascribes as the primary downside to implementing PBI. Despite the scope and disproportionate impact of AI-based automation, which is argued in the introduction to be quite strong, the upsides of PBI cannot justify its degradation of the human condition. Ergo, an alternative proposal to protect against AI-based automation must distribute the risk of AI without rewriting the social contract. 
             </p>
         </section>
 
@@ -113,15 +113,15 @@ const ArticleTemplate = () => {
             <li>Manyika, James, Susan Lund, Michael Chui, Jacques Bughin, Lola Woetzel, Parul Batra, Ryan Ko, and Saurabh Sanghvi. “Jobs Lost, Jobs Gained: What the Future of Work Will Mean for Jobs, Skills, and Wages.” McKinsey & Company, November 28, 2017. https://www.mckinsey.com/featured-insights/future-of-work/jobs-lost-jobs-gained-what-the-future-of-work-will-mean-for-jobs-skills-and-wages.</li>
             <li>Ellingrud, Kweilin, Saurabh Sanghvi, Gurneet Singh Dandona, Anu Madgavkar, Michael Chui, Olivia White, and Paige Hasebe. “Generative AI and the Future of Work in America.” McKinsey & Company, July 26, 2023. https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america.</li>
             <li>James, Aaron. "Planning for mass unemployment: precautionary basic income." In Ethics of Artificial Intelligence, pp. 183-211. Oxford University Press, 2020.</li>
-            <li>Danaher, John. "Automation and the Future of Work." (2021).</li>
-            <li>Bui, Hong TM, Gordon Liu, Wai Wai Ko, and Amy Curtis. "Harmonious workplace climate and employee altruistic behavior: from social exchange perspective." International Journal of Manpower 42, no. 1 (2021): 95-112.</li>
             <li>Darwin, Charles. On the origin of species: A facsimile of the first edition. Harvard University Press, 1964.</li>
-            <li>Barghouti, Zina, Jacob Guinot, and Ricardo Chiva. "Compassion and altruism in organizations: a path for firm survival." International Journal of Manpower 44, no. 9 (2023): 1-19.</li>
             <li>Solnit, Rebecca. A paradise built in hell: The extraordinary communities that arise in disaster. Penguin, 2010.</li>
             <li>Putnam, Robert D. Bowling Alone: The Collapse and Revival of American Community. New York: Simon & Schuster, 2000.</li>
+            <li>Bui, Hong TM, Gordon Liu, Wai Wai Ko, and Amy Curtis. "Harmonious workplace climate and employee altruistic behavior: from social exchange perspective." International Journal of Manpower 42, no. 1 (2021): 95-112.</li>
+            <li>Barghouti, Zina, Jacob Guinot, and Ricardo Chiva. "Compassion and altruism in organizations: a path for firm survival." International Journal of Manpower 44, no. 9 (2023): 1-19.</li>
             <li>Ashforth, Blake E., and Glen E. Kreiner. "“How can you do it?”: Dirty work and the challenge of constructing a positive identity." Academy of management Review 24, no. 3 (1999): 413-434.</li>
             <li>Sattler, Sebastian, Veljko Dubljević, and Eric Racine. "Cooperative behavior in the workplace: Empirical evidence from the agent-deed-consequences model of moral judgment." Frontiers in Psychology 13 (2023): 1064442.</li>
             <li>Weber, Max, and Stephen Kalberg. The Protestant ethic and the spirit of capitalism. Routledge, 2013.</li>
+            <li>Danaher, John. "Automation and the Future of Work." (2021).</li>
             <li>Joshanloo, Mohsen, Veljko Jovanović, and Tim Taylor. "A multidimensional understanding of prosperity and well-being at country level: Data-driven explorations." PloS one 14, no. 10 (2019): e0223221.</li>
           </ol>
         </section>
