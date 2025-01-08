@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -40,54 +39,11 @@ const BuoyantForceAnalysis = () => {
           </p>
         </section>
 
-        {/* Baseline Model Section */}
+        {/* PDF Embed Section */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Establishing a Baseline Model with Water</h2>
-          <p>
-            Proposed by Greek Mathematician Archimedes of Syracuse, Archimedes' Principle is the foundation
-            of modeling the position of objects submerged in fluids of higher density. It states that the buoyant
-            force on an object is equal to the weight of the fluid it displaces.
-          </p>
-          <div style={styles.equation}>
-            F<sub>B</sub> = &rho;gV
-          </div>
-          <p>
-            Where &rho; is the fluid density, g is the gravitational constant (9.81), and V is the volume of the object
-            submerged in the fluid.
-          </p>
-          <br />
-          <p> 
-          When an object rises due to the buoyant force, it is subject to resistance in the form of drag. In this case, we will use Stoke’s Law to approximate drag of our spherical object: 
-          </p>
-          <div style={styles.equation}>
-            F<sub>D</sub> = 6&pi;&nu;Rv
-          </div>
-        </section>
-
-        {/* Oobleck Section */}
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Oobleck</h2>
-          <p>
-            Named by Dr. Seuss, oobleck is a 3:2 mixture of cornstarch and water. The same properties that make
-            the substance of interest to young kids and Dr. Seuss make oobleck a scientific anomaly...
-          </p>
-        </section>
-
-        {/* Proposed Explanations Section */}
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Proposed Explanations and Corresponding Differential Equations</h2>
-          <h3 style={styles.sectionSubTitle}>1. Immediate Jump</h3>
-          <p>To explain the immediate rise in vertical position, one need not look further than tangible observation...</p>
-        </section>
-
-        {/* References Section */}
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>References</h2>
-          <ol style={styles.sourceList}>
-            <li>Uniyal, M. (2022, August 22). Non-Newtonian fluid: Definition, types, examples...</li>
-            <li>Carroll, B. (2014, January 0). Archimedes' Principle...</li>
-            <li>Libretexts. (2022, July 20). 8.6: Drag Forces in Fluids...</li>
-          </ol>
+        <a href="/Mathematical Analysis of the Buoyant Force in Non-Newtonian Fluids.pdf" target="_blank">
+          Open PDF
+        </a>
         </section>
 
         {/* Back Button at Bottom */}
@@ -158,22 +114,10 @@ const styles = {
     marginBottom: '10px',
     color: '#2e4075',
   },
-  sectionSubTitle: {
-    fontSize: '1.5rem',
-    fontWeight: 'bold',
-    marginBottom: '10px',
-    color: '#2e4075',
-  },
-  equation: {
-    backgroundColor: '#f9f9f9',
-    padding: '10px',
-    border: '1px solid #ddd',
-    margin: '20px 0',
-    fontFamily: 'Courier New, Courier, monospace',
-  },
-  sourceList: {
-    paddingLeft: '20px',
-    fontSize: '1rem',
+  pdfEmbed: {
+    width: '100%',
+    height: '600px',
+    border: 'none',
   },
   heroImage: {
     width: '100%',

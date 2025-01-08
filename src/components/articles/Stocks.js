@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const StockPredictionAnalysis = () => {
+const StockAnalysis = () => {
   const navigate = useNavigate();
 
   const goBack = () => {
@@ -33,76 +32,15 @@ const StockPredictionAnalysis = () => {
         <section style={styles.section}>
           <h2 style={styles.sectionTitle}>Abstract</h2>
           <p>
-            The aim of this paper is to discuss the creation of stock market modeling software using
-            difference equations, differential equations, and a simple natural language processing model...
+          The aim of this paper is to discuss the creation of stock market modeling software using difference equations, differential equations, and a simplistic natural language processing model. The research methodology involved expressing common stock market patterns through difference equations, an analysis to find the correlation between a specific stock’s history and standard stock patterns, using a second order differential equation to evaluate the volatility of a stock, quantifying the impact of news articles and social media discussions on a stock through an NLP model, and combining these factors to produce a predictive algorithm for the stock’s future. While equations and algorithms used in this paper are arbitrarily defined, the idea that difference equations and NLP could be used in unison to predict stock changes in real time is proven to be a legitimate possibility given the success of modeling the Allstate Insurance Company’s stock throughout the paper.
           </p>
         </section>
 
-        {/* Introduction Section */}
+        {/* PDF Embed Section */}
         <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Introduction</h2>
-          <p>
-            The stock market is no longer controlled by a select group of Ivy League graduates who
-            strut to work in personally tailored suits and enter skyscrapers adorned with the names of JP
-            Morgan, BlackRock, Citigroup, and Goldman Sachs. Rather, it is the schoolteacher dressed in
-            pajamas and armed with an investment app that is a part of the fastest-growing sector of the
-            world investment economy.
-          </p>
-        </section>
-
-        {/* Modeling Stock Patterns Section */}
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Modeling Stock Patterns through Difference Equations</h2>
-          <p>
-            Difference equations can be used to model all types of functions as an alternative to
-            continuous differential equations. The general first-order difference equation can be written as:
-          </p>
-          <div style={styles.equation}>
-            y<sub>n+1</sub> = f(y<sub>n</sub>, n)
-          </div>
-        </section>
-
-        {/* Stock Volatility Section */}
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Stock Volatility Index</h2>
-          <p>
-            Traditional stock volatility models rely on a procedure involving the standard deviation
-            of stock prices. However, simplifying volatility down to standard deviation does not account for
-            the way/rate in which the rate of change of the stock is being manipulated by market
-            fluctuations...
-          </p>
-        </section>
-
-        {/* Natural Language Processing Section */}
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Natural Language Processing Model</h2>
-          <p>
-            When analyzing an article or social media manuscript to find its impact on a stock, the
-            two most principal factors are the positivity of the text towards the stock and how relevant the
-            text is to the stock. The NLP model created for this analysis tool involves two main methods
-            (one for the positivity of the text and another for the relevancy) that can be multiplied together to
-            determine the overall impact on the stock.
-          </p>
-        </section>
-
-        {/* Predictive Algorithm Section */}
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>The Predictive Algorithm</h2>
-          <p>
-            All the components discussed thus far can be combined to produce a difference equation model for
-            20 additional iterations of a given stock, with each iteration resembling a day of the stock being
-            traded on the market.
-          </p>
-        </section>
-
-        {/* References Section */}
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>References</h2>
-          <ol style={styles.sourceList}>
-            <li>Fitzgerald, M. (2021, March 10). Retail investors continue to jump into the stock market...</li>
-            <li>Unknown. (2022). 11 most essential stock chart patterns...</li>
-            <li>Hayes, A. (2022, February 8). Volatility. Investopedia...</li>
-          </ol>
+        <a href="public/Stock Market Prediction Using Difference Equations and Natural Language Processing.pdf" target="_blank">
+          Open PDF
+        </a>
         </section>
 
         {/* Back Button at Bottom */}
@@ -173,16 +111,10 @@ const styles = {
     marginBottom: '10px',
     color: '#2e4075',
   },
-  equation: {
-    backgroundColor: '#f9f9f9',
-    padding: '10px',
-    border: '1px solid #ddd',
-    margin: '20px 0',
-    fontFamily: 'Courier New, Courier, monospace',
-  },
-  sourceList: {
-    paddingLeft: '20px',
-    fontSize: '1rem',
+  pdfEmbed: {
+    width: '100%',
+    height: '600px',
+    border: 'none',
   },
   heroImage: {
     width: '100%',
@@ -191,4 +123,4 @@ const styles = {
   },
 };
 
-export default StockPredictionAnalysis;
+export default StockAnalysis;
