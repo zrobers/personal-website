@@ -19,6 +19,7 @@ const ArticleTemplate = () => {
       <header style={styles.header}>
         <h1 style={styles.title}>The Easy Problem of AI Rights</h1>
         <p style={styles.subtitle}>Zachary Robers</p>
+        <p style={styles.subtitle}>July 2024</p>
         <img 
           src="/images/article-images/ai-rights.jpg" 
           alt="Placeholder for article image" 

@@ -19,6 +19,7 @@ const ArticleTemplate = () => {
       <header style={styles.header}>
         <h1 style={styles.title}>Machine God: Theōria Superī</h1>
         <p style={styles.subtitle}>Zachary Robers</p>
+        <p style={styles.subtitle}>August 2024</p>
         <img
           src="/images/article-images/machine-god.webp"
           alt="Placeholder for article image"

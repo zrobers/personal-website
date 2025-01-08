@@ -18,7 +18,7 @@ const ArticleTemplate = () => {
       {/* Article Header */}
       <header style={styles.header}>
         <h1 style={styles.title}>Against Precautionary Basic Income: An Argument for the Survival of Survival</h1>
-        <p style={styles.subtitle}>Zachary Robers</p>
+        <p style={styles.subtitle}>July 2024</p>
         <img
           src="/images/article-images/survival.jpg"
           alt="Placeholder for article image"

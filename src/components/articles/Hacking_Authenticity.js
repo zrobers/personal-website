@@ -19,6 +19,7 @@ const ArticleTemplate = () => {
       <header style={styles.header}>
         <h1 style={styles.title}>Hacking Inductive Authenticity</h1>
         <p style={styles.subtitle}>Zachary Robers</p>
+        <p style={styles.subtitle}>July 2024</p>
         <img
           src="/images/article-images/hacking-authenticity.webp"
           alt="Placeholder for article image"

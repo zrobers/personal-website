@@ -19,6 +19,7 @@ const ArticleTemplate = () => {
       <header style={styles.header}>
         <h1 style={styles.title}>How often do men think about the Roman Empire? Misconceptions of Roman Masculinity</h1>
         <p style={styles.subtitle}>Zachary Robers</p>
+        <p style={styles.subtitle}>April 2024</p>
         <img 
           src="/images/article-images/roman-masculinity.jpg" 
           alt="Placeholder for article image" 

@@ -19,6 +19,7 @@ const ArticleTemplate = () => {
       <header style={styles.header}>
         <h1 style={styles.title}>Why Machines Can't Act From Ethics</h1>
         <p style={styles.subtitle}>Zachary Robers</p>
+        <p style={styles.subtitle}>June 2024</p>
         <img 
           src="/images/article-images/machine-ethics.jpg" 
           alt="Placeholder for article image" 

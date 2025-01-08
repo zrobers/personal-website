@@ -19,6 +19,7 @@ const StockAnalysis = () => {
       <header style={styles.header}>
         <h1 style={styles.title}>Stock Market Prediction Using Difference Equations and Natural Language Processing</h1>
         <p style={styles.subtitle}>Zachary Robers</p>
+        <p style={styles.subtitle}>May 2022</p>
         <img 
           src="/images/article-images/stocks.jpg" 
           alt="Placeholder for article image" 

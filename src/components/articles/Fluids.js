@@ -19,6 +19,7 @@ const BuoyantForceAnalysis = () => {
       <header style={styles.header}>
         <h1 style={styles.title}>Mathematical Analysis of the Buoyant Force in Non-Newtonian Fluids</h1>
         <p style={styles.subtitle}>Zachary Robers</p>
+        <p style={styles.subtitle}>May 2023</p>
         <img 
           src="/images/article-images/buoyancy.png" 
           alt="Placeholder for article image" 
