@@ -49,7 +49,7 @@ const ArticleTemplate = () => {
           </p>
           <br />
           <p>
-          Fair enough. Let’s meet in person. Seeing my glistening smile, the shine of my greenish blue eyes, the chaotic disarray of my hair as I extend my hand to greet you, I look authentic. More, the warmth of my hind, the roughness of my calluses, the smoothness of my fingernails, feel right.   
+          Fair enough. Let’s meet in person. <i>Seeing my glistening smile, the shine of my greenish blue eyes, the chaotic disarray of my hair as I extend my hand to greet you, I look authentic. More, the warmth of my hind, the roughness of my calluses, the smoothness of my fingernails, feel right.</i>   
           </p>
           <br />
           <p>
@@ -57,7 +57,7 @@ const ArticleTemplate = () => {
           </p>
           <br />
           <p>
-          Fine. Let’s get to know each other. We laugh as my chopstick insufficiency causes me to drop the sushi roll on my lap. We reminisce over old family memories as we share in the joy of an ice cream sundae for dessert. As we watch a baseball game later, we share in the distraught as the other team walks off, leaving our team hanging their heads.   
+          Fine. Let’s get to know each other. <i>We laugh as my chopstick insufficiency causes me to drop the sushi roll on my lap. We reminisce over old family memories as we share in the joy of an ice cream sundae for dessert. As we watch a baseball game later, we share in the distraught as the other team walks off, leaving our team hanging their heads.</i>   
           </p>
           <br />
           <p>
@@ -65,7 +65,7 @@ const ArticleTemplate = () => {
           </p>
           <br />
           <p>
-          More time passes. We see our ups and downs. You tell me you’re upset that I keep prioritizing my studies over spending time with each other. I jab back: “My future is more important than watching sports together.” We don’t speak for two weeks. Then your phone rings. It’s me. I tell you that I’m ready to change - I’ll cut off working at 5 if it means we can continue hanging out. Reluctantly, you agree to meet the next day. Everything seems well and good… for now. -----  
+          <i>More time passes. We see our ups and downs. You tell me you’re upset that I keep prioritizing my studies over spending time with each other. I jab back: “My future is more important than watching sports together.” We don’t speak for two weeks. Then your phone rings. It’s me. I tell you that I’m ready to change - I’ll cut off working at 5 if it means we can continue hanging out. Reluctantly, you agree to meet the next day. Everything seems well and good… for now. --</i>
           </p>
           <br />
           <p>
@@ -150,7 +150,7 @@ const ArticleTemplate = () => {
             </p>
             <br />
             <p>
-            Furthermore, evolutionary pressures will further aid in the “hacking” process by providing a secondary motive for accepting the relationship. These pressures have been noted as a factor in leading children to nurture Tamagotchi robots, toys designed to simulate a dependent relationship, as humans have evolved to provide nourishment to one another as a means to ensure survival<sup style={styles.sup}>10</sup>. Similarly, evolutionary pressures to find friends and a romantic partner are bound to increase one’s susceptibility to accept a virtue-based relationship as authentic. 
+            Furthermore, evolutionary pressures will further aid in the “hacking” process by providing a secondary motive for accepting the relationship. These pressures have been noted as a factor in leading children to nurture Tamagotchi robots, toys designed to simulate a dependent relationship, as humans have evolved to provide nourishment to one another as a means to ensure survival<sup style={styles.sup}>9</sup>. Similarly, evolutionary pressures to find friends and a romantic partner are bound to increase one’s susceptibility to accept a virtue-based relationship as authentic. 
             </p>
         </section>
 
@@ -178,15 +178,15 @@ const ArticleTemplate = () => {
         <section style={styles.sources}>
         <h3 style={styles.sectionTitle}>Sources</h3>
         <ol style={styles.sourceList}>
-            <li>Donath, Judith. "Ethical issues in our relationship with artificial entities." The Oxford Handbook of Ethics of AI (2020): 53-73.</li>
-            <li>Hauskeller, Michael. "Automatic sweethearts for transhumanists." (2017).</li>
-            <li>Turkle, Sherry. "Authenticity in the age of digital companions." Interaction Studies 8, no. 3 (2007): 501-517.</li>
             <li>Danaher, John. "The philosophical case for robot friendship." Journal of Posthuman Studies 3, no. 1 (2019): 5-24.</li>
-            <li>Chung, Stephy. “Meet Sophia: The Robot Who Laughs, Smiles and Frowns Just Like Us.” CNN, November 2, 2018. https://amp.cnn.com/cnn/style/article/sophia-robot-artificial-intelligence-smart-creativity.</li>
-            <li>Liao, Q. Vera, and Jennifer Wortman Vaughan. “AI Transparency in the Age of LLMs: A Human-Centered Research Roadmap.” Harvard Data Science Review, February 29, 2024.</li>
-            <li>Malle, Bertram F. "Attribution Theories: How People Sense of Behavior." In Theories in Social Psychology, edited by Derek Chadee, 72-95. Malden, MA: Wiley-Blackwell, 2011.</li>
+            <li>Donath, Judith. "Ethical issues in our relationship with artificial entities." The Oxford Handbook of Ethics of AI (2020): 53-73.</li>
             <li>Baron-Cohen, S. (2001). "Theory of mind in normal development and autism." Prisme.</li>
             <li>Niedenthal, P. M., et al. (2010). "The Simulation of Smiles (SIMS) model: Embodied simulation and the meaning of facial expression." Behavioral and Brain Sciences.</li>
+            <li>Hauskeller, Michael. "Automatic sweethearts for transhumanists." (2017).</li>
+            <li>Malle, Bertram F. "Attribution Theories: How People Sense of Behavior." In Theories in Social Psychology, edited by Derek Chadee, 72-95. Malden, MA: Wiley-Blackwell, 2011.</li>
+            <li>Liao, Q. Vera, and Jennifer Wortman Vaughan. “AI Transparency in the Age of LLMs: A Human-Centered Research Roadmap.” Harvard Data Science Review, February 29, 2024.</li>
+            <li>Chung, Stephy. “Meet Sophia: The Robot Who Laughs, Smiles and Frowns Just Like Us.” CNN, November 2, 2018. https://amp.cnn.com/cnn/style/article/sophia-robot-artificial-intelligence-smart-creativity.</li>
+            <li>Turkle, Sherry. "Authenticity in the age of digital companions." Interaction Studies 8, no. 3 (2007): 501-517.</li>
         </ol>
         </section>
 
