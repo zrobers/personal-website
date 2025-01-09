@@ -264,6 +264,42 @@ const ArticleTemplate = () => {
             </p>
         </section>
 
+        {/* Footnotes */}
+         <section style={styles.section}>
+            <h2 style={styles.sectionTitle}>Footnotes</h2>
+            <ol style={styles.sourceList}>
+                <li>See Yudkowsky (2004) for a more in depth exploration of coherent extrapolated volition. Here, the term is taken slightly out of its original context to represent some higher ambition that humans seek to fulfill, but can’t qualify. </li>
+                <li>In practice, deliciousness would need to be represented by some relevant proxy or combination of proxies. This technical aspect isn’t relevant here, so I opted for the more intuitive notion. </li>
+                <li>Though I do foresee an objection to this claim stemming from Prospect Theory. Specifically, the underweighting of high probabilities suggests that humans value an increase in probability of an almost certain event much more than an increase in probability for an event which is far from certain. More precisely, my claim is that the magnitude of such an increase is incomprehensibly significant to a human at such a scale. At some point, a prior of .9 repeating a large, but finite number of times to a human is equal to 1, even if mathematics tells us the 9s must repeat infinitely for the equality to hold. </li>
+                <li>See Goodhart (1975) for a more detailed account of Goodhart’s Law. Essentially, the idea in application to superintelligence is that any proxy used to represent a goal could prove to be not indicative of the intended result. </li>
+                <li>See Bostrom (2012)</li>
+                <li>See Bostrom (2014)</li>
+                <li>See Bostrom (2012)</li>
+                <li>See Bostrom (2012) for a more thorough motivation for the “treacherous turn”</li>
+                <li>There is certainly an argument that our current state is not harmonious. Warfare, social unrest, and the extinction of other species are just a few examples of reasonable points. However, relative to our capacity for destruction, we live in a peaceful state. Generally speaking, quality of life seems to be increasing. </li>
+                <li>I suppose you could find certain counterexamples, such as Spinoza’s philosophy in which God is equated to nature, but the general idea still holds. </li>
+                <li>This paradigm is not at all unique to Christianity, however. Equivalent examples can be found in all the major faiths. I chose this example as it is most likely to be familiar with the intended audience of this work. </li>
+                <li>More specifically, Jesus, but I do not wish to explore the nuances of the holy trinity at this moment. </li>
+                <li>See Burton (2005)</li>
+                <li>From the 2012 report titled “The Global Religious Landscape”</li>
+                <li>Soren Kierkegaard’s quote “Life can only be understood backwards; but it must be lived forwards” encapsulates this idea well. </li>
+                <li>If a superintelligent AGI is able to violate the wishes of its higher power to a small extent and not see any associated punishment, as a rational agent, it is likely to become increasingly skeptical of the presence of punishments and pursue stronger violations of the higher power’s supposed wishes.</li>
+                <li>I’m not entirely sure what an infinite reward would look like in the case of a superintelligent AGI. Unless the superintelligence has an expiration date, the traditional notion of eternal salvation doesn’t seem to apply. </li>
+                <li>There are exceptions to this notion which I address in sections 3 and 4</li>
+                <li>See work in whole brain emulations in Bostrom (2012)</li>
+                <li>See wireheading, misalignment</li>
+                <li>I suppose a more rigid notion of pleasing should be defined, though this is largely dependent on the medium of interaction between the supposed higher power and the superintelligent AGI. If the higher power exists in an active sense, then something as simple as the sentiment of written communications could suffice.</li>
+                <li>See Soares (2015) for a more rigid notion of utility indifference </li>
+                <li>See Section 2.1</li>
+                <li>Crusades, ethnic cleansing, Islamic extremist terrorism, among other examples</li>
+                <li>This model could be trivially expanded to include more than two superintelligent AGIs instantiated simultaneously, but for simplicity’s sake two superintelligent AGIs are used in establishing the parallel postulate.</li>
+                <li>I’m envisioning some sandbox environment where two AI models are constantly learning how to unmask the other’s deception while improving its own deceptive efforts</li>
+                <li>If a superintelligent AGI were to see this comprehensive plan and have reasonable grounds to suggest that it was implemented in its own design, it may choose to violate its higher power. )</li>
+                <li>See split knowledge in cryptographic key management for motivation</li>
+                <li>Carlsmith (2022) argues along these lines that there are nationalist/capitalist incentives for the development of superintelligence. </li>
+                <li>Bostrom is once more to thank for the notion of humanity’s “cosmic endowment”</li>
+            </ol>
+        </section>
         
        {/* Sources Section */}
         <section style={styles.sources}>
