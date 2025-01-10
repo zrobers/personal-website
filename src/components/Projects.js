@@ -1,109 +1,108 @@
 import React from 'react';
-import Sailea_Slideshow from '../components/Sailea_Slideshow';
-import Echhsaa_Slideshow from '../components/Echhsaa_Slideshow';
-import { FaUsers, FaFolder, FaComments, FaGlobeAmericas, FaMoneyCheck, FaNewspaper, FaSchool} from 'react-icons/fa';
+import { FaCode, FaUsers, FaFolder, FaComments, FaGlobeAmericas, FaMoneyCheck, FaNewspaper, FaSchool } from 'react-icons/fa';
 
 const Projects = () => {
+  const projectData = [
+    {
+      logo: '/images/connectu_hands_logo.png',
+      name: 'ConnectU',
+      description:
+        'Empowering high school students globally to explore AI through resources, courses, speaker events, and competitions.',
+      fastFacts: [
+        { icon: <FaUsers />, label: '2,000+ Members' },
+        { icon: <FaFolder />, label: '150+ Resources' },
+        { icon: <FaComments />, label: '6 Speaker Events' },
+        { icon: <FaGlobeAmericas />, label: '4 Continents' },
+      ],
+    },
+    {
+      logo: '/images/equiflow_logo.png',
+      name: 'Equiflow',
+      description:
+        'Fostering connections among alumni, supporting current students, and enhancing the campus through initiatives.',
+      fastFacts: [
+        { icon: <FaMoneyCheck />, label: '$10k+ Raised' },
+        { icon: <FaUsers />, label: '120+ Members' },
+        { icon: <FaNewspaper />, label: '19 Blog Entries' },
+        { icon: <FaSchool />, label: '200+ Students Impacted' },
+      ],
+    },
+    {
+      logo: '/images/mm_logo_v1.png',
+      name: 'Madness Multiplier',
+      description:
+        'Fostering connections among alumni, supporting current students, and enhancing the campus through initiatives.',
+      fastFacts: [
+        { icon: <FaMoneyCheck />, label: '$10k+ Raised' },
+        { icon: <FaUsers />, label: '120+ Members' },
+        { icon: <FaNewspaper />, label: '19 Blog Entries' },
+        { icon: <FaSchool />, label: '200+ Students Impacted' },
+      ],
+    },{
+      logo: '/images/neighborhood_clusters.png',
+      name: 'Rental Property Pricing Models',
+      description:
+        'Fostering connections among alumni, supporting current students, and enhancing the campus through initiatives.',
+      fastFacts: [
+        { icon: <FaMoneyCheck />, label: '$10k+ Raised' },
+        { icon: <FaUsers />, label: '120+ Members' },
+        { icon: <FaNewspaper />, label: '19 Blog Entries' },
+        { icon: <FaSchool />, label: '200+ Students Impacted' },
+      ],
+    },{
+      logo: '/images/sailea.png',
+      name: 'SAILea Automations',
+      description:
+        'I\'ve created scripts automating workflows for the Scholastic Artificial Intelligence League through LLM-generated content.',
+      fastFacts: [
+        { icon: <FaMoneyCheck />, label: '$10k+ Raised' },
+        { icon: <FaUsers />, label: '120+ Members' },
+        { icon: <FaNewspaper />, label: '19 Blog Entries' },
+        { icon: <FaSchool />, label: '200+ Students Impacted' },
+      ],
+    },{
+      logo: '/Z_logo_inverted.png',
+      name: 'Personal Website and Branding',
+      description:
+        'This website serves as a demonstration of front-end web development and branding capabilities.',
+      fastFacts: [
+        { icon: <FaMoneyCheck />, label: '$10k+ Raised' },
+        { icon: <FaUsers />, label: '120+ Members' },
+        { icon: <FaNewspaper />, label: '19 Blog Entries' },
+        { icon: <FaSchool />, label: '200+ Students Impacted' },
+      ],
+    },
+   
+  ];
+
   return (
     <div>
       {/* Header */}
-      <header style={styles.header}>
-      </header>
+      <header style={styles.header}></header>
 
       {/* Introduction */}
       <div style={styles.content}>
-        <h2 style={styles.title}>
-          Get a glimpse of what I'm currently working on. 
-        </h2>
+        <h2 style={styles.title}>Get a glimpse of what I'm currently working on.</h2>
       </div>
 
-      {/* The Scholastic Artificial Intelligence League Section */}
-      <section style={styles.nonprofitSection}>
-        <div style={styles.headerRow}>
-          <a href="https://sailea.org" target="_blank" rel="noopener noreferrer" style={styles.logoLink}>
-            <img src="/images/sailea.png" alt="SAILea Logo" style={styles.logo} />
-          </a>
-          <span style={styles.verticalBar}>|</span>
-          <a href="https://sailea.org" target="_blank" rel="noopener noreferrer" style={styles.nameLink}>
-            The Scholastic Artificial Intelligence League (SAILea)
-          </a>
-        </div>
-
-        {/* Description */}
-        <p style={styles.paragraph}>
-          The Scholastic Artificial Intelligence League empowers high school students globally to explore AI through interactive resources, courses, speaker events, and competitions. We aim to democratize AI education and inspire the next generation of innovators.
-        </p>
-
-        {/* Slideshow Section */}
-        <div style={styles.gallery}>
-          <Sailea_Slideshow />
-        </div>
-
-        {/* Fast Facts Section */}
-      <div style={styles.fastFactsSection}>
-        <div style={styles.fastFactItem}>
-          <FaUsers style={styles.fastFactIcon} />
-          <div style={styles.factLabel}>2,000+ Members</div>
-        </div>
-        <div style={styles.fastFactItem}>
-          <FaFolder style={styles.fastFactIcon} />
-          <div style={styles.factLabel}>150+ Resources</div>
-        </div>
-        <div style={styles.fastFactItem}>
-          <FaComments style={styles.fastFactIcon} />
-          <div style={styles.factLabel}>6 Speaker Events</div>
-        </div>
-        <div style={styles.fastFactItem}>
-          <FaGlobeAmericas style={styles.fastFactIcon} />
-          <div style={styles.factLabel}>4 Continents</div>
-        </div>
-      </div>
-
-      </section>
-
-      {/* The East Chapel Hill Alumni Association Section */}
-      <section style={styles.nonprofitSection}>
-        <div style={styles.headerRow}>
-          <a href="https://echhsalumni.org" target="_blank" rel="noopener noreferrer" style={styles.logoLink}>
-            <img src="/images/echhsaa.png" alt="ECHHS Alumni Logo" style={styles.logo} />
-          </a>
-          <span style={styles.verticalBar}>|</span>
-          <a href="https://echhsalumni.org" target="_blank" rel="noopener noreferrer" style={styles.nameLink}>
-            The East Chapel Hill High School Alumni Association 
-          </a>
-        </div>
-
-        {/* Description */}
-        <p style={styles.paragraph}>
-          The East Chapel Hill High School Alumni Association fosters connections among alumni, supports current students, and enhances the ECHHS campus through fundraising initiatives, mentorship programs, and gatherings.
-        </p>
-
-         {/* Slideshow Section */}
-         <div style={styles.gallery}>
-          <Echhsaa_Slideshow />
-        </div>
-
-        {/* Fast Facts Section */}
-      <div style={styles.fastFactsSection}>
-        <div style={styles.fastFactItem}>
-          <FaMoneyCheck style={styles.fastFactIcon} />
-          <div style={styles.factLabel}>$10k+ Raised</div>
-        </div>
-        <div style={styles.fastFactItem}>
-          <FaUsers style={styles.fastFactIcon} />
-          <div style={styles.factLabel}>120+ Members</div>
-        </div>
-        <div style={styles.fastFactItem}>
-          <FaNewspaper style={styles.fastFactIcon} />
-          <div style={styles.factLabel}>19 Blog Entries</div>
-        </div>
-        <div style={styles.fastFactItem}>
-          <FaSchool style={styles.fastFactIcon} />
-          <div style={styles.factLabel}>200+ Students Impacted</div>
-        </div>
-      </div>
-
-      </section>
+      {/* Project Sections */}
+      {projectData.map((project, index) => (
+        <section key={index} style={styles.projectSection}>
+          <div style={styles.logoContainer}>
+            <img src={project.logo} alt={`${project.name} Logo`} style={styles.logo} />
+          </div>
+          <h3 style={styles.projectName}>{project.name}</h3>
+          <p style={styles.description}>{project.description}</p>
+          <div style={styles.fastFactsSection}>
+            {project.fastFacts.map((fact, factIndex) => (
+              <div key={factIndex} style={styles.fastFactItem}>
+                {fact.icon}
+                <div style={styles.factLabel}>{fact.label}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
     </div>
   );
 };
@@ -125,58 +124,28 @@ const styles = {
     backgroundColor: '#d4e3fc',
   },
   title: {
-    marginTop: '20px',
     fontSize: '2rem',
     color: '#2e4075',
     textAlign: 'center',
   },
-  subtitle: {
-    fontSize: '1.2rem',
-    color: '#2e4075',
-    textAlign: 'center',
-    marginTop: '10px',
-  },
-  nonprofitSection: {
+  projectSection: {
     margin: '40px 20px',
-    borderBottom: '1px solid #ddd',
     paddingBottom: '20px',
+    borderBottom: '1px solid #ddd',
+    textAlign: 'center',
   },
-  headerRow: {
-    display: 'flex',
-    alignItems: 'center',
+  logoContainer: {
     marginBottom: '20px',
   },
   logo: {
-    height: '50px',
+    height: '160px',
   },
-  verticalBar: {
-    margin: '0 10px',
-    fontSize: '4rem',
+  projectName: {
+    fontSize: '1.8rem',
     color: '#2e4075',
-  },
-  nameLink: {
-    fontSize: '2rem',
-    color: '#2e4075',
-    textDecoration: 'none',
     fontWeight: 'bold',
   },
-  logoLink: {
-    textDecoration: 'none',
-  },
-  gallery: {
-    textAlign: 'center',
-    marginBottom: '20px',
-  },
-  galleryImage: {
-    maxWidth: '100%',
-    height: 'auto',
-    borderRadius: '10px',
-  },
-  caption: {
-    marginTop: '10px',
-    fontStyle: 'italic',
-  },
-  paragraph: {
+  description: {
     fontSize: '1.2rem',
     lineHeight: '1.6',
     marginBottom: '20px',
@@ -187,20 +156,13 @@ const styles = {
     justifyContent: 'space-around',
     backgroundColor: '#2e4075',
     padding: '30px',
-    width: '100%',
-    boxSizing: 'border-box',
     color: 'white',
-    textAlign: 'center',
   },
   fastFactItem: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     margin: '10px',
-  },
-  fastFactIcon: {
-    fontSize: '2rem',
-    marginBottom: '10px',
   },
   factLabel: {
     fontSize: '1.2rem',
@@ -209,4 +171,3 @@ const styles = {
 };
 
 export default Projects;
-
