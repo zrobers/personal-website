@@ -10,7 +10,7 @@ import { FaSchool, FaMapMarkerAlt, FaLaptopCode, FaHiking, FaCalendar, FaGraduat
 const experiences = [
     { image: '/images/software.png', label: 'Software Development Internships', number: 2 },
     { image: '/images/research.png', label: 'Research Experiences', number: 3 },
-    { image: '/images/projects.png', label: 'Personal Projects', number: 5 },
+    { image: '/images/projects.png', label: 'Personal Projects', number: 6 },
     { image: '/images/math.png', label: 'University Math Courses', number: 10 },
   ];
 
