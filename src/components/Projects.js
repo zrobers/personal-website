@@ -24,7 +24,7 @@ const Projects = () => {
         'Interpretable machine learning pipeline to advise companies whether to pursue M&A transactions. Dataset labeled through retroactive DCF calculations.',
       fastFacts: [
         { icon: <FaCode size={30} />, label: 'Code', link: 'https://github.com/zrobers/ibbdc' },
-        { icon: <FaFolder size={30} />, label: 'Use Case', link: 'https://example.com/equiflow-usecase' },
+        { icon: <FaFolder size={30} />, label: 'Use Case', link: '/equiflow_use_case.pdf'}, // PDF
       ],
     },
     {
@@ -33,7 +33,7 @@ const Projects = () => {
       description:
         'Community-based sports betting game with intentionally exploitable odds.',
       fastFacts: [
-        { icon: <FaLink size={30} />, label: 'Lightweight Solution - Request Access', link: 'https://example.com/madness-multiplier' },
+        { icon: <FaLink size={30} />, label: 'Lightweight Solution - Request Access', link: 'https://drive.google.com/drive/folders/1MQr_t-N12puAOAT-9rnuGapCq0wV60go?usp=drive_link' },
       ],
     },
     {
@@ -43,7 +43,7 @@ const Projects = () => {
         'Extending a technique used in biomedical engineering to create new clustering techniques helpful for predicting Airbnb prices.',
       fastFacts: [
         { icon: <FaCode size={30} />, label: 'Code', link: 'https://github.com/zrobers/abnb-classifier' },
-        { icon: <FaFilePdf size={30} />, label: 'Paper' }, // PDF is not an external link
+        { icon: <FaFilePdf size={30} />, label: 'Paper', link: '/property_pricing.pdf' }, // PDF 
       ],
     },
     {
