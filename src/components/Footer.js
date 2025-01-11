@@ -1,8 +1,8 @@
 import React from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa'; // Import LinkedIn and GitHub icons
+import { FaLinkedin, FaGithub, FaFilePdf } from 'react-icons/fa';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear(); // Get the current year
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer style={styles.footer}>
@@ -12,6 +12,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           style={styles.link}
+          aria-label="LinkedIn Profile"
         >
           <FaLinkedin size={32} />
         </a>
@@ -20,8 +21,18 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           style={styles.link}
+          aria-label="GitHub Profile"
         >
           <FaGithub size={32} />
+        </a>
+        <a
+          href="/zach_robers_cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={styles.link}
+          aria-label="Download Resume"
+        >
+          <FaFilePdf size={32} />
         </a>
       </div>
       <p style={styles.copyright}>
@@ -31,17 +42,16 @@ const Footer = () => {
   );
 };
 
-// Inline styles for simplicity
 const styles = {
   footer: {
-    backgroundColor: '#2e4075', // Primary color
+    backgroundColor: '#2e4075',
     color: 'white',
     textAlign: 'center',
     padding: '1rem 0',
     position: 'relative',
     bottom: 0,
     width: '100%',
-    fontFamily: "'Poppins', sans-serif", // Modern font
+    fontFamily: "'Poppins', sans-serif",
   },
   iconContainer: {
     display: 'flex',
@@ -50,7 +60,7 @@ const styles = {
     marginBottom: '0.5rem',
   },
   link: {
-    color: 'white', // Accent color
+    color: 'white',
     transition: 'color 0.3s',
     textDecoration: 'none',
   },

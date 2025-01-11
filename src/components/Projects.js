@@ -1,78 +1,69 @@
 import React from 'react';
-import { FaCode, FaUsers, FaFolder, FaComments, FaGlobeAmericas, FaMoneyCheck, FaNewspaper, FaSchool } from 'react-icons/fa';
+import {
+  FaCode,
+  FaFilePdf,
+  FaLink,
+  FaFolder,
+} from 'react-icons/fa';
 
 const Projects = () => {
   const projectData = [
     {
       logo: '/images/connectu_hands_logo.png',
       name: 'ConnectU',
-      description:
-        'Empowering high school students globally to explore AI through resources, courses, speaker events, and competitions.',
+      description: 'Mentorship solutions with AI-powered matching methodology.',
       fastFacts: [
-        { icon: <FaUsers />, label: '2,000+ Members' },
-        { icon: <FaFolder />, label: '150+ Resources' },
-        { icon: <FaComments />, label: '6 Speaker Events' },
-        { icon: <FaGlobeAmericas />, label: '4 Continents' },
+        { icon: <FaCode size={30} />, label: 'Code - Request Access', link: 'https://github.com/zrobers/ab-family-match' },
+        { icon: <FaFolder size={30} />, label: 'Pitch Deck - Request Access', link: 'https://docs.google.com/presentation/d/17YZkoeBwSonMPR3QtOlNPmiymfeMbX-9FjKyB1bRZzE/edit?usp=sharing' },
       ],
     },
     {
       logo: '/images/equiflow_logo.png',
       name: 'Equiflow',
       description:
-        'Fostering connections among alumni, supporting current students, and enhancing the campus through initiatives.',
+        'Interpretable machine learning pipeline to advise companies whether to pursue M&A transactions. Dataset labeled through retroactive DCF calculations.',
       fastFacts: [
-        { icon: <FaMoneyCheck />, label: '$10k+ Raised' },
-        { icon: <FaUsers />, label: '120+ Members' },
-        { icon: <FaNewspaper />, label: '19 Blog Entries' },
-        { icon: <FaSchool />, label: '200+ Students Impacted' },
+        { icon: <FaCode size={30} />, label: 'Code', link: 'https://github.com/zrobers/ibbdc' },
+        { icon: <FaFolder size={30} />, label: 'Use Case', link: 'https://example.com/equiflow-usecase' },
       ],
     },
     {
       logo: '/images/mm_logo_v1.png',
       name: 'Madness Multiplier',
       description:
-        'Fostering connections among alumni, supporting current students, and enhancing the campus through initiatives.',
+        'Community-based sports betting game with intentionally exploitable odds.',
       fastFacts: [
-        { icon: <FaMoneyCheck />, label: '$10k+ Raised' },
-        { icon: <FaUsers />, label: '120+ Members' },
-        { icon: <FaNewspaper />, label: '19 Blog Entries' },
-        { icon: <FaSchool />, label: '200+ Students Impacted' },
+        { icon: <FaLink size={30} />, label: 'Lightweight Solution - Request Access', link: 'https://example.com/madness-multiplier' },
       ],
-    },{
+    },
+    {
       logo: '/images/neighborhood_clusters.png',
       name: 'Rental Property Pricing Models',
       description:
-        'Fostering connections among alumni, supporting current students, and enhancing the campus through initiatives.',
+        'Extending a technique used in biomedical engineering to create new clustering techniques helpful for predicting Airbnb prices.',
       fastFacts: [
-        { icon: <FaMoneyCheck />, label: '$10k+ Raised' },
-        { icon: <FaUsers />, label: '120+ Members' },
-        { icon: <FaNewspaper />, label: '19 Blog Entries' },
-        { icon: <FaSchool />, label: '200+ Students Impacted' },
+        { icon: <FaCode size={30} />, label: 'Code', link: 'https://github.com/zrobers/abnb-classifier' },
+        { icon: <FaFilePdf size={30} />, label: 'Paper' }, // PDF is not an external link
       ],
-    },{
+    },
+    {
       logo: '/images/sailea.png',
       name: 'SAILea Automations',
       description:
-        'I\'ve created scripts automating workflows for the Scholastic Artificial Intelligence League through LLM-generated content.',
+        "Scripts automating workflows for the Scholastic Artificial Intelligence League through LLM-generated content.",
       fastFacts: [
-        { icon: <FaMoneyCheck />, label: '$10k+ Raised' },
-        { icon: <FaUsers />, label: '120+ Members' },
-        { icon: <FaNewspaper />, label: '19 Blog Entries' },
-        { icon: <FaSchool />, label: '200+ Students Impacted' },
+        { icon: <FaCode size={30} />, label: 'Code', link: 'https://github.com/zrobers/sailea-api' },
       ],
-    },{
+    },
+    {
       logo: '/Z_logo_inverted.png',
       name: 'Personal Website and Branding',
       description:
-        'This website serves as a demonstration of front-end web development and branding capabilities.',
+        'Demonstration of front-end web development and branding capabilities.',
       fastFacts: [
-        { icon: <FaMoneyCheck />, label: '$10k+ Raised' },
-        { icon: <FaUsers />, label: '120+ Members' },
-        { icon: <FaNewspaper />, label: '19 Blog Entries' },
-        { icon: <FaSchool />, label: '200+ Students Impacted' },
+        { icon: <FaCode size={30} />, label: 'Code', link: 'https://github.com/zrobers/personal-website' },
       ],
     },
-   
   ];
 
   return (
@@ -96,8 +87,15 @@ const Projects = () => {
           <div style={styles.fastFactsSection}>
             {project.fastFacts.map((fact, factIndex) => (
               <div key={factIndex} style={styles.fastFactItem}>
-                {fact.icon}
-                <div style={styles.factLabel}>{fact.label}</div>
+                <a
+                  href={fact.link || '#'}
+                  target={fact.link ? '_blank' : '_self'}
+                  rel={fact.link ? 'noopener noreferrer' : undefined}
+                  style={styles.factLink}
+                >
+                  {fact.icon}
+                  <div style={styles.factLabel}>{fact.label}</div>
+                </a>
               </div>
             ))}
           </div>
@@ -164,9 +162,15 @@ const styles = {
     alignItems: 'center',
     margin: '10px',
   },
+  factLink: {
+    textDecoration: 'none',
+    color: 'white',
+    textAlign: 'center',
+  },
   factLabel: {
     fontSize: '1.2rem',
     fontWeight: 'bold',
+    marginTop: '10px',
   },
 };
 
