@@ -33,7 +33,7 @@ const Contact = () => {
           >
             <FaGithub style={styles.socialIcon} />
           </a>
-          <a href="public/zach_robers_cv.pdf" download style={styles.iconLink}>
+          <a href="/robers_zach_cv.pdf" download style={styles.iconLink}>
             <FaFilePdf style={styles.socialIcon} />
           </a>
         </div>

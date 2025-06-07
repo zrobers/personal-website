@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "personal-website-80bdf"
+  },
+  "targets": {
+    "personal-website-80bdf": {
+      "hosting": {
+        "main-site": [
+          "personal-website-80bdf"
+        ]
+      }
+    }
   }
 }
