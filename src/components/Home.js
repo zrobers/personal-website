@@ -69,7 +69,7 @@ const Home = () => {
         </div>
         <div style={styles.fastFactItem}>
           <FaCalendar style={styles.fastFactIcon} />
-          <div style={styles.factLabel}>Sophomore</div>
+          <div style={styles.factLabel}>Junior</div>
         </div>
         <div style={styles.fastFactItem}>
           <FaGraduationCap style={styles.fastFactIcon} />

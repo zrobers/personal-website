@@ -20,6 +20,10 @@ import RomanMasculinity from './components/articles/Roman_Masculinity.js'
 import Chat from './components/articles/Chat.js'
 import Fluids from './components/articles/Fluids.js'
 import Stocks from './components/articles/Stocks.js'
+import SparsitySkew from './components/articles/Sparsity_and_Skew.js'
+import Riemann from './components/articles/Riemann.js'
+import GOSDT from './components/articles/GOSDT.js'
+
 
 import './App.css';
 
@@ -46,6 +50,9 @@ function App() {
             <Route path="/thought-leadership/chat" element={<Chat />} />
             <Route path="/thought-leadership/fluids" element={<Fluids />} />
             <Route path="/thought-leadership/stocks" element={<Stocks />} />
+            <Route path="/thought-leadership/sparsity-skew" element={<SparsitySkew />} />
+            <Route path="/thought-leadership/riemann-siegel" element={<Riemann />} />
+            <Route path="/thought-leadership/gosdt-efficiency" element={<GOSDT />} />
           </Routes>
       </div>
       <Footer />
