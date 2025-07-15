@@ -1,14 +1,14 @@
 import React, { useRef, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
-import Slideshow from '../components/Slideshow'; // slideshow component
+import Slideshow from '../components/Slideshow'; 
 import ArticleCarousel from '../components/Article_Carousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faBrain, faChartLine, faCogs } from '@fortawesome/free-solid-svg-icons';
 import { FaSchool, FaMapMarkerAlt, FaLaptopCode, FaHiking, FaCalendar, FaGraduationCap } from 'react-icons/fa';
 
 const experiences = [
-    { image: '/images/software.png', label: 'Software / Data Science Internships', number: 3 },
+    { image: '/images/code.png', label: 'Software / Data Science Internships', number: 3 },
     { image: '/images/research.png', label: 'Research Experiences', number: 4 },
     { image: '/images/projects.png', label: 'Personal Projects', number: 6 },
     { image: '/images/math.png', label: 'University Math Courses', number: 10 },

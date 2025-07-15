@@ -11,7 +11,7 @@ const ArticleCarousel = () => {
       },
       {
         id: 2,
-        title: 'Against Precautionary Basic Income: An Argument for the Survival or Survival',
+        title: 'Against Precautionary Basic Income: An Argument for the Survival of Survival',
         image: '/images/article-images/survival.jpg',
         link: '/thought-leadership/precautionary-basic-income',
       },
@@ -59,7 +59,7 @@ const ArticleCarousel = () => {
       },
       {
           id: 10,
-          title: 'Stock Pediction with Difference Equations and Custom Sentiment Analysis',
+          title: 'Stock Prediction with Difference Equations and Custom Sentiment Analysis',
           image: '/images/article-images/stocks.jpg',
           link: '/thought-leadership/stocks',
       },
