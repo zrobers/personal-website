@@ -1,60 +1,98 @@
+/* Reset + base font */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Header bar */
+.header {
+  background-color: #2e4075; /* Primary color */
+  color: white;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-image {
+  height: 30px;
+  width: auto;
+  margin-right: 10px;
+}
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Desktop nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+}
+.nav-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Hamburger menu button—hidden by default */
+.menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* === Responsive: screens ≤ 768px === */
+@media (max-width: 768px) {
+  /* Show the hamburger */
+  .menu-icon {
+    display: block;
   }
-  
-  .header {
-    background-color: #2e4075; /* Primary color */
-    color: white; /* White text for contrast */
-    width: 100%;
-    padding: 0.5rem 2rem;
-    position: fixed;
-    top: 0;
+
+  /* Hide the desktop nav */
+  .nav-links {
+    position: absolute;
+    top: 100%;     /* immediately below the header */
     left: 0;
-    z-index: 1000;
+    right: 0;
+    background-color: #2e4075;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none; /* hidden by default */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
-  
-  .navbar {
+
+  /* When menu is open, show links */
+  .nav-links.active {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
-  
-  .logo-container {
-    display: flex;
-    align-items: center; /* Ensures logo and text are vertically aligned */
-  }
-  
-  .logo-image {
-    height: 30px; /* Adjust the height to make it smaller */
-    width: auto;
-    margin-right: 10px; /* Space between the logo and text */
-  }
-  
-  .logo-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white; /* Accent color */
-    font-weight: 400;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .nav-links a:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  
+}
