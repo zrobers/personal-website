@@ -26,7 +26,7 @@ const Footer = () => {
           <FaGithub size={32} />
         </a>
         <a
-          href="/robers_zach_cv.pdf"
+          href="/robers_zach_resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           style={styles.link}

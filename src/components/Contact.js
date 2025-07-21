@@ -31,7 +31,7 @@ const Contact = () => {
           <a href="https://github.com/zrobers" target="_blank" rel="noopener noreferrer" style={styles.iconLink}>
             <FaGithub style={styles.socialIcon} />
           </a>
-          <a href="/robers_zach_cv.pdf" download style={styles.iconLink}>
+          <a href="/robers_zach_resume.pdf" download style={styles.iconLink}>
             <FaFilePdf style={styles.socialIcon} />
           </a>
         </div>
