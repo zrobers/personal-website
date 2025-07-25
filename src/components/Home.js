@@ -168,10 +168,8 @@ const styles = {
   slideshowContainer: {
     position: 'relative',
     width: '100%',
-    height: 'auto',
+    minHeight: '500px', // or whatever minimum height you'd like
     overflow: 'hidden',
-    paddingBottom: '0',
-    marginBottom: '0',
     backgroundColor: '#2e4075',
   },
   overlay: {
