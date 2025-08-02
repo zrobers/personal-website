@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const ArticleCarousel = () => {
@@ -66,25 +66,101 @@ const ArticleCarousel = () => {
   ];
 
   const scrollRef = useRef(null);
+  const containerRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [cardWidth, setCardWidth] = useState(320); // 300px card + 20px gap
+  const [visibleCards, setVisibleCards] = useState(3);
+  const [totalPages, setTotalPages] = useState(0);
+
+  useEffect(() => {
+    const calculateVisibleCards = () => {
+      if (containerRef.current) {
+        const containerWidth = containerRef.current.offsetWidth;
+        const cardWidthWithGap = 320; // 300px card + 20px gap
+        const calculatedVisibleCards = Math.floor(containerWidth / cardWidthWithGap);
+        const newVisibleCards = Math.max(1, calculatedVisibleCards); // At least 1 card
+        setVisibleCards(newVisibleCards);
+        setTotalPages(Math.ceil(articles.length / newVisibleCards));
+      }
+    };
+
+    const calculateCardWidth = () => {
+      if (scrollRef.current) {
+        const firstCard = scrollRef.current.querySelector('[data-card]');
+        if (firstCard) {
+          const cardRect = firstCard.getBoundingClientRect();
+          const gap = 20; // gap between cards
+          setCardWidth(cardRect.width + gap);
+        }
+      }
+    };
+
+    calculateVisibleCards();
+    calculateCardWidth();
+
+    // Recalculate on window resize
+    const handleResize = () => {
+      calculateVisibleCards();
+      calculateCardWidth();
+      // Reset to first page when screen size changes
+      setCurrentIndex(0);
+      if (scrollRef.current) {
+        scrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [articles.length]);
 
   const scrollLeft = () => {
-    scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+    if (currentIndex > 0) {
+      const newIndex = currentIndex - 1;
+      setCurrentIndex(newIndex);
+      scrollRef.current.scrollTo({
+        left: newIndex * (cardWidth * visibleCards),
+        behavior: 'smooth'
+      });
+    }
   };
 
   const scrollRight = () => {
-    scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+    if (currentIndex < totalPages - 1) {
+      const newIndex = currentIndex + 1;
+      setCurrentIndex(newIndex);
+      scrollRef.current.scrollTo({
+        left: newIndex * (cardWidth * visibleCards),
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const goToPage = (pageIndex) => {
+    setCurrentIndex(pageIndex);
+    scrollRef.current.scrollTo({
+      left: pageIndex * (cardWidth * visibleCards),
+      behavior: 'smooth'
+    });
   };
 
   return (
     <div style={styles.backgroundContainer}>
       <div style={styles.pageContainer}>
-        <div style={styles.carouselContainer}>
-          <button style={styles.scrollButton} onClick={scrollLeft}>
+        <div style={styles.carouselContainer} ref={containerRef}>
+          <button 
+            style={{
+              ...styles.scrollButton,
+              opacity: currentIndex === 0 ? 0.5 : 1,
+              cursor: currentIndex === 0 ? 'not-allowed' : 'pointer'
+            }} 
+            onClick={scrollLeft}
+            disabled={currentIndex === 0}
+          >
             &#8249;
           </button>
           <div style={styles.articlesRow} ref={scrollRef}>
             {articles.map((article) => (
-              <div key={article.id} style={styles.articleCard}>
+              <div key={article.id} style={styles.articleCard} data-card>
                 <img
                   src={article.image}
                   alt={article.title}
@@ -97,10 +173,33 @@ const ArticleCarousel = () => {
               </div>
             ))}
           </div>
-          <button style={styles.scrollButton} onClick={scrollRight}>
+          <button 
+            style={{
+              ...styles.scrollButton,
+              opacity: currentIndex === totalPages - 1 ? 0.5 : 1,
+              cursor: currentIndex === totalPages - 1 ? 'not-allowed' : 'pointer'
+            }} 
+            onClick={scrollRight}
+            disabled={currentIndex === totalPages - 1}
+          >
             &#8250;
           </button>
         </div>
+        {/* Dots indicator - only shows pages, not individual articles */}
+        {totalPages > 1 && (
+          <div style={styles.dotsContainer}>
+            {Array.from({ length: totalPages }, (_, index) => (
+              <button
+                key={index}
+                style={{
+                  ...styles.dot,
+                  backgroundColor: index === currentIndex ? '#2e4075' : '#ccc'
+                }}
+                onClick={() => goToPage(index)}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -139,6 +238,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     position: 'relative',
+    width: '100%',
   },
   scrollButton: {
     backgroundColor: '#2e4075',
@@ -151,17 +251,24 @@ const styles = {
     fontSize: '1.5rem',
     margin: '0 10px',
     zIndex: 10,
+    transition: 'opacity 0.3s ease',
+    flexShrink: 0,
   },
   articlesRow: {
     display: 'flex',
-    overflowX: 'scroll',
+    overflowX: 'hidden', // Changed from scroll to hidden
     scrollBehavior: 'smooth',
     gap: '20px',
     padding: '10px 0',
     width: '100%',
+    scrollbarWidth: 'none', // Hide scrollbar for Firefox
+    msOverflowStyle: 'none', // Hide scrollbar for IE/Edge
+  },
+  'articlesRow::-webkit-scrollbar': {
+    display: 'none', // Hide scrollbar for Chrome/Safari
   },
   articleCard: {
-    flex: '0 0 auto',
+    flex: '0 0 300px', // Fixed width instead of auto
     width: '300px',
     display: 'flex',
     flexDirection: 'column',
@@ -193,6 +300,20 @@ const styles = {
     backgroundColor: '#2e4075',
     borderRadius: '5px',
     textDecoration: 'none',
+  },
+  dotsContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '8px',
+    marginTop: '20px',
+  },
+  dot: {
+    width: '10px',
+    height: '10px',
+    borderRadius: '50%',
+    border: 'none',
+    cursor: 'pointer',
+    transition: 'background-color 0.3s ease',
   },
 };
 

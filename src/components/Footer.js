@@ -17,7 +17,7 @@ const Footer = () => {
               <h3 style={styles.footerTitle}>Zach Robers</h3>
             </div>
             <p style={styles.footerDescription}>
-              A.B. Duke Scholar studing Mathematics & Computer Science at Duke University.
+              A.B. Duke Scholar studying Mathematics & Computer Science.
             </p>
             <div style={styles.contactInfo}>
               <div style={styles.contactItem}>
