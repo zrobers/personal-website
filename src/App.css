@@ -38,7 +38,7 @@
 }
 
 .main-content {
-  padding-top: 2rem; /* Ensures content is not hidden behind the fixed header */
+  padding-top: 3.5rem; /* Reduced to create small overlap while ensuring content visibility */
 }
 
 /* Link to Google Fonts for Roboto */
