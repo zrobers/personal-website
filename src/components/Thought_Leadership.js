@@ -114,8 +114,9 @@ const styles = {
   },
   articlesContainer: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-    gap: '20px',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+    gap: '30px',
+    padding: '20px 0',
   },
   articleCard: {
     display: 'flex',
@@ -129,7 +130,8 @@ const styles = {
     padding: '15px',
     backgroundColor: '#d4e3fc',
     color: '#2e4075',
-    height: '100%',
+    minHeight: '400px',
+    height: 'auto',
   },
   articleImage: {
     width: '100%',
