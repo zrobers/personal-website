@@ -1,0 +1,9 @@
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(46, 64, 117, 0.15);
+}
+
+.fact-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(4px);
+} 
