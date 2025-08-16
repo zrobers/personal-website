@@ -10,6 +10,12 @@ import './Projects.css';
 const Projects = () => {
   const projectData = [
     {
+      logo: '/images/research_backer_text_and_logo.png',
+      name: 'Research Backer',
+      description: 'Crowd funding for accredited research',
+      fastFacts: [],
+    },
+    {
       logo: '/images/connectu_hands_logo.png',
       name: 'ConnectU',
       description: 'Mentorship solutions with AI-powered matching methodology.',
