@@ -1,8 +1,14 @@
-/* Forces every react-slick wrapper to fill the parent’s height */
-.slideshow-container .slick-slider,
-.slideshow-container .slick-list,
-.slideshow-container .slick-track,
-.slideshow-container .slick-slide,
-.slideshow-container .slick-slide > div {
+/* slideshow height fix */
+.slideshow-container {
+  height: 100vh;
+}
+
+.slideshow-slide {
   height: 100%;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
