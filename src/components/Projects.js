@@ -20,7 +20,7 @@ const Projects = () => {
       name: 'ConnectU',
       description: 'Mentorship solutions with AI-powered matching methodology.',
       fastFacts: [
-        { icon: <FaCode size={24} />, label: 'Code - Request Access', link: 'https://github.com/zrobers/ab-family-match' },
+        { icon: <FaLink size={24} />, label: 'Website', link: 'https://connectu.ai' },
         { icon: <FaFolder size={24} />, label: 'Pitch Deck - Request Access', link: 'https://docs.google.com/presentation/d/17YZkoeBwSonMPR3QtOlNPmiymfeMbX-9FjKyB1bRZzE/edit?usp=sharing' },
       ],
     },

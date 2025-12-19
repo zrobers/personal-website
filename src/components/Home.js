@@ -11,7 +11,7 @@ const experiences = [
     { image: '/images/code.png', label: 'Software / Data Science Internships', number: 3 },
     { image: '/images/research.png', label: 'Research Experiences', number: 4 },
     { image: '/images/projects.png', label: 'Personal Projects', number: 6 },
-    { image: '/images/math.png', label: 'University Math Courses', number: 10 },
+    { image: '/images/math.png', label: 'University Math Courses', number: 12 },
   ];
 
 const skills = [
