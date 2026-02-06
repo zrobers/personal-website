@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
-import Slideshow from '../components/Slideshow'; 
+import OptimizedImage from './OptimizedImage';
 import ArticleCarousel from '../components/Article_Carousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faBrain, faChartLine, faCogs } from '@fortawesome/free-solid-svg-icons';
@@ -48,9 +48,15 @@ const Home = () => {
   return (
     <div style={styles.pageContainer}>
 
-      {/* Slideshow Section */}
+      {/* Image Section */}
       <div style={styles.slideshowContainer} ref={slideshowRef}>
-        <Slideshow />
+        <OptimizedImage
+          webpSrc="/images/optimized/zach1.webp"
+          fallbackSrc="/images/zach1.jpg"
+          alt="Zach"
+          style={styles.heroImage}
+          loading="eager"
+        />
         <div className="overlay" style={styles.overlay}>
           <h1 style={styles.introText}>Hi, I'm Zach.</h1>
           <div style={styles.arrow}></div>
@@ -171,6 +177,14 @@ const styles = {
     minHeight: '500px', // or whatever minimum height you'd like
     overflow: 'hidden',
     backgroundColor: '#2e4075',
+  },
+  heroImage: {
+    width: '100%',
+    height: '100%',
+    minHeight: '500px',
+    objectFit: 'cover',
+    objectPosition: 'center',
+    display: 'block',
   },
   overlay: {
     position: 'absolute',
