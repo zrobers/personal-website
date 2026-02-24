@@ -5,7 +5,6 @@ const ThoughtLeadership = () => {
   const [filter, setFilter] = useState('All');
 
   const articles = [
-    { id: 1, title: 'Sparsity and Skew: The Role of Bad Data in the Prominence of the Classics', image: '/images/article-images/sparsity_and_skew.png', link: '/thought-leadership/sparsity-skew' },
     { id: 2, title: 'Deriving the Riemann-Siegel Formula with the Method of Steepest Descent', image: '/images/article-images/riemann_siegel.png', link: '/thought-leadership/riemann-siegel' },
     { id: 3, title: 'Exploring the Efficiency of GOSDT', image: '/images/article-images/decision_tree.png', link: '/thought-leadership/gosdt-efficiency' },
     { id: 4, title: 'Why Machines Can\'t Act From Ethics', image: '/images/article-images/machine-ethics.jpg', link: '/thought-leadership/machine-ethics' },
@@ -20,7 +19,7 @@ const ThoughtLeadership = () => {
     { id: 13, title: 'Stock Pediction with Difference Equations and Custom Sentiment Analysis', image: '/images/article-images/stocks.jpg', link: '/thought-leadership/stocks' },
   ];
 
-  const humanitiesIds = new Set([1, 4, 5, 6, 7, 8, 9, 10]);
+  const humanitiesIds = new Set([4, 5, 6, 7, 8, 9, 10]);
   const sciencesIds = new Set(articles.map(a => a.id).filter(id => !humanitiesIds.has(id) && id !== 11));
 
   const filteredArticles = articles.filter(article => {
